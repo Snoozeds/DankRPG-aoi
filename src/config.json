@@ -1,7 +1,7 @@
 {
     "token": "Grab this from https://discord.com/developers",
     "prefix" : "sp!",
-    "intents" : "",
+    "intents" : "MESSAGE_CONTENT",
     "WARNING" : "Prefix is the default prefix, if not changed. Intents require verification if a bot is in over 100 servers. You can safely remove this (warning) config."
 }
 
