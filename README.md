@@ -2,7 +2,7 @@
 **Before all of this, make sure you update the "config.json" file!!!**
 
 ## Step 1: Picking the correct host
-Personally I chose DigitalOcean, as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
+Personally I chose DigitalOcean (though they have pretty STEEP prices), as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
 Just make sure the one you choose supports: 
 - Linux (I recommend **Ubuntu/Other Debian distros**, as they share they same commands.)
 - 24/7 hosting 
