@@ -3,7 +3,7 @@
 ## Step 1: Picking the correct host
 Personally I chose DigitalOcean, as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
 Just make sure the one you choose supports: 
-- Linux (I recommend Ubuntu, as it is widely documented)
+- Linux (I recommend **Ubuntu/Other Debian distros**, as it is widely documented)
 - 24/7 hosting 
 - (optional) pay as you go.
 
@@ -20,7 +20,7 @@ To use these applications, they will usually ask for a couple of things:
 
 ## Step 3: Downloading dependencies on your host
 
-Assuming you are using Ubuntu, run the following commands:
+Assuming you are using **Ubuntu**, run the following commands:
 
 **Installing Nodejs v17 (normal apt version is outdated):** \
 ```curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -``` \
