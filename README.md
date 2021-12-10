@@ -44,3 +44,5 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```pm2 restart index.js - restarts the file``` \
 ```pm2 stop index.js - stops the file``` \
 ```pm2 ls - lists all processes running```
+
+Feel free to contact me on [Discord](https://discord.com/users/764564962815115267) if you need any help.
