@@ -18,7 +18,7 @@ module.exports = {
 **__Server Settings__**
 \`prefix\`\n\n
 **__Bot Links__**
-[Privacy](https://dankrpg.xyz/privacy) | [Support](https://discord.gg/Cc3xBSpWeB) | [Docs](https://docs.dankrpg.xyz)]
+[Privacy](https://dankrpg.xyz/privacy) | [Support](https://discord.gg/Cc3xBSpWeB) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG)]
 		$footer[You are seeing this menu because you have the "manage guild" permission.]
 
 		$else
@@ -35,7 +35,7 @@ module.exports = {
 **__Experimental Features__**
 **Music:** \`play\`, \`skip\`, \`stop\`, \`cp\`, \`loopsong\`\n\n
 **__Bot Links__**
-[Privacy](https://dankrpg.xyz/privacy) | [Support](https://discord.gg/Cc3xBSpWeB) | [Docs](https://docs.dankrpg.xyz)]
+[Privacy](https://dankrpg.xyz/privacy) | [Support](https://discord.gg/Cc3xBSpWeB) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG)]
 
 		$endif
 		$suppressErrors
