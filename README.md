@@ -1,4 +1,5 @@
 # How to host Dank RPG (on a server)
+**Before all of this, make sure you update the "config.json" file!!!**
 
 ## Step 1: Picking the correct host
 Personally I chose DigitalOcean, as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
