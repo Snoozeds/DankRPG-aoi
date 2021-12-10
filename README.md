@@ -3,7 +3,7 @@
 ## Step 1: Picking the correct host
 Personally I chose DigitalOcean, as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
 Just make sure the one you choose supports: 
-- Linux (I recommend **Ubuntu/Other Debian distros**, as it is widely documented)
+- Linux (I recommend **Ubuntu/Other Debian distros**, as they share they same commands.)
 - 24/7 hosting 
 - (optional) pay as you go.
 
