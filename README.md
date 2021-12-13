@@ -12,7 +12,7 @@ Just make sure the one you choose supports:
 
 For linux users (your personal machine), I recommend **Termius** (free with education pack) for accessing the server. \
 For Windows users (your personal machine), I recommend **Bitvise** or **Termius** (free with education pack) \
-Note that these are just recommendations from apps that I've used personally. There are countless options out there.
+**Note that these are just recommendations from apps that I've used personally. There are countless options out there.**
 
 To use these applications, they will usually ask for a couple of things:
 - The host/address: This is the ipv4 address provided by your server provider.
