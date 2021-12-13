@@ -10,8 +10,8 @@ Just make sure the one you choose supports:
 
 ## Step 2: Connecting to your host
 
-For linux users (your personal machine), I recommend **FileZilla** for uploading files, and **Easy SSH/Terminus** for running commands in the terminal. \
-For Windows users (your personal machine), I recommend **Bitvise**.
+For linux users (your personal machine), I recommend **FileZilla** for uploading files, and **Easy SSH/Termius** (free with education pack) for running commands in the terminal. \
+For Windows users (your personal machine), I recommend **Bitvise** or **Termius** (free with education pack)
 
 To use these applications, they will usually ask for a couple of things:
 - The host/address: This is the ipv4 address provided by your server provider.
