@@ -10,7 +10,7 @@ Just make sure the one you choose supports:
 
 ## Step 2: Connecting to your host
 
-For linux users (your personal machine), I recommend **FileZilla** for uploading files, and **Easy SSH/Termius** (free with education pack) for running commands in the terminal. \
+For linux users (your personal machine), I recommend **Termius** (free with education pack) for accessing the server. \
 For Windows users (your personal machine), I recommend **Bitvise** or **Termius** (free with education pack)
 
 To use these applications, they will usually ask for a couple of things:
