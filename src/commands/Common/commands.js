@@ -2,11 +2,11 @@ module.exports = {
     name: "commands",
     aliases: ["help", "cmds"],
     code: `
-		$if[$checkContains[$userPerms;Manage Guild]==]
+		$if[$checkContains[$userPerms;Manage Guild]==true]
 		$title[Commands: Guild Manager]
 		$color[$getGlobalUserVar[EmbedColor]]
 		 $description[**__Misc__**
-\`commands\`, \`ping\`, \`settings\`, \`feedback\`, \`credits\`, \`repeat\`\n
+\`commands\`, \`ping\`, \`settings\`, \`feedback\`, \`credits\`, \`repeat\`, \`8ball\`\n
 **__Economy__**
 \`beg\`, \`daily\`, \`heal\`, \`fight\`, \`work\`, \`upgrade\`, \`shop\`, \`farm\`, \`bs\`, \`bwork\`\n
 **__Stats__**
@@ -25,7 +25,7 @@ module.exports = {
 		$title[Commands]
     $color[$getGlobalUserVar[EmbedColor]]
     $description[**__Misc__**
-\`commands\`, \`ping\`, \`settings\`, \`feedback\`, \`credits\`, \`repeat\`\n
+\`commands\`, \`ping\`, \`settings\`, \`feedback\`, \`credits\`, \`repeat\`, \`8ball\`\n
 **__Economy__**
 \`beg\`, \`daily\`, \`heal\`, \`fight\`, \`work\`, \`upgrade\`, \`shop\`, \`farm\`, \`bs\`, \`bwork\`\n
 **__Stats__**
