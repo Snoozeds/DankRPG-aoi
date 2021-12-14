@@ -78,7 +78,7 @@ module.exports = {
 	$else
 	$title[A new monster has spawned!]
 	$description[It has **5HP**!\n You fight it, dealing **5 ATK**. It dies, and you earn <:RPGCoin:855767372534906920>**$random[30;35]**.
-	You lose <:RPGHeart:855755205102534686>**$random[20;25]**.
+	You lose <:RPGHeart:855755205102534686>**$random[30;35]**.
 	]
 	$color[$getGlobalUserVar[EmbedColor]]
 	$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];$random[30;35]]]
