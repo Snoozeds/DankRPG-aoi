@@ -39,6 +39,7 @@ bot.variables({
   Wood : "0",
   Slime: "0",
   //////////////////////////////////////////////////
+  BoughtHouse: "False"
   }) 
   // These are the DEFAULTS for each variable.
 
@@ -50,6 +51,17 @@ bot.loadCommands(`./commands/Shop`)
 bot.loadCommands(`./commands/Interactions`)
 bot.loadCommands(`./commands/Experimental`)
 bot.loadCommands(`./commands/Stats`)
+
+const http = require('http');
+
+const requestListener = function (req, res) {
+  res.writeHead(200);
+  res.end('Running discord bot....!');
+}
+
+const server = http.createServer(requestListener);
+server.listen(8080);
+
 
 // Error handler so bot doesn't kaboom
 try{}catch(error){console.log(error)}
