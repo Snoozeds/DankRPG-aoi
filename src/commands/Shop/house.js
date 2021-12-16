@@ -16,7 +16,7 @@ module.exports = [{
     $onlyIf[$getGlobalUserVar[BoughtHouse]==True;]
     $onlyIf[$getGlobalUserVar[HP]!=$sub[$getGlobalUserVar[MaxHP];1];]
     $onlyIf[$getGlobalUserVar[HP]!=$getGlobalUserVar[MaxHP];]
-    $globalCooldown[60s;]`
+    $globalCooldown[5m;]`
 }
 
 ]
