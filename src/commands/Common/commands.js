@@ -8,9 +8,9 @@ module.exports = {
 		 $description[**__Misc__**
 \`commands\`, \`ping\`, \`settings\`, \`feedback\`, \`credits\`, \`repeat\`, \`8ball\`\n
 **__Economy__**
-\`beg\`, \`daily\`, \`heal\`, \`fight\`, \`work\`, \`upgrade\`, \`shop\`, \`farm\`, \`bs\`, \`bwork\`\n
+\`daily\`, \`fight\`, \`shop\`, \`farm\`, \`bs\`, \`bwork\`, \`forage\`\n
 **__Stats__**
-\`info\`, \`profile\`, \`hp\`, \`achievements\`, \`whois\`, \`serverinfo\` \n
+\`info\`, \`profile\`, \`hp\`, \`achievements\`, \`whois\`, \`serverinfo\`, \`inventory\`\n
 **__Interactions__**
 \`hug\`, \`kill\`\n
 **__Experimental Features__**
@@ -27,9 +27,9 @@ module.exports = {
     $description[**__Misc__**
 \`commands\`, \`ping\`, \`settings\`, \`feedback\`, \`credits\`, \`repeat\`, \`8ball\`\n
 **__Economy__**
-\`beg\`, \`daily\`, \`heal\`, \`fight\`, \`work\`, \`upgrade\`, \`shop\`, \`farm\`, \`bs\`, \`bwork\`\n
+\`daily\`, \`fight\`, \`shop\`, \`farm\`, \`bs\`, \`bwork\`, \`forage\`\n
 **__Stats__**
-\`info\`, \`profile\`, \`hp\`, \`achievements\`, \`whois\`, \`serverinfo\`\n
+\`info\`, \`profile\`, \`hp\`, \`achievements\`, \`whois\`, \`serverinfo\`, \`inventory\`\n
 **__Interactions__**
 \`hug\`, \`kill\`\n
 **__Experimental Features__**
