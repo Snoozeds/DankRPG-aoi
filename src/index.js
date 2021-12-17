@@ -39,7 +39,9 @@ bot.variables({
   Wood : "0",
   Slime: "0",
   //////////////////////////////////////////////////
-  BoughtHouse: "False"
+  BoughtHouse: "False",
+  GiftL: "1",
+  HouseL: "1"
   }) 
   // These are the DEFAULTS for each variable.
 
