@@ -10,7 +10,7 @@ Server Count: $serverCount \n
 RAM Usage: $round[$ram]MBs
 CPU Usage: $round[$cpu]%
     ]
-    $color[#ffff]
+    $color[$getGlobalUserVar[EmbedColor]]
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 		$suppressErrors`,
 })
