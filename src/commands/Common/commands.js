@@ -12,7 +12,7 @@ $description[
 \`hug, kill\`
 
 **Fun Commands**:
-\`repeat, 8ball\`
+\`repeat, 8ball, coinflip\`
 
 **Misc Commands**:
 \`commands, ping, info, feedback, credits\`
@@ -24,10 +24,5 @@ $description[
 [Privacy](https://dankrpg.xyz/privacy) | [Support](https://discord.gg/Cc3xBSpWeB) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG)]
 $suppressErrors
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-    
-
-
-
-    
     `
 }
