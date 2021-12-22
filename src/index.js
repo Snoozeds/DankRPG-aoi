@@ -14,7 +14,7 @@ bot.status({
     })
 
 bot.variables({
-  Coi: "<:RPGCoin:855767372534906920>",
+  Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier
   Coins: "0",
   HP: "100",
   MaxHP : "100",
@@ -39,11 +39,13 @@ bot.variables({
   Wood : "0",
   Slime: "0",
   //////////////////////////////////////////////////
-  BoughtHouse: "False",
-  GiftL: "1",
-  HouseL: "1"
-  }) 
+  BoughtHouse: "False", // Bought house or not
+  GiftL: "1", // Gift Stock
+  HouseL: "1", // House Stock
+  //////////////////////////////////////////////////
+
   // These are the DEFAULTS for each variable.
+  })
 
 bot.onMessage()
 bot.onInteractionCreate()
