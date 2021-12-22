@@ -6,7 +6,7 @@ $title[Commands]
 $color[$getGlobalUserVar[EmbedColor]]
 $description[
 **Economy Commands**:
-\`daily, fight, farm, bwork, forage\`
+\`daily, fight, farm, bwork, forage, slots\`
 
 **Interactions Commands**:
 \`hug, kill\`
@@ -18,7 +18,7 @@ $description[
 \`commands, ping, info, feedback, credits\`
 
 **Settings**:
-\`prefix, changecolor, familymode, interactions\`
+\`settings, prefix, changecolor, familymode, interactions\`
 
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Support](https://discord.gg/Cc3xBSpWeB) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG)]
