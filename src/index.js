@@ -8,8 +8,8 @@ const bot = new aoijs.Bot({
 });
 
 bot.status({
-    text: "$serverCount servers || d!help", 
-    type: "WATCHING",
+    text: "PREFIX RESET | d!help", 
+    type: "PLAYING",
     time: "12",
     })
 
@@ -43,10 +43,10 @@ bot.variables({
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
   //////////////////////////////////////////////////
+  TopggToken: "Get this from https://top.gg."
 
   // These are the DEFAULTS for each variable.
   })
-
 bot.onMessage()
 bot.onInteractionCreate()
 bot.loadCommands(`./commands/Common`)
@@ -65,7 +65,6 @@ const requestListener = function (req, res) {
 
 const server = http.createServer(requestListener);
 server.listen(8080);
-
 
 // Error handler so bot doesn't kaboom
 try{}catch(error){console.log(error)}
