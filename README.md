@@ -10,8 +10,8 @@ Just make sure the one you choose supports:
 
 ## Step 2: Connecting to your host
 
-For linux users (your personal machine), I recommend **Termius** (free with education pack) for accessing the server. \
-For Windows users (your personal machine), I recommend **Bitvise** or **Termius** (free with education pack) \
+For linux users (your personal machine), I recommend **Termius** or **Your OS's terminal** (using ssh) for accessing the server. \
+For Windows users (your personal machine), I recommend **Bitvise** or **Termius**\
 **Note that these are just recommendations from apps that I've used personally. There are countless options out there.**
 
 To use these applications, they will usually ask for a couple of things:
