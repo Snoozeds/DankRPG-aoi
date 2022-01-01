@@ -8,7 +8,6 @@ This only takes a couple of seconds and helps support us. [vote](https://top.gg/
 +$getVar[Coi]**1000**]
     $footer[Our privacy policy applies to this command: https://dankrpg.xyz/privacy]
     $color[$getGlobalUserVar[EmbedColor;$authorID]]
-    $globalCooldown[15s;Slow down! You still haven't voted. **%time%** left.]
     $else
     Thank you for voting! Your support helps the bot grow :)
 +$getVar[Coi]**1000**
