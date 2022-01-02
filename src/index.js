@@ -41,7 +41,6 @@ bot.variables({
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
   TopggToken: "",
-  HasPotion: "False" // Has potion already active or not
 
   // These are the DEFAULTS for each variable.
   })
