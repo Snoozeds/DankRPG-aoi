@@ -3,12 +3,12 @@ const config = require('./config.json');
 
 const bot = new aoijs.Bot({
   token: config.token,
-  prefix: "$getServerVar[Prefix]",
+  prefix: ["$getServerVar[Prefix]", "$getServerVar[Prefix] "],
   intents: config.intents,
 });
 
 bot.status({
-    text: "PREFIX RESET | d!help", 
+    text: "It's 2022! | d!help", 
     type: "PLAYING",
     time: "12",
     })
@@ -34,16 +34,14 @@ bot.variables({
 	ATKAchievement: "<:Locked:899050875916541963>",
   InBusiness: "False",
   BusinessType: "None",
-  //////////////////////////////////////////////////
   Stone : "0",
   Wood : "0",
   Slime: "0",
-  //////////////////////////////////////////////////
   BoughtHouse: "False", // Bought house or not
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
-  //////////////////////////////////////////////////
-  TopggToken: "Get this from https://top.gg."
+  TopggToken: "",
+  HasPotion: "False" // Has potion already active or not
 
   // These are the DEFAULTS for each variable.
   })
@@ -53,7 +51,6 @@ bot.loadCommands(`./commands/Common`)
 bot.loadCommands(`./commands/Economy`)
 bot.loadCommands(`./commands/Shop`)
 bot.loadCommands(`./commands/Interactions`)
-bot.loadCommands(`./commands/Experimental`)
 bot.loadCommands(`./commands/Stats`)
 
 const http = require('http');
