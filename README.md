@@ -1,4 +1,4 @@
-#If you want to download the source code, please download it from 'releases'.
+# If you want to download the source code, please download it from 'releases'.
 
 # How to host Dank RPG (on a server)
 **Before all of this, make sure you update the "config.json" file!!!**
