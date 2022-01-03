@@ -1,6 +1,19 @@
 const aoijs = require('aoi.js');
 const config = require('./config.json');
 
+//Top.gg stuff
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
+const { AutoPoster } = require('topgg-autoposter')
+
+const ap = AutoPoster('TOPGG TOKEN', client)
+
+ap.on('posted', () => {
+  console.log('Posted stats to Top.gg!')
+})
+
+client.login(config.token)
+
 const bot = new aoijs.Bot({
   token: config.token,
   prefix: ["$getServerVar[Prefix]", "$getServerVar[Prefix] "],
@@ -8,7 +21,7 @@ const bot = new aoijs.Bot({
 });
 
 bot.status({
-    text: "It's 2022! | d!help", 
+    text: "05/01/22.. | d!help", 
     type: "PLAYING",
     time: "12",
     })
@@ -34,13 +47,21 @@ bot.variables({
 	ATKAchievement: "<:Locked:899050875916541963>",
   InBusiness: "False",
   BusinessType: "None",
+  //
   Stone : "0",
   Wood : "0",
   Slime: "0",
+  //
   BoughtHouse: "False", // Bought house or not
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
-  TopggToken: "",
+  TopggToken: "TOPGG TOKEN",
+  //
+  PetType: "none",
+  PetName: "Your pet hasn't been named yet. Run \`<prefix>petname <name>\`.",
+  HasPet: "false",
+  PetIMG : "",
+  //
 
   // These are the DEFAULTS for each variable.
   })
