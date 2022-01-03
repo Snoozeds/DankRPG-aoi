@@ -31,7 +31,7 @@ bot.variables({
   Coins: "0",
   HP: "100",
   MaxHP : "100",
-	ATK: "1",
+  ATK: "1",
   Prefix: "d!",
   EmbedColor : "#FFE302",
   FamilyMode : "False",
