@@ -98,7 +98,8 @@ name: "$alwaysExecute",
 code: `
 $if[$randomText[yes;no;no;no]==yes]
 $title[$getGlobalUserVar[PetName;$authorID]]
-$description[Your cat found you $getVar[Coi] **$random[25;50]!**]
+$description[Your cat ($getGlobalUserVar[PetName]found you $getVar[Coi] **$random[25;50]!**]
+$color[$getGlobalUserVar[EmbedColor;$authorID]]
 $thumbnail[$getGlobalUserVar[PetIMG;$authorID]]
 $else
 $endif
