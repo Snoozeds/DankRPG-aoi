@@ -17,6 +17,9 @@ $description[
 **Misc Commands**:
 \`commands, ping, info, feedback, credits, inventory\`
 
+**Shop Commands**:
+\`petshop, buypet, abandon, petinfo, heal, upgrade\`
+
 **Settings**:
 \`settings, prefix, changecolor, familymode, interactions\`
 
