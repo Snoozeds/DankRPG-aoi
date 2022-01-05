@@ -96,7 +96,7 @@ $endif
 {
 name: "$alwaysExecute",
 code: `
-$if[$randomText[yes;no;no;no]==yes]
+$if[$randomText[yes;no]==yes]
 $title[$getGlobalUserVar[PetName;$authorID]]
 $description[Your cat ($getGlobalUserVar[PetName]found you $getVar[Coi] **$random[25;50]!**]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
