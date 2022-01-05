@@ -6,7 +6,7 @@ const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
 const { AutoPoster } = require('topgg-autoposter')
 
-const ap = AutoPoster('TOPGG TOKEN', client)
+const ap = AutoPoster('', client)
 
 ap.on('posted', () => {
   console.log('Posted stats to Top.gg!')
@@ -21,7 +21,7 @@ const bot = new aoijs.Bot({
 });
 
 bot.status({
-    text: "05/01/22.. | d!help", 
+    text: "v1.12| d!help", 
     type: "PLAYING",
     time: "12",
     })
@@ -31,7 +31,7 @@ bot.variables({
   Coins: "0",
   HP: "100",
   MaxHP : "100",
-  ATK: "1",
+	ATK: "1",
   Prefix: "d!",
   EmbedColor : "#FFE302",
   FamilyMode : "False",
@@ -55,7 +55,7 @@ bot.variables({
   BoughtHouse: "False", // Bought house or not
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
-  TopggToken: "TOPGG TOKEN",
+  TopggToken: "",
   //
   PetType: "none",
   PetName: "Your pet hasn't been named yet. Run \`<prefix>petname <name>\`.",
