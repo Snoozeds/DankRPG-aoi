@@ -15,7 +15,7 @@ $description[
 \`repeat, 8ball, coinflip\`
 
 **Misc Commands**:
-\`commands, ping, info, feedback, credits, inventory\`
+\`commands, ping, info, feedback, credits, inventory, whois\`
 
 **Shop Commands**:
 \`petshop, buypet, abandon, petinfo, heal, upgrade\`
