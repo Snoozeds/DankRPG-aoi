@@ -21,7 +21,7 @@ const bot = new aoijs.Bot({
 });
 
 bot.status({
-    text: "v1.12| d!help", 
+    text: "v1.12 | d!help", 
     type: "PLAYING",
     time: "12",
     })
@@ -31,20 +31,20 @@ bot.variables({
   Coins: "0",
   HP: "100",
   MaxHP : "100",
-	ATK: "1",
+  ATK: "1",
   Prefix: "d!",
   EmbedColor : "#FFE302",
   FamilyMode : "False",
   UserInt : "True",
-	FirstDaily: "True",
-	DailyAchievement: "<:Locked:899050875916541963>",
-	FarmO: "<:Orange:861639407978020914>",
-	FarmK: "<:Kiwi:861639983268626442>",
-	FarmS: "<:Strawberry:861641050930282516>",
-	FirstFarm: "True",
-	FarmAchievement: "<:Locked:899050875916541963>",
-	FirstATK: "True",
-	ATKAchievement: "<:Locked:899050875916541963>",
+  FirstDaily: "True",
+  DailyAchievement: "<:Locked:899050875916541963>",
+  FarmO: "<:Orange:861639407978020914>",
+  FarmK: "<:Kiwi:861639983268626442>",
+  FarmS: "<:Strawberry:861641050930282516>",
+  FirstFarm: "True",
+  FarmAchievement: "<:Locked:899050875916541963>",
+  FirstATK: "True",
+  ATKAchievement: "<:Locked:899050875916541963>",
   InBusiness: "False",
   BusinessType: "None",
   //
@@ -62,6 +62,8 @@ bot.variables({
   HasPet: "false",
   PetIMG : "",
   //
+  DungeonStage: "",
+  DungeonName: "",
 
   // These are the DEFAULTS for each variable.
   })
@@ -75,6 +77,7 @@ bot.loadCommands(`./commands/Stats`)
 
 const http = require('http');
 
+// Runs a page on port 8080, you can ping this to keep it alive; or you could monitor it.
 const requestListener = function (req, res) {
   res.writeHead(200);
   res.end('Running discord bot....!');
