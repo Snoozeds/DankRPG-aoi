@@ -52,4 +52,5 @@ Assuming you are using **Ubuntu**, run the following commands:
 Feel free to contact me on [Discord](https://discord.com/users/764564962815115267) if you need any help.
 
 ## If you'd like to support me please check out these links:
-<a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">DigitalOcean (<b>REFERRAL</b>)</a> <a href="https://dankrpg.xyz/donate">WidgetBot (Actual money in my pocket)</a>
+<a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">DigitalOcean (<b>REFERRAL</b>)</a> \
+<a href="https://dankrpg.xyz/donate">WidgetBot (Actual money in my pocket)</a>
