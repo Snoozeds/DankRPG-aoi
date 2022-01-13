@@ -51,7 +51,5 @@ Assuming you are using **Ubuntu**, run the following commands:
 
 Feel free to contact me on [Discord](https://discord.com/users/764564962815115267) if you need any help.
 
-## If you'd like to support the server costs, you can use my referral for DigitalOcean. You get $100 credits for free (60d, after you add a payment method), and I get $25 credits for every $25 you spend.
-(Please note that this is not me shilling them  - I am not being "paid" by them specifically. Every user has access to this program and there are FAR better options out there. It would just help my costs.)\
-\
-<a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+## If you'd like to support me please check out these links:
+<a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">DigitalOcean (<b>REFERRAL</b>)</a> <a href="https://dankrpg.xyz/donate">WidgetBot (Actual money in my pocket)</a>
