@@ -27,7 +27,8 @@ bot.status({
     })
 
 bot.variables({
-  Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier
+  Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier.
+  Heart: "<:RPGHeart:855755205102534686>", // Variable to make typing the hp emoji easier.
   Coins: "0",
   HP: "100",
   MaxHP : "100",
