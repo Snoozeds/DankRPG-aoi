@@ -1,5 +1,5 @@
 module.exports = {
-name: "start dungeon",
+name: "startdungeon",
 code: `You start a dungeon.
 $if[$randomText[Loot;Enemy;Enemy]==Enemy]
 You find an enemy. It damages you, and you lose $getVar[Heart]$random[5;10].
