@@ -2,7 +2,7 @@ module.exports = {
     name: "weekly",
     code: `$if[$checkContains[$httpRequest[https://normal-api.ml/topgg/hasvoted?bot=$clientID&user=$authorID&token=$getVar[TopggToken]];true]!=true]
     $title[Unfortunately, you haven't voted.]
-    $description[<:tggfail:924458621440495658> Using the 'weekly' command requires you to vote for us on top.gg.
+    $description[<:Locked:899050875916541963> Using the 'weekly' command requires you to vote for us on top.gg.
 This only takes a couple of seconds and helps support us. [vote](https://top.gg/bot/855479925863481345/vote)
 **Your rewards for voting:**
 +$getVar[Coi]**1000**]
