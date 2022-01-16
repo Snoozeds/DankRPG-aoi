@@ -63,8 +63,13 @@ bot.variables({
   HasPet: "false",
   PetIMG : "",
   //
-  DungeonStage: "",
-  DungeonName: "",
+  Gold: "0",
+  Diamond: "0",
+  SlimeEmoji: "<:Slime:932047284814884996>",
+  StoneEmoji: "<:Stone:932047285058166814>",
+  GoldEmoji: "<:Gold:932047285213360208>",
+  DiamondEmoji: "<:Diamond:932047284986839110>",
+  //
 
   // These are the DEFAULTS for each variable.
   })
