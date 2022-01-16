@@ -15,8 +15,9 @@ $endif
 $if[$getGlobalUserVar[Gold;$findUser[$message;yes]]!=0]
 **Gold:** $getGlobalUserVar[Gold;$findUser[$message;yes]]
 $endif
-$if[$getGlobalUserVar[Diamond;$findUser;$message;yes]!=0]
-**Diamond:** $getGlobalUserVar[Diamond;$findUser[$messsage;yes]]
+$if[$getGlobalUserVar[Diamond;$findUser[$message;yes]]!=0]
+**Diamonds:** $getGlobalUserVar[Diamond;$findUser[$message;yes]]
+$endif
 ]
 $color[$getGlobalUserVar[EmbedColor]]
 $globalCooldown[5s;Please wait **%time%**.]`
