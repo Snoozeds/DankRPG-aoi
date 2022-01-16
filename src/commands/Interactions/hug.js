@@ -4,7 +4,7 @@ module.exports = {
 	$globalCooldown[10s;Please wait **%time%** before using this userInteraction command again.]
 
   $if[$mentioned[1]==$authorID]
-	$title[Secret Bot hugs $username[$authorID]]
+	$title[Dank RPG hugs $username[$authorID]]
 	$color[$getGlobalUserVar[EmbedColor;$authorID]]
 	$image[$httpRequest[https://apiv1.snoozeds.repl.co/anime/hug;GET;;url]]
 	$else
