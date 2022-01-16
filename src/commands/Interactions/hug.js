@@ -6,7 +6,7 @@ module.exports = {
   $if[$mentioned[1]==$authorID]
 	$title[Dank RPG hugs $username[$authorID]]
 	$color[$getGlobalUserVar[EmbedColor;$authorID]]
-	$image[$httpRequest[https://apiv1.snoozeds.repl.co/anime/hug;GET;;url]]
+	$image[https://dankrpg.xyz/api/hug/$random[1;15].gif]
 	$else
 
 	$if[$mentioned[1]==914941866875703306]
@@ -21,9 +21,10 @@ module.exports = {
 
 	$title[$username[$authorID] hugs $username[$mentioned[1]]]
 	$color[$getGlobalUserVar[EmbedColor;$authorID]]
-	$image[$httpRequest[https://apiv1.snoozeds.repl.co/anime/hug;GET;;url]]
+	$image[https://dankrpg.xyz/api/hug/$random[1;15].gif]
 	$endif
 	$endif
 	$endif
+	$suppressErrors[Mention someone.]
 	`
 }
