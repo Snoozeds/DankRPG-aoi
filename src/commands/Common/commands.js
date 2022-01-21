@@ -6,7 +6,7 @@ $title[Commands]
 $color[$getGlobalUserVar[EmbedColor]]
 $description[
 **Economy Commands**:
-\`daily, weekly, fight, farm, bwork, forage, slots\`
+\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine\`
 
 **Interactions Commands**:
 \`hug, kill\`
@@ -15,7 +15,7 @@ $description[
 \`repeat, 8ball, coinflip\`
 
 **Misc Commands**:
-\`commands, ping, info, feedback, credits, inventory, whois\`
+\`commands, ping, info, serverinfo, feedback, credits, inventory, whois, sellall\`
 
 **Shop Commands**:
 \`petshop, buypet, abandon, petinfo, heal, upgrade\`
