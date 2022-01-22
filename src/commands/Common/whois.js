@@ -10,8 +10,7 @@ module.exports = {
 	<:Arrow_Right_Green:915175740947972097> **Joined Discord:** <t:$djsEval[var unixTimestamp = Math.floor(new Date("$creationDate[$findUser[$message;yes]]").getTime()/1000);unixTimestamp;yes]> (<t:$djsEval[var unixTimestamp = Math.floor(new Date("$creationDate[$findUser[$message;yes]]").getTime()/1000);unixTimestamp;yes]:R>)
 	:door: **Joined Server:** <t:$djsEval[var unixTimestamp = Math.floor(new Date("$memberJoinedDate[$findUser[$message;yes];date]").getTime()/1000);unixTimestamp;yes]> (<t:$djsEval[var unixTimestamp = Math.floor(new Date("$memberJoinedDate[$findUser[$message;yes];date]").getTime()/1000);unixTimestamp;yes]:R>)
 	]
-	$color[$getGlobalUserVar[EmbedColor;$authorID]]
-	$suppressErrors[Cannot find user. Are they in this server?]	
+	$color[$getGlobalUserVar[EmbedColor;$authorID]]	
 	
 	$else
 	$description[
@@ -25,6 +24,7 @@ module.exports = {
 	$suppressErrors[Cannot find user. Are they in this server?]
 	$endif
 	$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+	$suppressErrors[Cannot find user. Are they in this server?]
 	`
 	} 
 	
