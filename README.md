@@ -1,16 +1,21 @@
-# If you want to download the source code, please download it from 'releases'.
+# The Guide
+Please note that this project mainly for people who want to see the code of Dank RPG, and learn from it. I have provided this guide for the people that wish to self host Dank RPG, but you will most likely encounter errors. You will have to edit some of the code yourself (e.g removing all top.gg lines, updating emotes).
 
-# How to host Dank RPG (on a server)
-**Before all of this, make sure you update the "config.json" file!!!**
+#### First of all: Note that the current version of the "main" branch is most likely not stable. For the most up-to-date and stable version, download the code from "releases". The latest release will be the latest public version of the bot.
 
-## Step 1: Picking the correct host
+If you wish to continue:
+- First update the config.json file.
+- Update some of the vars in index.js
+- Read through code and change what you'd like to.
+
+## Hosting Dank RPG | Step 1: Picking the correct host
 Personally I chose DigitalOcean (though they have pretty STEEP prices), as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
 Just make sure the one you choose supports: 
 - Linux (I recommend **Ubuntu/Other Debian distros**, as they share they same commands.)
 - 24/7 hosting 
 - (optional) pay as you go.
 
-## Step 2: Connecting to your host
+## Hosting Dank RPG | Step 2: Connecting to your host
 
 For linux users (your personal machine), I recommend **Termius** or **Your OS's terminal** (using ssh) for accessing the server. \
 For Windows users (your personal machine), I recommend **Bitvise** or **Termius**\
@@ -22,7 +27,7 @@ To use these applications, they will usually ask for a couple of things:
 - The password: Set by yourself through your hosting provider.
 - The port: Usually "22", but check with your hosting provider.
 
-## Step 3: Downloading dependencies on your host
+## Hosting Dank RPG | Step 3: Downloading dependencies on your host
 
 Assuming you are using **Ubuntu**, run the following commands:
 
