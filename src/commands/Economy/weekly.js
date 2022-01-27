@@ -15,5 +15,5 @@ This only takes a couple of seconds and helps support us. [vote](https://top.gg/
 +$getVar[Coi]**1000**
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];1000];$authorID]
 $globalCooldown[7d;You can only claim your voting rewards every week. You need to wait **%time%**.]
-    $endif`
+$endif`
 }
