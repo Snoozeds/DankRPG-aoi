@@ -28,8 +28,8 @@ $setGlobalUserVar[InRelationship;True;$authorID]
 $setGlobalUserVar[InRelationship;True;$getGlobalUserVar[Sender;$authorID]]
 $setGlobalUserVar[MarriedTo;$authorID;$getGlobalUserVar[Sender;$authorID]]
 $setGlobalUserVar[MarriedTo;$getGlobalUserVar[Sender;$authorID];$authorID]
-$setGlobalUserVar[MarriageDate;$dateStamp;$authorID]
-$setGlobalUserVar[MarriageDate;$dateStamp;$getGlobalUserVar[Sender;$authorID]]
+$setGlobalUserVar[MarriageDate;$round[$divide[$dateStamp;1000]];$authorID]
+$setGlobalUserVar[MarriageDate;$round[$divide[$dateStamp;1000]];$getGlobalUserVar[Sender;$authorID]]
 
 $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=True;]
 `
@@ -69,4 +69,6 @@ $setGlobalUserVar[MarriageDate;$authorID]
 $setGlobalUserVar[MarriageDate;$getGlobalUserVar[Sender;$authorID]]
 `
 }
+
+
 ]
