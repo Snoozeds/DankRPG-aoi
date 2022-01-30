@@ -10,8 +10,8 @@ $resetGlobalUserVar[ATK]
 $else
 
 $title[A new monster has spawned!]
-$description[It has **1HP**!\nYou fight it, dealing **1 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[5;10]**.
-You lose <:RPGHeart:855755205102534686>**$random[1;5]**.
+$description[You fight it, dealing **1 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[5;10]**.
+You lose <:RPGHeart:855755205102534686>**$random[1;5]**. You now have <:RPGHeart:855755205102534686>**$getGlobalUserVar[HP]**.
 ]
 $color[$getGlobalUserVar[EmbedColor]]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];$random[5;10]]]
@@ -27,8 +27,8 @@ $resetGlobalUserVar[Coins]
 $resetGlobalUserVar[ATK]
 $else
 $title[A new monster has spawned!]
-$description[It has **2HP**!\nYou fight it, dealing **2 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[15;20]**.
-You lose <:RPGHeart:855755205102534686>**$random[5;10]**.
+$description[You fight it, dealing **2 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[15;20]**.
+You lose <:RPGHeart:855755205102534686>**$random[5;10]**. You now have <:RPGHeart:855755205102534686>**$getGlobalUserVar[HP]**.
 ]
 $color[$getGlobalUserVar[EmbedColor]]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];$random[15;20]]]
@@ -44,8 +44,8 @@ $resetGlobalUserVar[Coins]
 $resetGlobalUserVar[ATK]
 $else
 $title[A new monster has spawned!]
-$description[It has **3HP**!\nYou fight it, dealing **3 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[20;25]**.
-You lose <:RPGHeart:855755205102534686>**$random[10;15]**.
+$description[You fight it, dealing **3 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[20;25]**.
+You lose <:RPGHeart:855755205102534686>**$random[10;15]**. You now have <:RPGHeart:855755205102534686>**$getGlobalUserVar[HP]**.
 ]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];$random[20;25]]]
 $setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP];$random[10;15]]]
@@ -60,8 +60,8 @@ $resetGlobalUserVar[Coins]
 $resetGlobalUserVar[ATK]
 $else
 $title[A new monster has spawned!]
-$description[It has **4HP**!\nYou fight it, dealing **4 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[25;30]**.
-You lose <:RPGHeart:855755205102534686>**$random[15;20]**.
+$description[You fight it, dealing **4 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[25;30]**.
+You lose <:RPGHeart:855755205102534686>**$random[15;20]**. You now have <:RPGHeart:855755205102534686>**$getGlobalUserVar[HP]**.
 ]
 $color[$getGlobalUserVar[EmbedColor]]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];$random[25;30]]]
@@ -77,8 +77,8 @@ $resetGlobalUserVar[Coins]
 $resetGlobalUserVar[ATK]
 $else
 $title[A new monster has spawned!]
-$description[It has **5HP**!\nYou fight it, dealing **5 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[30;35]**.
-You lose <:RPGHeart:855755205102534686>**$random[20;25]**.
+$description[You fight it, dealing **5 ATK**.\nIt dies, and you earn <:RPGCoin:855767372534906920>**$random[30;35]**.
+You lose <:RPGHeart:855755205102534686>**$random[20;25]**. You now have <:RPGHeart:855755205102534686>**$getGlobalUserVar[HP]**.
 ]
 $color[$getGlobalUserVar[EmbedColor]]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];$random[30;35]]]
