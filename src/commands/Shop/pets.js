@@ -84,8 +84,8 @@ type: "awaitedCommand",
 code: `
 You have abandoned your pet. It's name has been reset, and you can no longer access pet commands, until you buy a new pet.
 $setGlobalUserVar[HasPet;false;$authorID]
-$setGlobalUserVar[PetName;none;$authorID]
-$setGlobalUserVar[PetType;Your pet hasn't been named yet. Run \`<prefix>petname <name>\`;$authorID]
+$setGlobalUserVar[PetType;none;$authorID]
+$setGlobalUserVar[PetName;Your pet hasn't been named yet. Run \`<prefix>petname <name>\`;$authorID]
 $globalCooldown[1d;You have already abandoned another pet today. Please come back in **%time%**.]
 $if[$getGlobalUserVar[PetType;$authorID]==dog]
 $setGlobalUserVar[MaxHP;$sub[$getGlobalUserVar[MaxHP;$authorID];125];$authorID]
@@ -98,12 +98,12 @@ name: "$alwaysExecute",
 code: `
 $if[$randomText[yes;no]==yes]
 $title[$getGlobalUserVar[PetName;$authorID]]
-$description[Your cat ($getGlobalUserVar[PetName]found you $getVar[Coi] **$random[25;50]!**]
+$description[Your cat ($getGlobalUserVar[PetName]) found you $getVar[Coi] **$random[25;50]!**]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $thumbnail[$getGlobalUserVar[PetIMG;$authorID]]
 $else
 $endif
-$onlyIf[$getGlobalUserVar[PetType]==cat;]
+$onlyIf[$getGlobalUserVar[PetType]!=dog;]
 $onlyIf[$checkContains[$message;fight;bwork;business work;farm;slots;forage;explore;search]!=false;]
 $globalCooldown[30s;]`
 }
