@@ -104,7 +104,8 @@ $thumbnail[$getGlobalUserVar[PetIMG;$authorID]]
 $else
 $endif
 $onlyIf[$getGlobalUserVar[PetType]!=dog;]
-$onlyIf[$checkContains[$message;fight;bwork;business work;farm;slots;forage;explore;search]!=false;]
+$onlyIf[$checkContains[$message;$getServerVar[Prefix]fight;$getServerVar[Prefix]bwork;$getServerVar[Prefix]business work;$getServerVar[Prefix]farm;$getServerVar[Prefix]slots;$getServerVar[Prefix]forage;$getServerVar[Prefix]explore;$getServerVar[Prefix]search]!=false;]
+$onlyIf[$checkContains[$message;$getServerVar[Prefix] fight;$getServerVar[Prefix] bwork;$getServerVar[Prefix] business work;$getServerVar[Prefix] farm;$getServerVar[Prefix] slots;$getServerVar[Prefix] forage;$getServerVar[Prefix] explore;$getServerVar[Prefix] search]!=false;]
 $globalCooldown[30s;]`
 }
 
