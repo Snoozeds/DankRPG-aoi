@@ -42,16 +42,16 @@ code: `
 $if[$mentioned[1]==]
 $title[🌸 | Marriage info: $username[$findUser[$message;yes]]]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
-$description[**You** are married to: $username[$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]]]
+$description[**You** are married to: $username[$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]]\nYou have been married since: <t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]> (<t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]:R>)]
 $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=False;You are not married.]
 $else
 $title[🌸 | Marriage info: $username[$findUser[$message;yes]]]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
-$description[$username[$findUser[$message;yes]] is married to: $username[$getGlobalUserVar[MarriedTo;$findUser[$message;no]]]]
-$endif
-
+$description[$username[$findUser[$message;yes]] is married to: $username[$getGlobalUserVar[MarriedTo;$findUser[$message;no]]]\nThey have been married since: <t:$getGlobalUserVar[MarriageDate;$findUser[$message;no]]> (<t:$getGlobalUserVar[MarriageDate;$findUser[$message;no]]:R>)]
 $onlyIf[$getGlobalUserVar[InRelationship;$findUser[$message;yes]]!=False;This user is not married.]
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has interaction commands disabled from their settings.]
+$endif
+
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Bots marrying people... hmm.]
 $globalCooldown[10s;Please don't spam commands.]
 `
@@ -65,8 +65,8 @@ $setGlobalUserVar[InRelationship;False;$authorID]
 $setGlobalUserVar[InRelationship;False;$getGlobalUserVar[Sender;$authorID]]
 $setGlobalUserVar[MarriedTo;;$getGlobalUserVar[Sender;$authorID]]
 $setGlobalUserVar[MarriedTo;;$authorID]
-$setGlobalUserVar[MarriageDate;$authorID]
-$setGlobalUserVar[MarriageDate;$getGlobalUserVar[Sender;$authorID]]
+$setGlobalUserVar[MarriageDate;;$authorID]
+$setGlobalUserVar[MarriageDate;;$getGlobalUserVar[Sender;$authorID]]
 `
 }
 
