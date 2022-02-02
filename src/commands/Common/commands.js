@@ -1,12 +1,12 @@
 module.exports = {
-    name: "commands",
-    aliases: ["help", "cmds"],
-    code: `
+name: "commands",
+aliases: ["help", "cmds"],
+code: `
 $title[Commands]
 $color[$getGlobalUserVar[EmbedColor]]
 $description[
 **Economy Commands**:
-\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine\`
+\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine, give\`
 
 **Interactions Commands**:
 \`hug, kill\`
