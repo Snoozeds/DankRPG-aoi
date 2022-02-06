@@ -1,16 +1,12 @@
 module.exports = {
 	name: "hug",
 	code: `
-	$globalCooldown[10s;Please wait **%time%** before using this userInteraction command again.]
+	$globalCooldown[10s;Please wait **%time%** before using this social command again.]
 
   $if[$mentioned[1]==$authorID]
 	$title[Dank RPG hugs $username[$authorID]]
 	$color[$getGlobalUserVar[EmbedColor;$authorID]]
-	$image[https://dankrpg.xyz/api/hugs/$random[1;15].gif]
-	$else
-
-	$if[$mentioned[1]==914941866875703306]
-	Ew.
+	$image[$httpRequest[https://api.dankrpg.xyz/anime/hug;GET;;url]]
 	$else
 
 	$if[$isBot[$mentioned[1]]==true]
@@ -21,8 +17,7 @@ module.exports = {
 
 	$title[$username[$authorID] hugs $username[$mentioned[1]]]
 	$color[$getGlobalUserVar[EmbedColor;$authorID]]
-	$image[https://dankrpg.xyz/api/hugs/$random[1;15].gif]
-	$endif
+	$image[$httpRequest[https://api.dankrpg.xyz/anime/hug;GET;;url]]
 	$endif
 	$endif
 	$suppressErrors[Mention someone.]
