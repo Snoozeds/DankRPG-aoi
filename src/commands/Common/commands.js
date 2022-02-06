@@ -8,7 +8,7 @@ $description[
 **Economy Commands**:
 \`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine, give\`
 
-**Interactions Commands**:
+**Social Commands**:
 \`hug, kill\`
 
 **Fun Commands**:
