@@ -9,7 +9,7 @@ $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $image[$httpRequest[https://api.dankrpg.xyz/anime/slap;GET;;url]]
 $else
 
-$onlyIf[$getGlobalUserVar[UserInt;$mentioned[1]]!=False;This user has interaction commands disabled from their settings.]
+$onlyIf[$getGlobalUserVar[UserInt;$mentioned[1]]!=False;This user has social commands disabled from their settings.]
 
 $title[$username[$authorID] slaps $username[$mentioned[1]]]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
