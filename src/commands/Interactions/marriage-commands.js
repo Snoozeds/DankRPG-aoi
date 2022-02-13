@@ -67,6 +67,8 @@ $setGlobalUserVar[MarriedTo;;$getGlobalUserVar[Sender;$authorID]]
 $setGlobalUserVar[MarriedTo;;$authorID]
 $setGlobalUserVar[MarriageDate;;$authorID]
 $setGlobalUserVar[MarriageDate;;$getGlobalUserVar[Sender;$authorID]]
+$onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=False;You are NOT in a relationship... :face_with_raised_eyebrow:]
+$globalCooldown[5s;]
 `
 }
 
