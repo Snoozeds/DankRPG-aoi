@@ -22,10 +22,10 @@ $description[
 
 **Settings**:
 \`settings, prefix, changecolor, familymode, interactions\`
-
+ 
 **__Bot Links__**
-[Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Donate](https://dankrpg.xyz/donate)]
+[Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)
 $suppressErrors
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-    `
+`
 }
