@@ -1,7 +1,7 @@
 module.exports = {
 name: "kill",
 code: `
-$username kills $username[$findUser[$message;no]] by $randomText[Yeeting them;defenestrating them;ejecting them;stabbing them;kicking them;bonking them to death]
+$username kills $username[$findUser[$message;no]] by **$randomText[yeeting them;defenestrating them;ejecting them;stabbing them;kicking them;bonking them to death]**
 $onlyIf[$getGlobalUserVar[FamilyMode;$findUser[$message;no]]!=True;User has family mode.]
 $onlyIf[$findUser[$message;no]!=$clientID;haha I am immortal\nL]
 $onlyIf[$findUser[$message;no]!=$authorID;I can't allow you to do that to yourself.]
