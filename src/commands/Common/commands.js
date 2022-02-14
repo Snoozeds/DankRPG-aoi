@@ -6,16 +6,16 @@ $title[Commands]
 $color[$getGlobalUserVar[EmbedColor]]
 $description[
 **Economy Commands**:
-\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine, give\`
+\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine, give, sellall\`
 
 **Social Commands**:
-\`hug, kill\`
+\`hug, kill, slap, wave, marry, marriage, divorce\`
 
 **Fun Commands**:
 \`repeat, 8ball, coinflip\`
 
 **Misc Commands**:
-\`commands, ping, info, serverinfo, feedback, credits, inventory, whois, sellall\`
+\`commands, ping, info, serverinfo, feedback, credits, inventory, whois, avatar\`
 
 **Shop Commands**:
 \`petshop, buypet, abandon, petinfo, heal, upgrade\`
@@ -29,3 +29,4 @@ $suppressErrors
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 `
 }
+    
