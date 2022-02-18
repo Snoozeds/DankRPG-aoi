@@ -7,6 +7,7 @@ If you wish to continue:
 - First update the config.json file.
 - Update some of the vars in index.js
 - Read through code and change what you'd like to.
+- Take note of the [license](https://tldrlegal.com/license/mit-license).
 
 ## Hosting Dank RPG | Step 1: Picking the correct host
 Personally I chose DigitalOcean (though they have pretty STEEP prices), as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
