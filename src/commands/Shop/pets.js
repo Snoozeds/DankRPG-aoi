@@ -100,10 +100,10 @@ $if[$getGlobalUserVar[CatNotificationsOn;$authorID]==False]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];$authorID]
 $elseIf[$randomText[yes;no;no;no]==yes]
 $description[Your cat found you $getVar[Coi] **$random[25;50]!**]
+$footer[To turn off these notifications run: "$getServerVar[Prefix]catnotif false"]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $thumbnail[$getGlobalUserVar[PetIMG;$authorID]]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];$authorID]
-$else
 $endelseIf
 $endif
 $onlyIf[$getGlobalUserVar[PetType;$authorID]!=dog;]
