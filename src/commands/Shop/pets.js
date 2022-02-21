@@ -96,7 +96,7 @@ $endif
 {
 name: "$alwaysExecute",
 code: `
-$if[$randomText[yes;no;no]==yes]
+$if[$randomText[yes;no;no;no]==yes]
 $description[Your cat found you $getVar[Coi] **$random[25;50]!**]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $thumbnail[$getGlobalUserVar[PetIMG;$authorID]]
@@ -104,7 +104,7 @@ $else
 $endif
 $onlyIf[$getGlobalUserVar[PetType]!=dog;]
 $onlyIf[$checkContains[$message;$getServerVar[Prefix;$guildID]]!=false;]
-$globalCooldown[30s;]`
+$globalCooldown[1m;]`
 }
 
 ]
