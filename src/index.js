@@ -71,6 +71,7 @@ bot.variables({
   MarriageDate: "", // Time in unix since user was married.
   InRelationship: "False",
   MarriedTo: "",
+  CatNotificationsOn: "True",
   // These are the DEFAULTS for each variable.
   })
 bot.onMessage()
