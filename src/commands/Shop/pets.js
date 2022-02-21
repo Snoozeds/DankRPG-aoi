@@ -104,8 +104,8 @@ $thumbnail[$getGlobalUserVar[PetIMG;$authorID]]
 $else
 $endif
 $onlyIf[$getGlobalUserVar[PetType]!=dog;]
-$onlyIf[$checkContains[$message;$getServerVar[Prefix]fight;$getServerVar[Prefix]bwork;$getServerVar[Prefix]business work;$getServerVar[Prefix]farm;$getServerVar[Prefix]slots;$getServerVar[Prefix]forage;$getServerVar[Prefix]explore;$getServerVar[Prefix]search]!=false;]
-$onlyIf[$checkContains[$message;$getServerVar[Prefix] fight;$getServerVar[Prefix] bwork;$getServerVar[Prefix] business work;$getServerVar[Prefix] farm;$getServerVar[Prefix] slots;$getServerVar[Prefix] forage;$getServerVar[Prefix] explore;$getServerVar[Prefix] search]!=false;]
+$onlyIf[$checkContains[$message;$getServerVar[Prefix]fight;$getServerVar[Prefix]bwork;$getServerVar[Prefix]business work;$getServerVar[Prefix]farm;$getServerVar[Prefix]slots;$getServerVar[Prefix]forage;$getServerVar[Prefix]explore;$getServerVar[Prefix]search;$getServerVar[Prefix]dungeon;$getServerVar[Prefix]startdungeon]!=false;]
+$onlyIf[$checkContains[$message;$getServerVar[Prefix] fight;$getServerVar[Prefix] bwork;$getServerVar[Prefix] business work;$getServerVar[Prefix] farm;$getServerVar[Prefix] slots;$getServerVar[Prefix] forage;$getServerVar[Prefix] explore;$getServerVar[Prefix] search;$getServerVar[Prefix] dungeon;$getServerVar[Prefix] startdungeon]!=false;]
 $globalCooldown[30s;]`
 }
 
