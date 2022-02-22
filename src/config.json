@@ -1,7 +1,7 @@
 {
     "token": "Grab this from https://discord.com/developers",
-    "topgg": ""
-    "intents" : "MESSAGE_CONTENT",
+    "topgg": "",
+    "intents" : "MESSAGE_CONTENT"
 }
 
 
