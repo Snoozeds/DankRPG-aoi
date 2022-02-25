@@ -11,7 +11,7 @@ You found a chest! It contains $getVar[Coi]**$random[25;50]**
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];$authorID]
 $endelseIf
 $elseIf[$randomText[ChestEvent;MinigameEvent]==MinigameEvent]
-**MINIGAME:** Type $randomText[Dank;Fight;Defend] in chat to earn your reward!
+**MINIGAME:** Type **$randomText[Dank;Fight;Defend]** in chat to earn your reward!
 $awaitMessages[$authorID;7s;$randomText[Dank;Fight;Defend];DungeonR;:x: Sorry, you didn't respond in time. You don't get anything.]
 $endelseIf
 $endif
