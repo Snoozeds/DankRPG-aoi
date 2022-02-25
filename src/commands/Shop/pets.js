@@ -107,6 +107,7 @@ $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];
 $endelseIf
 $endif
 $onlyIf[$getGlobalUserVar[PetType;$authorID]!=dog;]
+$onlyIf[$getGlobalUserVar[PetType;$authorID]!=none;]
 $onlyIf[$checkContains[$message;$getServerVar[Prefix;$guildID]]!=false;]
 $globalCooldown[45s;]
 `
