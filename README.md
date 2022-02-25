@@ -54,8 +54,3 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```pm2 restart index.js - restarts the file``` \
 ```pm2 stop index.js - stops the file``` \
 ```pm2 ls - lists all processes running```
-
-## If you'd like to support me please check out these links:
-<a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">DigitalOcean (<b>REFERRAL</b>)</a> \
-<a href="https://dankrpg.xyz/donate">WidgetBot (Actual money in my pocket, no fees for me)</a> \
-<a href="https://paypal.me/snoozeds">Direct paypal (any amount)</a>
