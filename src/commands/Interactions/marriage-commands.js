@@ -5,7 +5,7 @@ $suppressErrors[Please mention someone to marry correctly.]
 $setGlobalUserVar[Sender;$authorID;$findUser[$message;no]]
 
 $reactionCollector[$splitText[1];$findUser[$message;no];24h;$getVar[AcceptEmoji];Marriage_Accept;yes]
-$textSplit[$sendMessage[<@$findUser[$message;no]>, <@$authorID> wants to marry you.\nDo you accept?\n(to deny, ignore this message.);yes]; ]
+$textSplit[$sendMessage[**$username[$findUser[$message;no]]**:\n$username[$authorID] wants to marry you... do you accept?\n(to deny, ignore this message.);yes]; ]
 $onlyIf[$memberExists[$findUser[$message;no]]!=false;User is not in this server, or you didn't mention someone properly.]
 $onlyIf[$message!=;Please mention a user to marry.]
 $onlyIf[$getGlobalUserVar[InRelationship;$findUser[$message;no]]!=True;This user is already in a relationship...]
