@@ -6,7 +6,7 @@ $description[
 Bot Ping: $round[$ping]ms
 Database Ping: $round[$dbPing]ms
 Uptime: $uptime
-Server Count: $serverCount
+Server Count: $serverCount \n
 **__Server Info__**
 OS: Linux, Ubuntu (20.04.3)
 RAM Usage: $round[$ram]MBs
