@@ -6,7 +6,7 @@ $title[Commands]
 $color[$getGlobalUserVar[EmbedColor]]
 $description[
 **Economy Commands**:
-\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine, give, sellall\`
+\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine, give, sellall, vote\`
 
 **Social Commands**:
 \`hug, kill, slap, wave, marry, marriage, divorce\`
