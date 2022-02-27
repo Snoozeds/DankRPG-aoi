@@ -25,8 +25,7 @@ $description[
  
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)
-$footer[Code by Snoozeds #0802]
 $suppressErrors
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 `
-} // Feel free to remove/change that footer.
+}
