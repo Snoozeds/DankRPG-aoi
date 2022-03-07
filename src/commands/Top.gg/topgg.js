@@ -6,6 +6,7 @@ $suppressErrors
 $onlyIf[$authorID!=855479925863481345;]
 $onlyForIDs[922909400941867128;]
 $onlyForChannels[950360118153871410;]
+$onlyIf[$isBot[$authorID]!=false;]
 
 Sending vote rewards to $message[>]....
 $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$message];1];$message]
