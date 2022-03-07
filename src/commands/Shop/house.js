@@ -19,7 +19,8 @@ module.exports = [{
     $onlyIf[$getGlobalUserVar[HP]!=$sub[$getGlobalUserVar[MaxHP];1];]
     $onlyIf[$getGlobalUserVar[HP]!=$getGlobalUserVar[MaxHP];]
     $globalCooldown[5m;]
-    $onlyIf[$isBot[$authorID]!=true;]`
+    $onlyIf[$isBot[$authorID]!=true;]
+    $suppressErrors`
 }
 
 ]
