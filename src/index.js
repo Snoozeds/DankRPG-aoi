@@ -1,7 +1,7 @@
 const aoijs = require('aoi.js');
 const config = require('./config.json');
 
-//Top.gg stuff
+// Top.gg Posting Stats: ////////////////////////////////////
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
 const { AutoPoster } = require('topgg-autoposter')
@@ -25,6 +25,7 @@ bot.status({
     type: "PLAYING",
     time: "12",
     })
+// ///////////////////////////////////////////////////////
 
 bot.variables({
   Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier.
@@ -74,23 +75,15 @@ bot.variables({
   CatNotificationsOn: "True",
   // These are the DEFAULTS for each variable.
   })
-bot.onMessage()
+
+bot.onMessage({respondToBots: true}) // This is set to true for my top.gg code. Either set it to false or add '$onlyIf[$isBot[$authorID]!=true;]' to every new command you make.
 bot.onInteractionCreate()
 bot.loadCommands(`./commands/Common`)
 bot.loadCommands(`./commands/Economy`)
 bot.loadCommands(`./commands/Shop`)
 bot.loadCommands(`./commands/Interactions`)
 bot.loadCommands(`./commands/Stats`)
-
-const http = require('http');
-
-const requestListener = function (req, res) {
-  res.writeHead(200);
-  res.end('Running discord bot....!');
-}
-
-const server = http.createServer(requestListener);
-server.listen(8080);
+bot.loadCommands(`./commands/Top.gg`)
 
 // Error handler so bot doesn't kaboom
 try{}catch(error){console.log(error)}
