@@ -6,11 +6,13 @@ $suppressErrors
 $onlyIf[$authorID!=855479925863481345;]
 $onlyForIDs[922909400941867128;]
 $onlyForChannels[950360118153871410;]
-$onlyIf[$isBot[$authorID]!=false;]
 
+$if[$authorID==922909400941867128]
 Sending vote rewards to $message[>]....
 $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$message];1];$message]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$message];100];$message]`
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$message];100];$message]
+$else
+$endif`
 }
 
 /* To explain this in the shortest way I can:
