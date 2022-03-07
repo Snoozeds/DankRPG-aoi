@@ -5,6 +5,8 @@ code: `
 $onlyIf[$authorID!=855479925863481345;]
 $onlyForIDs[922909400941867128;]
 $onlyForChannels[950360118153871410;]
+$onlyForServers[856149002734403615;]
+$onlyForRoles[950359239916933133;]
 
 Sending vote rewards to $message[>]....
 $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$message];1];$message]
