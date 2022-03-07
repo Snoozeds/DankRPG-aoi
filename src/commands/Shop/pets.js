@@ -117,6 +117,7 @@ $onlyIf[$getGlobalUserVar[PetType;$authorID]!=none;]
 $onlyIf[$checkContains[$message;$getServerVar[Prefix;$guildID]]!=false;]
 $globalCooldown[45s;]
 $onlyIf[$isBot[$authorID]!=true;]
+$suppressErrors
 `
 }
 
