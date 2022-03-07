@@ -18,6 +18,7 @@ const bot = new aoijs.Bot({
   token: config.token,
   prefix: ["$getServerVar[Prefix]", "$getServerVar[Prefix] "],
   intents: config.intents,
+  suppressAllErrors: true,
 });
 
 bot.status({
