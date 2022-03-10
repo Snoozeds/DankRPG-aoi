@@ -65,12 +65,16 @@ name: "divorce",
 code: `
 You divorced.
 $setGlobalUserVar[InRelationship;False;$authorID]
-$setGlobalUserVar[InRelationship;False;$getGlobalUserVar[Sender;$authorID]]
-$setGlobalUserVar[MarriedTo;;$getGlobalUserVar[Sender;$authorID]]
+$setGlobalUserVar[InRelationship;False;$findUser[$message;no]]
+$setGlobalUserVar[MarriedTo;;$findUser[$message;no]]
 $setGlobalUserVar[MarriedTo;;$authorID]
 $setGlobalUserVar[MarriageDate;;$authorID]
-$setGlobalUserVar[MarriageDate;;$getGlobalUserVar[Sender;$authorID]]
+$setGlobalUserVar[MarriageDate;;$findUser[$message;no]]
+$setGlobalUserVar[Sender;;$findUser[$message;no]]
+$setGlobalUserVar[Sender;;$authorID]
 $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=False;You are NOT in a relationship... :face_with_raised_eyebrow:]
+$onlyIf[$getGlobalUserVar[MarriedTo]==$findUser[$message;yes];You are not married to this person, weirdo.]
+$suppressErrors[Mention someone to divorce.]
 $globalCooldown[5s;]
 $onlyIf[$isBot[$authorID]!=true;]
 `
