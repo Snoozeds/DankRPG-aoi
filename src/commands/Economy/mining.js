@@ -25,9 +25,9 @@ Anything above the 'wait' function gets delayed. This is useful for things like 
 {
 name: "sellall",
 code: `
-$resetGlobalUserVar[Gold]
-$resetGlobalUserVar[Diamond]
-$resetGlobalUserVar[Stone]
+$setGlobalUserVar[Gold;0:$authorID]
+$setGlobalUserVar[Diamond;0;$authorID]
+$setGlobalUserVar[Stone;0;$authorID]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$sum[$multi[$getGlobalUserVar[Stone;$authorID];5];$multi[$getGlobalUserVar[Gold;$authorID];30];$multi[$getGlobalUserVar[Diamond;$authorID];40]]];$authorID]
 $wait[1s]
 You sold:
