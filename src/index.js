@@ -22,7 +22,7 @@ const bot = new aoijs.Bot({
 });
 
 bot.status({
-    text: "v1.14 | d!help", 
+    text: "v1.15 | d!help", 
     type: "PLAYING",
     time: "12",
     })
