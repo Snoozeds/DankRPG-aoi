@@ -6,9 +6,9 @@ module.exports = {
     $else
     $setServerVar[Prefix;$message;$guildID]
 		Changed prefix to \`$noEscapingMessage\`
-		$onlyPerms[manageserver;:x: You do not have the manage guild permission.]
 		$endif
 		$suppressErrors
+    $onlyPerms[manageserver;This server's prefix is $getServerVar[Prefix;$guildID]\n**(You can't change this because you don't have the "manage server" permission)**]
     $onlyIf[$isBot[$authorID]!=true;]
     `
 }
