@@ -18,7 +18,7 @@ Just make sure the one you choose supports:
 
 ## Hosting Dank RPG | Step 2: Connecting to your host
 
-For linux users (your personal machine), I recommend **EasySSH** + **FileZilla** for accessing the server. \
+For Linux users (your personal machine), I recommend **EasySSH** + **FileZilla** for accessing the server. \
 For Windows users (your personal machine), I recommend **Bitvise** or **Termius** (termius seems unstable on some of my linux distros.)\
 **Note that these are just recommendations from apps that I've used personally. There are countless options out there.**
 
