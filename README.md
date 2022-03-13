@@ -54,3 +54,7 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```pm2 restart index.js - restarts the file``` \
 ```pm2 stop index.js - stops the file``` \
 ```pm2 ls - lists all processes running```
+
+## Owner-Only commands from Dank RPG:
+```<prefix>eval <code> - evaluate code to make sure it runs without errors``` \
+```<prefix>blacklist <id> - blacklist a userid from using the bot (this feature isn't implemented just yet)
