@@ -16,17 +16,17 @@ client.login(config.token)
 
 const bot = new aoijs.Bot({
   token: config.token,
-  prefix: ["$getServerVar[Prefix]", "$getServerVar[Prefix] "],
+  prefix: ["$getServerVar[Prefix]", "$getServerVar[Prefix] ", "<@!$clientID>", "<@$clientID> "], // Client ID trigger is mentioning the bot. Can be useful if a user doesn't know the prefix.
   intents: config.intents,
   suppressAllErrors: true,
 });
+// ///////////////////////////////////////////////////////
 
 bot.status({
     text: "v1.15 | d!help", 
     type: "PLAYING",
     time: "12",
     })
-// ///////////////////////////////////////////////////////
 
 bot.variables({
   Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier.
