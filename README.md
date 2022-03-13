@@ -57,4 +57,4 @@ Assuming you are using **Ubuntu**, run the following commands:
 
 ## Owner-Only commands from Dank RPG:
 ```<prefix>eval <code> - evaluate code to make sure it runs without errors``` \
-```<prefix>blacklist <id> - blacklist a userid from using the bot (this feature isn't implemented just yet)
+```<prefix>blacklist <id> - blacklist a userid from using the bot (this feature isn't implemented just yet)```
