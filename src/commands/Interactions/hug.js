@@ -3,19 +3,19 @@ module.exports = {
 	code: `
 	$globalCooldown[10s;Please wait **%time%** before using this social command again.]
 
-  $if[$mentioned[1]==$authorID]
+  $if[$findUser[$message;no]==$authorID]
 	$title[Dank RPG hugs $username[$authorID]]
 	$color[$getGlobalUserVar[EmbedColor;$authorID]]
 	$image[$httpRequest[https://api.dankrpg.xyz/anime/hug;GET;;url]]
 	$else
 
-	$if[$isBot[$mentioned[1]]==true]
+	$if[$isBot[$findUser[$message;no]]==true]
 	You hug yourself (mention a user not a bot)
 	$else
 
-	$onlyIf[$getGlobalUserVar[UserInt;$mentioned[1]]!=False;This user has interaction commands disabled from their settings.]
+	$onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has interaction commands disabled from their settings.]
 
-	$title[$username[$authorID] hugs $username[$mentioned[1]]]
+	$title[$username[$authorID] hugs $username[$findUser[$message;no]]]
 	$color[$getGlobalUserVar[EmbedColor;$authorID]]
 	$image[$httpRequest[https://api.dankrpg.xyz/anime/hug;GET;;url]]
 	$endif

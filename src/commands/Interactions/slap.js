@@ -3,15 +3,15 @@ name: "slap",
 code: `
 $globalCooldown[10s;Please wait **%time%** before using this social command again.]
 
-$if[$mentioned[1]==$authorID]
+$if[$findUser[$message;no]==$authorID]
 $title[Dank RPG slaps $username[$authorID]]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $image[$httpRequest[https://api.dankrpg.xyz/anime/slap;GET;;url]]
 $else
 
-$onlyIf[$getGlobalUserVar[UserInt;$mentioned[1]]!=False;This user has social commands disabled from their settings.]
+$onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has social commands disabled from their settings.]
 
-$title[$username[$authorID] slaps $username[$mentioned[1]]]
+$title[$username[$authorID] slaps $username[$findUser[$message;no]]]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $image[$httpRequest[https://api.dankrpg.xyz/anime/slap;GET;;url]]
 $endif
