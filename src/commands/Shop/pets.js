@@ -7,7 +7,8 @@ $addField[Cat;Has a chance to find $getVar[Coi] while you run commands\nPrice: $
 $footer[d!buypet <opt>]
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
-$onlyIf[$isBot[$authorID]!=true;]`
+$onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 },
 
 {
@@ -42,6 +43,7 @@ $endif
 $onlyIf[$getUserVar[HasPet]!=true;:x: You already have a pet. Run \`$getServerVar[Prefix]abandon\` to abandon it.]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 },
 
@@ -60,6 +62,7 @@ $thumbnail[$getGlobalUserVar[PetIMG]]
 $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=false;:x: You do not have a pet. See: \`$getServerVar[Prefix]petshop\`]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 },
 
@@ -72,7 +75,8 @@ $setGlobalUserVar[PetName;$message;$authorID]
 $onlyIf[$charCount[$message]<16;Please make your pet's name less than 16 characters.]
 $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=false;:x: You do not have a pet. See: \`$getServerVar[Prefix]petshop\`]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
-$onlyIf[$isBot[$authorID]!=true;]`
+$onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 },
 
 {
@@ -80,7 +84,8 @@ name: "abandon",
 code:`Are you sure you want to abandon your pet? You can only do this once a day!\nPlease type 'yes' below, or wait for the command to run out of time.
 $awaitMessages[$authorID;15s;yes;AbandonYes;Response timed out. **Your pet has not been abandoned**.]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
-$onlyIf[$isBot[$authorID]!=true;]`
+$onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 },
 
 {
@@ -118,6 +123,7 @@ $onlyIf[$checkContains[$message;$getServerVar[Prefix;$guildID]]!=false;]
 $globalCooldown[45s;]
 $onlyIf[$isBot[$authorID]!=true;]
 $suppressErrors
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];]
 `
 }
 

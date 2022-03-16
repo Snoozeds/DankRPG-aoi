@@ -16,5 +16,6 @@ Thank you for voting! Your support helps the bot grow :)
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];1000];$authorID]
 $globalCooldown[7d;You can only claim your voting rewards every week. You need to wait **%time%**.]
 $endif
-$onlyIf[$isBot[$authorID]!=true;]`
+$onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 }

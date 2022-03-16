@@ -25,7 +25,8 @@ module.exports = [{
     $color[$getGlobalUserVar[EmbedColor;$authorID]]
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]`
+    $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 },
 
 {
@@ -38,6 +39,7 @@ module.exports = [{
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 		$suppressErrors
     $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 },
 
@@ -59,7 +61,8 @@ module.exports = [{
     Please provide a proper argument. Example: \`$getServerVar[Prefix]familymode true\`\
     $endif
 		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]`
+    $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 },
 
 {
@@ -80,7 +83,8 @@ module.exports = [{
     Please provide a proper argument. Example: \`$getServerVar[Prefix]userint true\`
 		$endif
 		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]`
+    $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 },
 
 {
@@ -101,7 +105,8 @@ module.exports = [{
   Please provide a proper argument. Example: \`$getServerVar[Prefix]catnotifications true\`\
   $endif
   $suppressErrors
-  $onlyIf[$isBot[$authorID]!=true;]`
+  $onlyIf[$isBot[$authorID]!=true;]
+  $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 }
 
 

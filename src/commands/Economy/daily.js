@@ -15,5 +15,6 @@ module.exports = {
 		$globalCooldown[24h;You have already collected your daily reward today. Please come back in **%time%**.]
 		$suppressErrors
 		$onlyIf[$isBot[$authorID]!=true;]
+		$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 }

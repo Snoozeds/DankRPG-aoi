@@ -92,5 +92,6 @@ $endif
 $globalCooldown[25s;Please wait **%time%** before fighting again.]
 $suppressErrors
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 }

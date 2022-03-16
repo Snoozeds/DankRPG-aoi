@@ -48,5 +48,6 @@ module.exports = {
 	$suppressErrors
 	$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 	$onlyIf[$isBot[$authorID]!=true;]
+	$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 	`
 }

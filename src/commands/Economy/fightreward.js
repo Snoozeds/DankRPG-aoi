@@ -10,5 +10,6 @@ module.exports = {
 	$cooldown[20s]
 	$suppressErrors
 	$onlyIf[$isBot[$authorID]!=true;]
+	$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];]
 	`
 }

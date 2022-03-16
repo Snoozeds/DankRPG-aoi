@@ -7,5 +7,6 @@ module.exports = {
 	$onlyIf[$getGlobalUserVar[Coins;$authorID]>749;You do not have enough <:RPGCoin:855767372534906920> to buy a **hpDrop**. You need at least <:RPGCoin:855767372534906920>**750**.]
 	$suppressErrors
 	$onlyIf[$isBot[$authorID]!=true;]
+	$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 	`
 }

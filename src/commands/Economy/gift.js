@@ -16,5 +16,6 @@ $onlyIf[$message[2]<$getGlobalUserVar[Coins;$authorID];You don't have this much.
 $globalCooldown[5s;I'm sure you don't need to give $username[$mentioned[1]] money all the time :upside_down: (**%time%**)]
 $suppressErrors
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 }

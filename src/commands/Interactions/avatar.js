@@ -11,5 +11,6 @@ $footer[Requested by $username[$authorID]]
 $addTimestamp
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has user interactions disabled from their settings.]
 $suppressErrors[Mention someone.]
-$onlyIf[$isBot[$authorID]!=true;]`
+$onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 }

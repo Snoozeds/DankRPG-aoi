@@ -9,5 +9,6 @@ $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has i
 $globalCooldown[10s;Please wait **%time%** before using this social command again.]
 $suppressErrors[Please mention a user.]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 	`
 }

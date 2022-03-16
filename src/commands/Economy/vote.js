@@ -4,5 +4,6 @@ code: `
 > Voting has changed! You will now automatically get your vote rewards.
 > You can vote here: <https://top.gg/bot/$clientID/vote>
 $globalCooldown[30s;Please don't spam commands (**%time%** left)]
-$onlyIf[$isBot[$authorID]!=true;]`
+$onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 }

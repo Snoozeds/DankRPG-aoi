@@ -14,5 +14,6 @@ $thumbnail[$userAvatar[$findUser[$message;yes]]]
 $color[$getGlobalUserVar[EmbedColor]]
 $globalCooldown[5s;Funny spam (**%time%** left)]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 }

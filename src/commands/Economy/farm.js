@@ -27,6 +27,7 @@ module.exports = {
 	$globalCooldown[20s;Please wait **%time%** before farming again.]
 	$suppressErrors
 	$onlyIf[$isBot[$authorID]!=true;]
+	$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 
 	`
 }

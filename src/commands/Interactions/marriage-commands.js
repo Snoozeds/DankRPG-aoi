@@ -14,6 +14,7 @@ $onlyIf[$findUser[$message;no]!=$authorID;Yes, we all wish this was possible, bu
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Wow, even a bot doesn't want to marry you.]
 $globalCooldown[3s;]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 },
 
@@ -57,6 +58,7 @@ $endif
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Bots marrying people... hmm.]
 $globalCooldown[10s;Please don't spam commands.]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 },
 
@@ -77,6 +79,7 @@ $onlyIf[$getGlobalUserVar[MarriedTo]==$findUser[$message;yes];You are not marrie
 $suppressErrors[Mention someone to divorce.]
 $globalCooldown[5s;]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 }
 

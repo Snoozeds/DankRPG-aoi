@@ -12,5 +12,6 @@ module.exports = {
     $endif
     $globalCooldown[10s;Please wait **%time%**.]
     $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 }

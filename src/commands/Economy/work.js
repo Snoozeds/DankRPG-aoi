@@ -9,5 +9,6 @@ module.exports = {
 	$globalCooldown[1h;You have already worked in the past 1 hour. Come back in **%time%**.]
 	$suppressErrors
 	$onlyIf[$isBot[$authorID]!=true;]
+	$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 	`
 }

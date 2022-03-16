@@ -14,6 +14,7 @@ Type in chat which business you'd like to select. You can only change businesses
     $suppressErrors
     $globalCooldown[24h;You need to wait **%time%**.]
     $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 },
 
@@ -81,6 +82,7 @@ $globalCooldown[30m;You need to wait **%time%**.]
     $endif
     $endif
     $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 },
 

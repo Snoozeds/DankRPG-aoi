@@ -8,7 +8,8 @@ module.exports = [{
     $setGlobalUserVar[HouseL;0]
     $onlyIf[$getGlobalUserVar[Wood;$authorID]>499;You do not have enough **wood** to buy a **house**. You need at least **499 Wood**.]
     $onlyIf[$getGlobalUserVar[BoughtHouse]!=True;You already have a house smh]
-    $onlyIf[$isBot[$authorID]!=true;]`
+    $onlyIf[$isBot[$authorID]!=true;]
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
 },
 
 {
@@ -20,7 +21,8 @@ module.exports = [{
     $onlyIf[$getGlobalUserVar[HP]!=$getGlobalUserVar[MaxHP];]
     $globalCooldown[5m;]
     $onlyIf[$isBot[$authorID]!=true;]
-    $suppressErrors`
+    $suppressErrors
+    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];]`
 }
 
 ]

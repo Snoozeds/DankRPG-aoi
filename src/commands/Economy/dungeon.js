@@ -17,6 +17,7 @@ $endelseIf
 $endif
 $globalCooldown[30s;Please wait **%time%** before starting another dungeon.]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 },
 

@@ -6,5 +6,6 @@ $setGlobalUserVar[$randomText[Wood;Stone;Slime];$sum[$getGlobalUserVar[$randomTe
 $color[$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[10s;Please wait **%time%**]
 $onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 }

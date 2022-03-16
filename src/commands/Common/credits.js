@@ -6,5 +6,6 @@ $description[**Farm crops**:\n"[LPC] Crops" by bluecarrot16, Daniel Eddeland (da
 $color[$getGlobalUserVar[EmbedColor]]
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 $suppressErrors
-$onlyIf[$isBot[$authorID]!=true;]	`
+$onlyIf[$isBot[$authorID]!=true;]
+$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]	`
 }
