@@ -4,6 +4,5 @@ code: `**Websocket Ping**: \`$ping ms\`
 **Database Ping:** \`$dbPing ms\`
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 $suppressErrors
-$onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`,
+$onlyIf[$isBot[$authorID]!=true;]`,
 })

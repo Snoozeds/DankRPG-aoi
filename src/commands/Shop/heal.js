@@ -5,7 +5,6 @@ module.exports = [{
     <:RPGHeart:855755205102534686>\`$getGlobalUserVar[HP]/$getGlobalUserVar[MaxHP]\`  | <:RPGCoin:855767372534906920>\`$getGlobalUserVar[Coins;$authorID]\`\nHealing will cost you <:RPGCoin:855767372534906920>**$multi[$sub[$getGlobalUserVar[MaxHP];$getGlobalUserVar[HP]];2]**.\nTo heal, run $getServerVar[Prefix;$guildID]heal
 		$suppressErrors
 		$onlyIf[$isBot[$authorID]!=true;]
-		$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 },
 
@@ -21,6 +20,5 @@ module.exports = [{
 	You healed <:RPGHeart:855755205102534686>**$sub[$getGlobalUserVar[MaxHP];$getGlobalUserVar[HP]]** for <:RPGCoin:855767372534906920>**$multi[$sub[$getGlobalUserVar[MaxHP];$getGlobalUserVar[HP]];2]**.
 	$suppressErrors
 	$onlyIf[$isBot[$authorID]!=true;]
-	$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 	`
 }]

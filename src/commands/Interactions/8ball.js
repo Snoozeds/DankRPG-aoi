@@ -1,17 +1,17 @@
 module.exports = {
     name : "8ball",
+    $if: "v4",
     code: `
     $if[$message==]
     Usage: $getServerVar[Prefix]8ball <question>
     $else
-    $title[You ask the magic 8ball...]
-    $description[$addField[Answer:;$httpRequest[https://apiv1.snoozeds.repl.co/8ball/$message;GET;;response;Failed to grab answer.]]$addField[Question:;$message]]
-    $thumbnail[https://assets.dankrpg.xyz/Images/8ball.png]
-    $addTimestamp
-    $color[$getGlobalUserVar[EmbedColor;$authorID]]
-    $endif
+    $title[1;You ask the magic 8ball...]
+    $description[1;$addField[1;Answer:;$httpRequest[https://apiv1.snoozeds.repl.co/8ball/$message;GET;;response;Failed to grab answer.]]$addField[1;Question:;$message]]
+    $thumbnail[1;https://assets.dankrpg.xyz/Images/8ball.png]
+    $addTimestamp[1;]
+    $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
     $globalCooldown[10s;Please wait **%time%**.]
+    $endif
     $onlyIf[$isBot[$authorID]!=true;]
-    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 }

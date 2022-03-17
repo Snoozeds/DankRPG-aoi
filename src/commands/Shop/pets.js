@@ -1,25 +1,25 @@
 module.exports = [{
 name: "petshop",
 aliases: "shop pet",
-code: `$title[Pet Shop]
-$description[Welcome to the pet shop $username! Here's what we have. $addField[Dog;Increases your MaxHP by **125**.\nPrice: $getVar[Coi]**750**]
-$addField[Cat;Has a chance to find $getVar[Coi] while you run commands\nPrice: $getVar[Coi]**1000**]]
-$footer[d!buypet <opt>]
-$color[$getGlobalUserVar[EmbedColor;$authorID]]
+code: `$title[1;Pet Shop]
+$description[1;Welcome to the pet shop $username! Here's what we have. $addField[Dog;Increases your MaxHP by **125**.\nPrice: $getVar[Coi]**750**]
+$addField[1;Cat;Has a chance to find $getVar[Coi] while you run commands\nPrice: $getVar[Coi]**1000**]]
+$footer[1;d!buypet <opt>]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
-$onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+$onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
 name: "buypet",
 aliases: "buy pet",
+$if: "v4",
 code: `
 $if[$message==cat]
-$title[You bought a cat!]
-$description[Enjoy your new furry friend.]
-$color[$getGlobalUserVar[EmbedColor;$authorID]]
-$thumbnail[https://i.ibb.co/sFrm0HH/cat.png]
+$title[1;You bought a cat!]
+$description[1;Enjoy your new furry friend.]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$thumbnail[1;https://i.ibb.co/sFrm0HH/cat.png]
 $setGlobalUserVar[HasPet;true;$authorID]
 $setGlobalUserVar[PetType;cat;$authorID]
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];1000];$authorID]
@@ -28,10 +28,10 @@ $onlyIf[$getGlobalUserVar[Coins;$authorID]>999;You do not have enough $getVar[Co
 $endif
 
 $if[$message==dog]
-$title[You bought a dog!]
-$description[Enjoy your new furry friend.]
-$color[$getGlobalUserVar[EmbedColor;$authorID]]
-$thumbnail[https://i.ibb.co/brt0Q3j/dog.png]
+$title[1;You bought a dog!]
+$description[1;Enjoy your new furry friend.]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$thumbnail[1;https://i.ibb.co/brt0Q3j/dog.png]
 $setGlobalUserVar[HasPet;true;$authorID]
 $setGlobalUserVar[PetType;dog;$authorID]
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];750];$authorID]
@@ -43,7 +43,6 @@ $endif
 $onlyIf[$getUserVar[HasPet]!=true;:x: You already have a pet. Run \`$getServerVar[Prefix]abandon\` to abandon it.]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
 $onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 },
 
@@ -51,18 +50,17 @@ $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blackliste
 name: "pet info",
 aliases: "petinfo",
 code: `
-$title[Your pet $getGlobalUserVar[PetType;$authorID]]
-$description[
-$addField[Name;$getGlobalUserVar[PetName;$authorID]]
-$addField[Type;$getGlobalUserVar[PetType;$authorID]]
+$title[1;Your pet $getGlobalUserVar[PetType;$authorID]]
+$description[1;
+$addField[1;Name;$getGlobalUserVar[PetName;$authorID]]
+$addField[1;Type;$getGlobalUserVar[PetType;$authorID]]
 ]
-$color[$getGlobalUserVar[EmbedColor;$authorID]]
-$footer[$username's pet]
-$thumbnail[$getGlobalUserVar[PetIMG]]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$footer[1;$username's pet]
+$thumbnail[1;$getGlobalUserVar[PetIMG]]
 $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=false;:x: You do not have a pet. See: \`$getServerVar[Prefix]petshop\`]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
 $onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 },
 
@@ -75,8 +73,7 @@ $setGlobalUserVar[PetName;$message;$authorID]
 $onlyIf[$charCount[$message]<16;Please make your pet's name less than 16 characters.]
 $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=false;:x: You do not have a pet. See: \`$getServerVar[Prefix]petshop\`]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
-$onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+$onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
@@ -84,13 +81,13 @@ name: "abandon",
 code:`Are you sure you want to abandon your pet? You can only do this once a day!\nPlease type 'yes' below, or wait for the command to run out of time.
 $awaitMessages[$authorID;15s;yes;AbandonYes;Response timed out. **Your pet has not been abandoned**.]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
-$onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+$onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
 name: "AbandonYes",
-type: "awaitedCommand",
+type: "awaited",
+$if: "v4",
 code: `
 You have abandoned your pet. It's name has been reset, and you can no longer access pet commands, until you buy a new pet.
 $setGlobalUserVar[HasPet;false;$authorID]
@@ -100,12 +97,13 @@ $globalCooldown[1d;You have already abandoned another pet today. Please come bac
 $if[$getGlobalUserVar[PetType;$authorID]==dog]
 $setGlobalUserVar[MaxHP;$sub[$getGlobalUserVar[MaxHP;$authorID];125];$authorID]
 $endif
-$onlyIf[$isBot[$authorID]!=true;]
 `
 },
 
 {
-name: "$alwaysExecute",
+name: "fight",
+aliases: ["daily", "farm", "mine", "forage", "slots", "dungeon", "startdungeon"],
+$if: "v4",
 code: `
 $if[$getGlobalUserVar[CatNotificationsOn;$authorID]==False]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];$authorID]
@@ -123,7 +121,6 @@ $onlyIf[$checkContains[$message;$getServerVar[Prefix;$guildID]]!=false;]
 $globalCooldown[45s;]
 $onlyIf[$isBot[$authorID]!=true;]
 $suppressErrors
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];]
 `
 }
 

@@ -1,2 +1,4 @@
 
 *.png
+src/config.json
+*.json

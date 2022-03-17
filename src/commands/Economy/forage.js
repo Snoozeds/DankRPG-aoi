@@ -1,11 +1,10 @@
 module.exports = {
 name: "forage",
 aliases: ["explore", "search"],
-code: `$description[<@$authorID> goes foraging. They find: $randomText[Wood;Stone;Slime] (**$random[1;3]**)]
+code: `$description[1;<@$authorID> goes foraging. They find: $randomText[Wood;Stone;Slime] (**$random[1;3]**)]
 $setGlobalUserVar[$randomText[Wood;Stone;Slime];$sum[$getGlobalUserVar[$randomText[Wood;Stone;Slime]];$random[1;3]];$authorID]
-$color[$getGlobalUserVar[EmbedColor;$authorID]]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[10s;Please wait **%time%**]
 $onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 }

@@ -2,11 +2,11 @@ module.exports = {
 name: "commands",
 aliases: ["help", "cmds"],
 code: `
-$title[Commands]
-$color[$getGlobalUserVar[EmbedColor]]
-$description[
+$title[1;Commands]
+$color[1;$getGlobalUserVar[EmbedColor]]
+$description[1;
 **Economy Commands**:
-\`daily, weekly, fight, farm, bwork, forage, slots, startdungeon, mine, give, sellall, vote\`
+\`daily, fight, farm, forage, slots, startdungeon, mine, give, sellall, vote\`
 
 **Social Commands**:
 \`hug, kill, slap, wave, marry, marriage, divorce\`
@@ -31,6 +31,5 @@ $description[
 $suppressErrors
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 $onlyIf[$isBot[$authorID]!=true;]
-$blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
 `
 }

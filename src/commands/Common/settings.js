@@ -2,8 +2,8 @@ module.exports = [{
     name: "settings",
     aliases: "options",
     code: `
-    $title[Settings]
-    $description[Here are all the settings you can change.
+    $title[1;Settings]
+    $description[1;Here are all the settings you can change.
 
     **Embed color** - This will change the color of embeds to your own choice. [Color Picker](https://colorpicker.me 'Color Picker')
 		$getServerVar[Prefix]changecolor <#hexid>
@@ -20,13 +20,12 @@ module.exports = [{
     **Cat Notifications** - Whether or not cat notifications are send in chat (finding coins).
     $getServerVar[Prefix]catnotifications <true/false>
     Your value: $getGlobalUserVar[CatNotificationsOn;$authorID]]
-		$footer[True = Enabled | False = Disabled]
+		$footer[1;True = Enabled | False = Disabled]
 
-    $color[$getGlobalUserVar[EmbedColor;$authorID]]
+    $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]
-    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+    $onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
@@ -39,7 +38,6 @@ module.exports = [{
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 		$suppressErrors
     $onlyIf[$isBot[$authorID]!=true;]
-    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]
     `
 },
 
@@ -61,8 +59,7 @@ module.exports = [{
     Please provide a proper argument. Example: \`$getServerVar[Prefix]familymode true\`\
     $endif
 		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]
-    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+    $onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
@@ -83,8 +80,7 @@ module.exports = [{
     Please provide a proper argument. Example: \`$getServerVar[Prefix]userint true\`
 		$endif
 		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]
-    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+    $onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
@@ -105,8 +101,7 @@ module.exports = [{
   Please provide a proper argument. Example: \`$getServerVar[Prefix]catnotifications true\`\
   $endif
   $suppressErrors
-  $onlyIf[$isBot[$authorID]!=true;]
-  $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+  $onlyIf[$isBot[$authorID]!=true;]`
 }
 
 

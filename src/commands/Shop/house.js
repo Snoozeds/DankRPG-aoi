@@ -8,12 +8,12 @@ module.exports = [{
     $setGlobalUserVar[HouseL;0]
     $onlyIf[$getGlobalUserVar[Wood;$authorID]>499;You do not have enough **wood** to buy a **house**. You need at least **499 Wood**.]
     $onlyIf[$getGlobalUserVar[BoughtHouse]!=True;You already have a house smh]
-    $onlyIf[$isBot[$authorID]!=true;]
-    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];You are blacklisted.]`
+    $onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
-    name: "$alwaysExecute",
+    name: "fight",
+    aliases: ["daily", "farm", "mine", "forage", "slots", "dungeon", "startdungeon"],
     code: `
     $setGlobalUserVar[HP;$sum[$getGlobalUserVar[HP];1]]
     $onlyIf[$getGlobalUserVar[BoughtHouse]==True;]
@@ -21,8 +21,7 @@ module.exports = [{
     $onlyIf[$getGlobalUserVar[HP]!=$getGlobalUserVar[MaxHP];]
     $globalCooldown[5m;]
     $onlyIf[$isBot[$authorID]!=true;]
-    $suppressErrors
-    $blackListIDs[$replaceText[$getVar[BlacklistedUsers];+;\;;-1];]`
+    $suppressErrors`
 }
 
 ]
