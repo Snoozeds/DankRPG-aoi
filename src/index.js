@@ -1,29 +1,39 @@
 const aoijs = require('aoi.js');
 const config = require('./config.json');
 
-// Top.gg Posting Stats: ////////////////////////////////////
-const { Client, Intents } = require('discord.js');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] })
-const { AutoPoster } = require('topgg-autoposter')
-
-const ap = AutoPoster(config.topgg, client)
-
-ap.on('posted', () => {
-  console.log('Posted stats to Top.gg!')
-})
-
-client.login(config.token)
-
 const bot = new aoijs.Bot({
   token: config.token,
   prefix: ["$getServerVar[Prefix]", "$getServerVar[Prefix] ", "<@!$clientID>", "<@$clientID> "], // Client ID trigger is mentioning the bot. Can be useful if a user doesn't know the prefix.
-  intents: config.intents,
-  suppressAllErrors: true,
+  intents : ['guilds','guildMessages'],
+  suppressAllErrors: true
 });
-// ///////////////////////////////////////////////////////
+
+// Top.gg Voting from: https://pastebin.com/AXQysNsz ///////////////////////
+
+const express = require('express') 
+const Topgg = require('@top-gg/sdk')
+const app = express()
+const event = new aoijs.CustomEvent(bot)
+
+event.command({
+listen: "votes",
+code: `$sendDM[Thanks for voting!\nYou earned:\n**$getVar[Coi]100\n$getVar[DiamondEmoji]1**;$eventData[[0]];no]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$eventData[[0]]];100];$eventData[[0]]]
+$setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$eventData[[0]]];1];$eventData[[0]]]`
+})
+event.listen("votes")
+
+const webhook = new Topgg.Webhook(config.topgg)
+app.post('/', webhook.listener(vote => {
+event.emit('votes', vote.user)
+console.log(vote.user)
+}))
+ 
+app.listen(69)
+////////////////////////////////////////////////////////////////////////////
 
 bot.status({
-    text: "v1.15 | d!help", 
+    text: "v1.16 | d!help", 
     type: "PLAYING",
     time: "12",
     })
@@ -74,17 +84,15 @@ bot.variables({
   InRelationship: "False",
   MarriedTo: "",
   CatNotificationsOn: "True",
+  BlacklistedUsers: ""
   // These are the DEFAULTS for each variable.
   })
 
-bot.onMessage({respondToBots: true}) // This is set to true for my top.gg code. Either set it to false or add '$onlyIf[$isBot[$authorID]!=true;]' to every new command you make.
-bot.onInteractionCreate()
-bot.loadCommands(`./commands/Common`)
-bot.loadCommands(`./commands/Economy`)
-bot.loadCommands(`./commands/Shop`)
-bot.loadCommands(`./commands/Interactions`)
-bot.loadCommands(`./commands/Stats`)
-bot.loadCommands(`./commands/Top.gg`)
+bot.onMessage({respondToBots: true})
+bot.onInteractionCreate // This is set to true for my top.gg code. Either set it to false or add '$onlyIf[$isBot[$authorID]!=true;]' to every new command you make.
+
+const loader = new aoijs.LoadCommands(bot)
+loader.load(bot.cmd,"./commands/")
 
 // Error handler so bot doesn't kaboom
 try{}catch(error){console.log(error)}
