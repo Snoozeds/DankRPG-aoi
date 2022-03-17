@@ -105,7 +105,8 @@ $onlyIf[$isBot[$authorID]!=true;]
 },
 
 {
-name: "$alwaysExecute",
+name: "fight",
+aliases: ["bwork", "daily", "farm", "mine", "forage", "slots", "dungeon", "startdungeon"],
 code: `
 $if[$getGlobalUserVar[CatNotificationsOn;$authorID]==False]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];$authorID]
