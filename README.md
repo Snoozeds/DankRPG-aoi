@@ -44,7 +44,7 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```mkdir folder_name``` (upload files here through your chosen program) \
 ```cd folder_name``` \
 ```npm init``` \
-```npm install aoi.js@4.6.0``` (if you get any missing module errors, install the modules) \
+```npm install https://github.com/AkaruiDevelopment/aoi.js#main``` (if you get any missing module errors, install the modules) \
 ```npm install pm2 -g``` (this will host the bot 24/7 and install pm2 globally) \
 ```pm2 start index.js```
 
@@ -57,4 +57,3 @@ Assuming you are using **Ubuntu**, run the following commands:
 
 ## Owner-Only commands from Dank RPG:
 ```<prefix>eval <code> - evaluate code to make sure it runs without errors``` \
-```<prefix>blacklist <id> - blacklist a userid from using the bot (this feature isn't implemented just yet)```
