@@ -5,7 +5,7 @@ $channelSendMessage[$channelID;<@$authorID>\nYou mined:\n  $getVar[StoneEmoji]**
 $setGlobalUserVar[Gold;$sum[$getGlobalUserVar[Gold;$authorID];$random[5;10]];$authorID]
 $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$authorID];$random[1;5]];$authorID]
 $setGlobalUserVar[Stone;$sum[$getGlobalUserVar[Stone;$authorID];$random[10;20]];$authorID]
-$wait[10s]
+$wait[1h]
 $channelSendMessage[$channelID;You have started mining. Come back in 1 hour to see what you have mined.]
 $globalCooldown[2h;You have already mined recently, please wait **%time%**.]
 $onlyIf[$isBot[$authorID]!=true;]
