@@ -29,7 +29,7 @@ event.emit('votes', vote.user)
 console.log(vote.user)
 }))
  
-app.listen(69)
+app.listen(69) // It is best to change this port and keep it private. It is also recommended to only open the port you select (using something like ufw).
 ////////////////////////////////////////////////////////////////////////////
 
 bot.status({

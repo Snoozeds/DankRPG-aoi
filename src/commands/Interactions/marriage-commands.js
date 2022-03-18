@@ -31,6 +31,8 @@ $setGlobalUserVar[MarriedTo;$getGlobalUserVar[Sender;$authorID];$authorID]
 $setGlobalUserVar[MarriageDate;$round[$divide[$dateStamp;1000]];$authorID]
 $setGlobalUserVar[MarriageDate;$round[$divide[$dateStamp;1000]];$getGlobalUserVar[Sender;$authorID]]
 $onlyIf[$getGlobalUserVar[Sender;$authorID]!=;Nothing to accept.]
+$onlyIf[$getGlobalUserVar[InRelationship;$getGlobalUserVar[Sender;$authorID]]!=True;The sender is already married.]
+$onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=True;You are already married.]
 `
 },
 
