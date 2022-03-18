@@ -56,4 +56,4 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```pm2 ls - lists all processes running```
 
 ## Owner-Only commands from Dank RPG:
-```<prefix>eval <code> - evaluate code to make sure it runs without errors``` \
+```<prefix>eval <code> - evaluate code to make sure it runs without errors```
