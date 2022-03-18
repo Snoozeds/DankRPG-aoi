@@ -89,7 +89,7 @@ bot.variables({
   })
 
 bot.onMessage({respondToBots: true})
-bot.onInteractionCreate // This is set to true for my top.gg code. Either set it to false or add '$onlyIf[$isBot[$authorID]!=true;]' to every new command you make.
+bot.onInteractionCreate
 
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./commands/")
