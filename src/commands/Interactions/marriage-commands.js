@@ -1,40 +1,36 @@
 module.exports = [{
 name: "marry",
-$if: "v4",
 code: `
 $suppressErrors[Please mention someone to marry correctly.]
 $setGlobalUserVar[Sender;$authorID;$findUser[$message;no]]
 
-$reactionCollector[$splitText[1];$findUser[$message;no];24h;$getVar[AcceptEmoji];Marriage_Accept;yes]
-$textSplit[$sendMessage[**$username[$findUser[$message;no]]**:\n$username[$authorID] wants to marry you... do you accept?\n(to deny, ignore this message.);yes]; ]
+$awaitMessages[$channelID;$findUser[$message;no];12h;MarryYes;Marriage_Accept;]
+**$username[$findUser[$message;no]]**:\n$username[$authorID] wants to marry you... do you accept?\n(to accept, type \`$getServerVar[Prefix]accept\`)
+
 $onlyIf[$memberExists[$findUser[$message;no]]!=false;User is not in this server, or you didn't mention someone properly.]
 $onlyIf[$message!=;Please mention a user to marry.]
 $onlyIf[$getGlobalUserVar[InRelationship;$findUser[$message;no]]!=True;This user is already in a relationship...]
 $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=True;You are in a relationship... :face_with_raised_eyebrow:]
 $onlyIf[$findUser[$message;no]!=$authorID;Yes, we all wish this was possible, but is it? No.]
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Wow, even a bot doesn't want to marry you.]
+$onlyIf[$memberExists[$findUser[$message;no]]!=false;User is not in this server. Try again.]
 $globalCooldown[3s;]
 $onlyIf[$isBot[$authorID]!=true;]
 `
 },
 
 {
-name: "Marriage_Accept",
-type: "awaitedCommand",
+name: "accept",
 code: `
-$title[1;New marriage]
-$color[1;$getGlobalUserVar[EmbedColor];$authorID]
-$description[1;<@$getGlobalUserVar[Sender;$authorID]> is now married to <@$authorID>!]
-
+$channelSendMessage[$channelID;<@$getGlobalUserVar[Sender;$authorID]> is now married to <@$authorID>!]
+    
 $setGlobalUserVar[InRelationship;True;$authorID]
 $setGlobalUserVar[InRelationship;True;$getGlobalUserVar[Sender;$authorID]]
 $setGlobalUserVar[MarriedTo;$authorID;$getGlobalUserVar[Sender;$authorID]]
 $setGlobalUserVar[MarriedTo;$getGlobalUserVar[Sender;$authorID];$authorID]
 $setGlobalUserVar[MarriageDate;$round[$divide[$dateStamp;1000]];$authorID]
 $setGlobalUserVar[MarriageDate;$round[$divide[$dateStamp;1000]];$getGlobalUserVar[Sender;$authorID]]
-
-$onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=True;]
-$onlyIf[$isBot[$authorID]!=true;]
+$onlyIf[$getGlobalUserVar[Sender;$authorID]!=;Nothing to accept.]
 `
 },
 
@@ -67,11 +63,9 @@ $setGlobalUserVar[Sender;;$findUser[$message;no]]
 $setGlobalUserVar[Sender;;$authorID]
 $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=False;You are NOT in a relationship... :face_with_raised_eyebrow:]
 $onlyIf[$getGlobalUserVar[MarriedTo]==$findUser[$message;yes];You are not married to this person, weirdo.]
-$suppressErrors[Mention someone to divorce.]
+$onlyIf[$message!=;Mention someone to divorce]
 $globalCooldown[5s;]
 $onlyIf[$isBot[$authorID]!=true;]
 `
 }
-
-
 ]
