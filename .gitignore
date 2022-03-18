@@ -2,3 +2,4 @@
 *.png
 src/config.json
 *.json
+src/index.js
