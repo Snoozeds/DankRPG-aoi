@@ -26,7 +26,6 @@ event.listen("votes")
 const webhook = new Topgg.Webhook(config.topgg)
 app.post('/', webhook.listener(vote => {
 event.emit('votes', vote.user)
-console.log(vote.user)
 }))
  
 app.listen(69) // It is best to change this port and keep it private. It is also recommended to only open the port you select (using something like ufw).
@@ -66,7 +65,7 @@ bot.variables({
   BoughtHouse: "False", // Bought house or not
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
-  TopggToken: "",
+  TopggToken: "", // No longer used
   PetType: "none",
   PetName: "Your pet hasn't been named yet. Run \`<prefix>petname <name>\`.",
   HasPet: "false",
@@ -84,7 +83,6 @@ bot.variables({
   InRelationship: "False",
   MarriedTo: "",
   CatNotificationsOn: "True",
-  BlacklistedUsers: ""
   // These are the DEFAULTS for each variable.
   })
 
