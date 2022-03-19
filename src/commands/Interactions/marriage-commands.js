@@ -4,7 +4,6 @@ code: `
 $suppressErrors[Please mention someone to marry correctly.]
 $setGlobalUserVar[Sender;$authorID;$findUser[$message;no]]
 
-$awaitMessages[$channelID;$findUser[$message;no];12h;MarryYes;Marriage_Accept;]
 **$username[$findUser[$message;no]]**:\n$username[$authorID] wants to marry you... do you accept?\n(to accept, type \`$getServerVar[Prefix]accept\`)
 
 $onlyIf[$memberExists[$findUser[$message;no]]!=false;User is not in this server, or you didn't mention someone properly.]
