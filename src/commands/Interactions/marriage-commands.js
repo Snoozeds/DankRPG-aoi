@@ -41,7 +41,7 @@ aliases: ["marriageinfo"],
 code: `
 $title[1;🌸 | Marriage info: $username[$findUser[$message;yes]]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$description[1;$username[$findUser[$message;yes]] is married to: $username[$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]]\nThey have been married since: <t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]> (<t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]:R>)]
+$description[1;$username[$findUser[$message;yes]] is married to: $username[$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]]\nMarried since: <t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]> (<t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]:R>)]
 $onlyIf[$getGlobalUserVar[InRelationship;$findUser[$message;yes]]!=False;This user is not married.]
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has interaction commands disabled from their settings.]
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Bots marrying people... hmm.]
