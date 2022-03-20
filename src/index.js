@@ -86,7 +86,7 @@ bot.variables({
   // These are the DEFAULTS for each variable.
   })
 
-bot.onMessage({respondToBots: true})
+bot.onMessage({respondToBots: false})
 bot.onInteractionCreate
 
 const loader = new aoijs.LoadCommands(bot)
