@@ -6,7 +6,8 @@ $description[1;
 Bot Ping: $round[$ping]ms
 Database Ping: $round[$dbPing]ms
 Uptime: $uptime
-Server Count: $serverCount \n
+Server Count: $serverCount
+$username[$clientID] Invite: [link](https://discord.com/oauth2/authorize?client_id=$clientID&scope=bot%20applications.commands&permissions=2147863552) \n
 **__Server Info__**
 OS: Linux, Ubuntu (20.04.3)
 RAM Usage: $round[$ram]MBs
