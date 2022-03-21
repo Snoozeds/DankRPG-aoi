@@ -1,10 +1,13 @@
 module.exports = [{
 name: "marry",
 code: `
+$setGlobalUserVar[Sender;;$findUser[$message;no]]
+$wait[12h]
+
 $suppressErrors[Please mention someone to marry correctly.]
 $setGlobalUserVar[Sender;$authorID;$findUser[$message;no]]
 
-**$username[$findUser[$message;no]]**:\n$username[$authorID] wants to marry you... do you accept?\n(to accept, type \`$getServerVar[Prefix]accept\`)
+$channelSendMessage[$channelID;**$username[$findUser[$message;no]]**:\n$username[$authorID] wants to marry you... do you accept?\n(to accept, type \`$getServerVar[Prefix]accept\`)]
 
 $onlyIf[$memberExists[$findUser[$message;no]]!=false;User is not in this server, or you didn't mention someone properly.]
 $onlyIf[$message!=;Please mention a user to marry.]
@@ -14,7 +17,6 @@ $onlyIf[$findUser[$message;no]!=$authorID;Yes, we all wish this was possible, bu
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Wow, even a bot doesn't want to marry you.]
 $onlyIf[$memberExists[$findUser[$message;no]]!=false;User is not in this server. Try again.]
 $globalCooldown[3s;]
-$onlyIf[$isBot[$authorID]!=true;]
 `
 },
 
