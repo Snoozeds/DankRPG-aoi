@@ -12,8 +12,7 @@ module.exports = [{
 },
 
 {
-    name: "fight",
-    aliases: ["daily", "farm", "mine", "forage", "slots", "dungeon", "startdungeon"],
+    name: "$alwaysExecute",
     code: `
     $setGlobalUserVar[HP;$sum[$getGlobalUserVar[HP];1]]
     $onlyIf[$getGlobalUserVar[BoughtHouse]==True;]

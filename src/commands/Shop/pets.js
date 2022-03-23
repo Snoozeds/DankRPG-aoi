@@ -101,8 +101,7 @@ $endif
 },
 
 {
-name: "fight",
-aliases: ["daily", "farm", "mine", "forage", "slots", "dungeon", "startdungeon"],
+name: "$alwaysExecute",
 $if: "v4",
 code: `
 $if[$getGlobalUserVar[CatNotificationsOn;$authorID]==False]

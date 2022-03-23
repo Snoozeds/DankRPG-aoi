@@ -1,8 +1,8 @@
 module.exports = {
 name: "fight",
 $if: "v4",
-code: `
-$if[$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]<$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]
+code:`
+$if[$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]<=$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]
 You die because you have run out of HP.
 $setGlobalUserVar[HP;100;$authorID]
 $setGlobalUserVar[Coins;0;$authorID]
@@ -17,8 +17,6 @@ $setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUser
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];20]]];$authorID]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $endif
-
-$globalCooldown[$random[10;15]s;Please wait **%time%** before fighting again.]
-$onlyIf[$isBot[$authorID]!=true;]
+$globalCooldown[10s;Please wait **%time%** before fighting again.]
 `
 }
