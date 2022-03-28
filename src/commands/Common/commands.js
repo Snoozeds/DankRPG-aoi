@@ -12,7 +12,7 @@ $description[1;
 \`hug, kill, slap, wave, marry, marriage, divorce\`
 
 **Fun Commands**:
-\`repeat, 8ball, coinflip\`
+\`repeat, 8ball, coinflip, neko\`
 
 **Misc Commands**:
 \`commands, ping, info, serverinfo, feedback, credits, whois, avatar\`
