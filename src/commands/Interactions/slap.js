@@ -16,7 +16,7 @@ $title[1;$username[$authorID] slaps $username[$findUser[$message;no]]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $image[1;$httpRequest[https://api.dankrpg.xyz/anime/slap;GET;;url]]
 $endif
-$suppressErrors[Mention someone.]
+$onlyIf[$message!=Mention someone.]
 $onlyIf[$isBot[$authorID]!=true;]
 `
 }
