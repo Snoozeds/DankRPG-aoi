@@ -9,6 +9,7 @@ $description[1;
 :door: **Joined Server:** <t:$truncate[$divide[$memberJoinedDate[$findUser[$message[1]];$guildID;ms];1000]]> (<t:$truncate[$divide[$memberJoinedDate[$findUser[$message[1]];$guildID;ms];1000]]:R>)
 ]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$thumbnail[1;$userAvatar[$findUser[$message;yes]]]
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 $onlyIf[$isBot[$authorID]!=true;]
 `
