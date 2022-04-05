@@ -5,7 +5,7 @@ $description[1;
 **__Bot Info__**
 Bot Ping: $round[$ping]ms
 Database Ping: $round[$dbPing]ms
-Uptime: $uptime
+Uptime: $replaceText[$replaceText[$replaceText[$replaceText[$uptime;days,;d;1];hours,;h;1];minutes,;m;1];seconds;s;1]
 Server Count: $serverCount
 $username[$clientID] Invite: [link](https://discord.com/oauth2/authorize?client_id=$clientID&scope=bot%20applications.commands&permissions=2147863552) \n
 **__Server Info__**
