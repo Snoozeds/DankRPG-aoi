@@ -6,13 +6,13 @@ $title[1;Commands]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $description[1;
 **Economy Commands**:
-\`daily, fight, farm, forage, slots, startdungeon, mine, give, sellall, vote\`
+\`daily, fight, farm, forage, slots, startdungeon, mine, give, sellall\`
 
 **Social Commands**:
 \`hug, kill, slap, wave, marry, marriage, divorce\`
 
 **Fun Commands**:
-\`repeat, 8ball, coinflip, neko\`
+\`repeat, 8ball, coinflip, neko, meme\`
 
 **Misc Commands**:
 \`commands, ping, info, serverinfo, feedback, credits, whois, avatar\`
