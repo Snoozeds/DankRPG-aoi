@@ -1,5 +1,6 @@
 module.exports = ({
 name: "meme",
+aliases: "memes",
 $if: "v4",
 code: `
 $addButton[1;$replaceText[$getObjectProperty[numComments];undefined;0];primary;comments;yes;💬]
