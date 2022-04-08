@@ -11,11 +11,11 @@ $title[1;$getObjectProperty[title];$getObjectProperty[url]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $replaceText[$replaceText[$checkContains[$getObjectProperty[image];https://v.redd.it/];true;];false;$image[1;$getObjectProperty[image]]]
 $if[$checkContains[$getObjectProperty[image];https://v.redd.it/]==false]
-$createObject[$jsonRequest[https://cryptons-api.herokuapp.com/api/v1/reddit?subreddit=memes&limit=1&sort=top&t=day]]
+$createObject[$jsonRequest[https://cryptons-api.herokuapp.com/api/v1/reddit?subreddit=memes]]
 $endIf
 $if[$checkContains[$getObjectProperty[image];https://v.redd.it/]==false]
-$createObject[$jsonRequest[https://cryptons-api.herokuapp.com/api/v1/reddit?subreddit=memes&limit=1&sort=top&t=day]]
+$createObject[$jsonRequest[https://cryptons-api.herokuapp.com/api/v1/reddit?subreddit=memes]]
 $endIf
-$createObject[$jsonRequest[https://cryptons-api.herokuapp.com/api/v1/reddit?subreddit=memes&limit=1&sort=top&t=day]]
+$createObject[$jsonRequest[https://cryptons-api.herokuapp.com/api/v1/reddit?subreddit=memes]]
 $globalCooldown[5s;Please wait **%time%** to use this command again.]`
 })
