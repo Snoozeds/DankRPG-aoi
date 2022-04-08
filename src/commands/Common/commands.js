@@ -9,7 +9,7 @@ $description[1;
 \`daily, fight, farm, forage, slots, startdungeon, mine, give, sellall\`
 
 **Social Commands**:
-\`hug, kill, slap, wave, marry, marriage, divorce\`
+\`hug, kill, slap, wave, laugh, marry, marriage, divorce\`
 
 **Fun Commands**:
 \`repeat, 8ball, coinflip, neko, meme\`
