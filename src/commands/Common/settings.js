@@ -33,7 +33,7 @@ module.exports = [{
     aliases: "changecolour",
     code: `
     $onlyif[$isValidHex[$replaceText[$message;#;;-1]]!=false;This is not a valid hex code. Please visit <https://colorpicker.me> to find a valid hex code.]
-    Changed all embed colors to $message.
+    Changed all embed colors to #$replaceText[$message;#;;-1].
 		$setGlobalUserVar[EmbedColor;$message;$authorID]
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 		$suppressErrors
