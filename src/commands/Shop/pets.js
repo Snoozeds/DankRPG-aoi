@@ -2,7 +2,7 @@ module.exports = [{
 name: "petshop",
 aliases: "shop pet",
 code: `$title[1;Pet Shop]
-$description[1;Welcome to the pet shop $username! Here's what we have. $addField[Dog;Increases your MaxHP by **125**.\nPrice: $getVar[Coi]**750**]
+$description[1;Welcome to the pet shop $username! Here's what we have. $addField[1;Dog;Increases your MaxHP by **125**.\nPrice: $getVar[Coi]**750**]
 $addField[1;Cat;Has a chance to find $getVar[Coi] while you run commands\nPrice: $getVar[Coi]**1000**]]
 $footer[1;d!buypet <opt>]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
