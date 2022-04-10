@@ -3,7 +3,7 @@ name: "slots",
 $if: "v4",
 code: `
 
-$if[$randomText[Lose;Lose;Lose;Lose;Lose;Lose;Lose;Win]==Win]
+$if[$randomText[Lose;Lose;Lose;Lose;Lose;Win]==Win]
 $title[1;You win!]
 $description[1;
 $randomText[\[⭐\]\[⭐\]\[⭐\];\[🎁\]\[🎁\]\[🎁\];\[💰\]\[💰\]\[💰\]]
