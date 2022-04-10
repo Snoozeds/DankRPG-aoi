@@ -13,7 +13,6 @@ $onlyIf[$isBot[$authorID]!=true;]
 },
 // Yes I am too lazy to make unique emoji shhh
 
-
 {
 name: "sellall",
 $if: "v4",
