@@ -11,7 +11,7 @@ $username[$clientID] Invite: [link](https://discord.com/oauth2/authorize?client_
 **__Server Info__**
 OS: Linux, Ubuntu (20.04.3)
 RAM Usage: $round[$ram]MBs
-CPU Usage: $round[$cpu[os]]% \n 
+CPU Usage: $cpu[os]% \n 
 **__Package Info__**
 Node: $nodeVersion
 Aoi.JS: v$packageVersion]
