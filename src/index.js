@@ -32,7 +32,7 @@ app.listen(69) // It is best to change this port and keep it private. It is also
 ////////////////////////////////////////////////////////////////////////////
 
 bot.status({
-    text: "v1.17 | d!help", 
+    text: "v1.18 | d!help", 
     type: "PLAYING",
     time: "12",
     })
