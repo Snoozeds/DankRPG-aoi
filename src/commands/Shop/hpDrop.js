@@ -1,5 +1,6 @@
 module.exports = {
 	name: "buyhp",
+	aliases: "buy hp",
 	code: `
 	You bought a hp drop for <:RPGCoin:855767372534906920>**750**.
 	$setGlobalUserVar[MaxHP;$sum[$getGlobalUserVar[MaxHP];100];$authorID]

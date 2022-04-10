@@ -1,6 +1,6 @@
 module.exports = [{
     name: "buyhouse",
-    aliases: "buildhouse",
+    aliases: "buy house",
     code: `
     You bought a house for **500 Wood**
     $setGlobalUserVar[Wood;$sub[$getGlobalUserVar[Wood];500];$authorID]
