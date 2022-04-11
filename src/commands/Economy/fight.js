@@ -1,5 +1,6 @@
 module.exports = {
 name: "fight",
+aliases: "attack",
 $if: "v4",
 code:`
 $if[$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]<=$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]
