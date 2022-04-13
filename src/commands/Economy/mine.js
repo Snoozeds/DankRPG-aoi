@@ -1,14 +1,27 @@
 module.exports = [{
 name: "mine",
+$if: "v4",
 code: `
+$if[$getGlobalUserVar[MiningTime;$authorID]==10m]
 $channelSendMessage[$channelID;<@$authorID>\nYou mined:\n  $getVar[StoneEmoji]**$random[10;20]** Stone\n $getVar[GoldEmoji]**$random[5;10]** Gold\n $getVar[DiamondEmoji]**$random[1;5]** Diamond(s)]
 $setGlobalUserVar[Gold;$sum[$getGlobalUserVar[Gold;$authorID];$random[5;10]];$authorID]
 $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$authorID];$random[1;5]];$authorID]
 $setGlobalUserVar[Stone;$sum[$getGlobalUserVar[Stone;$authorID];$random[10;20]];$authorID]
-$wait[$getGlobalUserVar[MiningTime;$authorID]]
+$wait[10m]
 $channelSendMessage[$channelID;You have started mining. Come back in $getGlobalUserVar[MiningTime;$authorID] to see what you have mined.]
-$globalCooldown[$sum[$getGlobalUserVar[MiningTime;$authorID];5m];You have already mined recently, please wait **%time%**.]
-$onlyIf[$isBot[$authorID]!=true;]
+
+$else
+$if[$getGlobalUserVar[MiningTime;$authorID]==5m]
+$channelSendMessage[$channelID;<@$authorID>\nYou mined:\n  $getVar[StoneEmoji]**$random[10;20]** Stone\n $getVar[GoldEmoji]**$random[5;10]** Gold\n $getVar[DiamondEmoji]**$random[1;5]** Diamond(s)]
+$setGlobalUserVar[Gold;$sum[$getGlobalUserVar[Gold;$authorID];$random[5;10]];$authorID]
+$setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$authorID];$random[1;5]];$authorID]
+$setGlobalUserVar[Stone;$sum[$getGlobalUserVar[Stone;$authorID];$random[10;20]];$authorID]
+$wait[5m]
+$channelSendMessage[$channelID;You have started mining. Come back in $getGlobalUserVar[MiningTime;$authorID] to see what you have mined.]
+$endif
+$endif
+
+$globalCooldown[$sum[$replaceText[$getGlobalUserVar[MiningTime;$authorID];m; ;-1];5]m;You have already mined recently, please wait **%time%**.]
 `
 },
 // Yes I am too lazy to make unique emoji shhh
