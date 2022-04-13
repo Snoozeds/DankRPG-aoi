@@ -63,8 +63,10 @@ bot.variables({
   Wood : "0",
   Slime: "0",
   BoughtHouse: "False", // Bought house or not
+  BoughtPick: "False", // Bought pickaxe or not
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
+  PickL: "1", // Pickaxe Stock
   TopggToken: "", // No longer used
   PetType: "none",
   PetName: "Your pet hasn't been named yet. Run \`<prefix>petname <name>\`.",
@@ -83,6 +85,7 @@ bot.variables({
   InRelationship: "False",
   MarriedTo: "",
   CatNotificationsOn: "True",
+  MiningTime: "10m",
   // These are the DEFAULTS for each variable.
   })
 
