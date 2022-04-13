@@ -1,8 +1,8 @@
 module.exports = {
 name: "buy pickaxe",
-aliases: ["buypickaxe", "buypick"],
+aliases: ["buypickaxe", "buypick", "buy pick"],
 code: `
-You bought a pickaxe for **100 Stone**
+$channelSendMessage[$channelID;You bought a pickaxe for **100 Stone**.]
 $setGlobalUserVar[Stone;$sub[$getGlobalUserVar[Stone];100];$authorID]
 $setGlobalUserVar[BoughtPick;True;$authorID]
 $setGlobalUserVar[PickL;0;$authorID]
