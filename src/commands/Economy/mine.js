@@ -42,7 +42,6 @@ $getVar[StoneEmoji]**$getGlobalUserVar[Stone]**
 For: $getVar[Coi]**$sum[$multi[$getGlobalUserVar[Stone;$authorID];5];$multi[$getGlobalUserVar[Gold;$authorID];30];$multi[$getGlobalUserVar[Diamond;$authorID];40]]**
 $onlyIf[$isBot[$authorID]!=true;]
 $onlyIf[$sum[$multi[$getGlobalUserVar[Stone;$authorID];5];$multi[$getGlobalUserVar[Gold;$authorID];30];$multi[$getGlobalUserVar[Diamond;$authorID];40]]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
-$endif
 $suppressErrors[Something went wrong. You probably have nothing to sell.]
 `
 }] // I add a wait to this one because otherwise it'll say that you sold 0 of everything... idk, aoi.js is weird.
