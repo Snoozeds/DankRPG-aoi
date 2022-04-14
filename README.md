@@ -44,7 +44,7 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```mkdir folder_name``` (upload files here through your chosen program) \
 ```cd folder_name``` \
 ```npm init``` \
-```npm install aoi.js@5.1.0``` (5.1.1 seems to have an issue where `%time% = 1s` doesn't display properly.) \
+```npm install aoi.js@5.1.1``` \
 ```npm install pm2 -g``` (this will host the bot 24/7 and install pm2 globally) \
 ```pm2 start index.js```
 

@@ -31,6 +31,7 @@ $onlyIf[$isBot[$authorID]!=true;]`
 {
 name : "changecolor",
 aliases: "changecolour",
+$if: "v4",
 code: `
 $onlyif[$isValidHex[$replaceText[$message;#;;-1]]!=false;This is not a valid hex code. Please visit <https://colorpicker.me> to find a valid hex code.]
 Changed all embed colors to #$replaceText[$message;#;;-1].
@@ -44,6 +45,7 @@ $onlyIf[$isBot[$authorID]!=true;]
 {
     name: "familymode",
     aliases : "fmm",
+    $if: "v4",
     code: `
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
     $if[$message==true]
@@ -65,6 +67,7 @@ $onlyIf[$isBot[$authorID]!=true;]
 {
     name: "userint",
     aliases: ["user interactions", "interactions"],
+    $if: "v4",
     code: `
     $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
     $if[$message==true]
@@ -86,6 +89,7 @@ $onlyIf[$isBot[$authorID]!=true;]
 {
   name: "catnotifications",
   aliases : ["catnoti", "catnotif", "catnotifs"],
+  $if: "v4",
   code: `
   $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
   $if[$message==true]
