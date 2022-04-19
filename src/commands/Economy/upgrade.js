@@ -1,17 +1,17 @@
 module.exports = {
-	name: "upgrade",
-	$if: "v4",
-	aliases: ["prestige", "rankup"],
-	code: `
-	$if[$getGlobalUserVar[ATK;$authorID]==1]
-	You upgraded to 2ATK for <:RPGCoin:855767372534906920>**500**.
+name: "upgrade",
+$if: "v4",
+aliases: ["prestige", "rankup"],
+code: `
+$if[$getGlobalUserVar[ATK;$authorID]==1]
+You upgraded to 2ATK for <:RPGCoin:855767372534906920>**500**.
 **Congratulations!** You unlocked an achievement: "On Another Level"\n+<:RPGCoin:855767372534906920>**150**.
-	$setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];500];$authorID]
-	$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];150];$authorID]
-	$setGlobalUserVar[ATK;2;$authorID]
-	$setGlobalUserVar[ATKAchievement;<:Unlocked:899050875719393281>]
-	$onlyIf[$getGlobalUserVar[Coins;$authorID]>499;You do not have enough <:RPGCoin:855767372534906920> to upgrade. You need at least <:RPGCoin:855767372534906920>**500**.]
-	$else
+$setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins];500];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];150];$authorID]
+$setGlobalUserVar[ATK;2;$authorID]
+$setGlobalUserVar[ATKAchievement;<:Unlocked:899050875719393281>]
+$onlyIf[$getGlobalUserVar[Coins;$authorID]>499;You do not have enough <:RPGCoin:855767372534906920> to upgrade. You need at least <:RPGCoin:855767372534906920>**500**.]
+$else
 
 $if[$getGlobalUserVar[ATK;$authorID]==2]
 You upgraded to 3ATK for <:RPGCoin:855767372534906920>**1000**.

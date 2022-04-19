@@ -43,69 +43,69 @@ $onlyIf[$isBot[$authorID]!=true;]
 },
 
 {
-    name: "familymode",
-    aliases : "fmm",
-    $if: "v4",
-    code: `
-    $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-    $if[$message==true]
-    Turned on family mode. Stay safe!
-    $setGlobalUserVar[FamilyMode;True;$authorID]
-    $endif
-    $if[$message==false]
-    Turned off family mode.
-    $setGlobalUserVar[FamilyMode;False;$authorID]
-    $endif
+name: "familymode",
+aliases : "fmm",
+$if: "v4",
+code: `
+$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$if[$message==true]
+Turned on family mode. Stay safe!
+$setGlobalUserVar[FamilyMode;True;$authorID]
+$endif
+$if[$message==false]
+Turned off family mode.
+$setGlobalUserVar[FamilyMode;False;$authorID]
+$endif
 
-    $if[$message==]
-    Please provide a proper argument. Example: \`$getServerVar[Prefix]familymode true\`\
-    $endif
-		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]`
+$if[$message==]
+Please provide a proper argument. Example: \`$getServerVar[Prefix]familymode true\`\
+$endif
+$suppressErrors
+$onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
-    name: "userint",
-    aliases: ["user interactions", "interactions"],
-    $if: "v4",
-    code: `
-    $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-    $if[$message==true]
-    Turned on user interactions.
-    $setGlobalUserVar[UserInt;True;$authorID]
-    $endif
-    $if[$message==false]
-    Turned off user interactions.
-    $setGlobalUserVar[UserInt;False;$authorID]
-    $endif
-    
-    $if[$message==]
-    Please provide a proper argument. Example: \`$getServerVar[Prefix]userint true\`
-		$endif
-		$suppressErrors
-    $onlyIf[$isBot[$authorID]!=true;]`
+name: "userint",
+aliases: ["user interactions", "interactions"],
+$if: "v4",
+code: `
+$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$if[$message==true]
+Turned on user interactions.
+$setGlobalUserVar[UserInt;True;$authorID]
+$endif
+$if[$message==false]
+Turned off user interactions.
+$setGlobalUserVar[UserInt;False;$authorID]
+$endif
+
+$if[$message==]
+Please provide a proper argument. Example: \`$getServerVar[Prefix]userint true\`
+$endif
+$suppressErrors
+$onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
-  name: "catnotifications",
-  aliases : ["catnoti", "catnotif", "catnotifs"],
-  $if: "v4",
-  code: `
-  $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-  $if[$message==true]
-  Turned on cat notifications (they are now sent in chat)
-  $setGlobalUserVar[CatNotificationsOn;True;$authorID]
-  $endif
-  $if[$message==false]
-  Turned off cat notifications (they are now no longer sent)
-  $setGlobalUserVar[CatNotificationsOn;False;$authorID]
-  $endif
+name: "catnotifications",
+aliases : ["catnoti", "catnotif", "catnotifs"],
+$if: "v4",
+code: `
+$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$if[$message==true]
+Turned on cat notifications (they are now sent in chat)
+$setGlobalUserVar[CatNotificationsOn;True;$authorID]
+$endif
+$if[$message==false]
+Turned off cat notifications (they are now no longer sent)
+$setGlobalUserVar[CatNotificationsOn;False;$authorID]
+$endif
 
-  $if[$message==]
-  Please provide a proper argument. Example: \`$getServerVar[Prefix]catnotifications true\`\
-  $endif
-  $suppressErrors
-  $onlyIf[$isBot[$authorID]!=true;]`
+$if[$message==]
+Please provide a proper argument. Example: \`$getServerVar[Prefix]catnotifications true\`\
+$endif
+$suppressErrors
+$onlyIf[$isBot[$authorID]!=true;]`
 }
 
 
