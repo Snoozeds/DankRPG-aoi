@@ -15,7 +15,7 @@ $description[1;
 \`repeat, 8ball, coinflip, neko, meme\`
 
 **Misc Commands**:
-\`commands, ping, info, serverinfo, feedback, credits, whois, avatar\`
+\`commands, ping, info, serverinfo, feedback, credits, whois, avatar, privacy\`
 
 **Stat Commands:**
 \`inventory, achievements\`
