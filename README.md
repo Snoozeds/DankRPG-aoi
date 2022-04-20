@@ -60,5 +60,6 @@ Assuming you are using **Ubuntu**, run the following commands:
 
 ## The Future of DankRPG:
 I am not interested in monetizing DankRPG. \
-However, if you'd like to support the future of this project, feel free to use my DigitalOcean referral code. \
+However, if you'd like to support the future of this project, feel free to use my DigitalOcean referral code: \
+ \
 <a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" /></a>
