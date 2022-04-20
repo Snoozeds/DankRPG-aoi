@@ -44,4 +44,53 @@ $onlyIf[$isBot[$authorID]!=true;]
 $onlyIf[$sum[$multi[$getGlobalUserVar[Stone;$authorID];3];$multi[$getGlobalUserVar[Gold;$authorID];20];$multi[$getGlobalUserVar[Diamond;$authorID];30]]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
 $suppressErrors[Something went wrong. You probably have nothing to sell.]
 `
-}] // I add a wait to this one because otherwise it'll say that you sold 0 of everything... idk, aoi.js is weird.
+},
+
+{
+name: "sell diamond",
+aliases: ["selldiamond", "sell diamonds", "selldiamonds"],
+$if: "v4",
+code: `
+$setGlobalUserVar[Diamond;0;$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Diamond;$authorID];30]];$authorID]
+$wait[1s]
+You sold:
+$getVar[DiamondEmoji]**$getGlobalUserVar[Diamond]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[Diamond;$authorID];30]**
+$onlyIf[$getGlobalUserVar[Diamond]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
+$suppressErrors[Something went wrong. You probably have nothing to sell.]
+`
+},
+
+{
+name: "sell gold",
+aliases: ["sellgold", "sell gold"],
+$if: "v4",
+code: `
+$setGlobalUserVar[Gold;0;$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Gold;$authorID];20]];$authorID]
+$wait[1s]
+You sold:
+$getVar[GoldEmoji]**$getGlobalUserVar[Gold]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[Gold;$authorID];20]**
+$onlyIf[$getGlobalUserVar[Gold]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
+$suppressErrors[Something went wrong. You probably have nothing to sell.]
+`
+},
+
+{
+name: "sell stone",
+aliases: ["sellstone", "sellstones", "sell stones"],
+$if: "v4",
+code: `
+$setGlobalUserVar[Stone;0;$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Stone;$authorID];3]];$authorID]
+$wait[1s]
+You sold:
+$getVar[StoneEmoji]**$getGlobalUserVar[Stone]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[Stone;$authorID];3]**
+$onlyIf[$getGlobalUserVar[Stone]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
+$suppressErrors[Something went wrong. You probably have nothing to sell.]
+`
+}
+] 
