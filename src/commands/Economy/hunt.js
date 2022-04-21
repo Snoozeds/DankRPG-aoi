@@ -5,14 +5,19 @@ $if: "v4",
 code: `
 $if[$randomText[Animal;Animal;Animal;Nothing]==Nothing]
 $title[1;Hunting]
-$description[1;<@!$authorID> goes hunting. They find: **Nothing!** Sucks to suck.]
+$description[1;<@!$authorID> goes hunting.\nThey find: **Nothing!**\nSucks to suck.]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 
 $else
 $title[1;Hunting]
-$description[1;<@!$authorID> goes hunting. They find: a **$randomText[fox;deer;moose;rabbit]**!]
+$description[1;<@!$authorID> goes hunting.\nThey find: a **$randomText[fox;deer;moose;rabbit]**!]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$if[$getGlobalUserVar[BoughtBait;$authorID]==False]
 $setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];1];$authorID]
+$else
+$setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];2];$authorID]
+$footer[1;Bait active. Double the animals.]
+$endif
 $endif
 
 $globalCooldown[30s;Please wait **%time%** before running this command again.]

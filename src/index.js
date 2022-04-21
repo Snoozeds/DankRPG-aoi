@@ -64,9 +64,11 @@ bot.variables({
   Slime: "0",
   BoughtHouse: "False", // Bought house or not
   BoughtPick: "False", // Bought pickaxe or not
+  BoughtBait: "False", // Bought bait or not
   GiftL: "1", // Gift Stock
   HouseL: "1", // House Stock
   PickL: "1", // Pickaxe Stock
+  BaitL: "1", // Bait Stock
   TopggToken: "", // No longer used
   PetType: "none",
   PetName: "Your pet hasn't been named yet. Run \`<prefix>petname <name>\`.",

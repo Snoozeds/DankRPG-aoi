@@ -24,6 +24,13 @@ Decreases your mining speed by 5m. | **100 Stone**
 $getServerVar[Prefix]buypick
 $endif
 
+$if[$getGlobalUserVar[BaitL;$authorID]==1]
+<:Bait:916369932072128544> **__Bait__**
+Find double the animals in \`$getServerVar[Prefix]hunt\`. | **50 Slime**
+**In stock: $getGlobalUserVar[BaitL;$authorID]**
+$getServerVar[Prefix]buybait
+$endif
+
 Other Shop commands:\n\`upgrade\`, \`hp\`, \`heal\`, \`petshop\`]
 $color[1;$getGlobalUserVar[EmbedColor]]
 `
