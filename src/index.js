@@ -86,6 +86,10 @@ bot.variables({
   MarriedTo: "",
   CatNotificationsOn: "True",
   MiningTime: "10m",
+  deerStock: "0",
+  mooseStock: "0",
+  rabbitStock: "0",
+  foxStock: "0",
   // These are the DEFAULTS for each variable.
   })
 
