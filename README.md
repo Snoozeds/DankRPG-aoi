@@ -18,8 +18,8 @@ Just make sure the one you choose supports:
 
 ## Hosting DankRPG | Step 2: Connecting to your host
 
-For Linux users (your personal machine), I recommend **EasySSH** + **FileZilla** for accessing the server. \
-For Windows users (your personal machine), I recommend **Bitvise** or **Termius** (termius seems unstable on some of my linux distros.)\
+For Linux users (your personal machine), I recommend **EasySSH** + **FileZilla** or **Termius** for accessing the server. \
+For Windows users (your personal machine), I recommend **Bitvise** or **Termius**\
 **Note that these are just recommendations from apps that I've used personally. There are countless options out there.**
 
 To use these applications, they will usually ask for a couple of things:
