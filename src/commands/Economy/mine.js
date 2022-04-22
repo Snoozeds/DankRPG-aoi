@@ -27,26 +27,6 @@ $globalCooldown[$sum[$replaceText[$getGlobalUserVar[MiningTime;$authorID];m; ;-1
 // Yes I am too lazy to make unique emoji shhh
 
 {
-name: "sellall",
-$if: "v4",
-code: `
-$setGlobalUserVar[Gold;0;$authorID]
-$setGlobalUserVar[Diamond;0;$authorID]
-$setGlobalUserVar[Stone;0;$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$sum[$multi[$getGlobalUserVar[Stone;$authorID];3];$multi[$getGlobalUserVar[Gold;$authorID];20];$multi[$getGlobalUserVar[Diamond;$authorID];30]]];$authorID]
-$wait[1s]
-You sold:
-$getVar[DiamondEmoji]**$getGlobalUserVar[Diamond]**
-$getVar[GoldEmoji]**$getGlobalUserVar[Gold]**
-$getVar[StoneEmoji]**$getGlobalUserVar[Stone]**
-For: $getVar[Coi]**$sum[$multi[$getGlobalUserVar[Stone;$authorID];3];$multi[$getGlobalUserVar[Gold;$authorID];20];$multi[$getGlobalUserVar[Diamond;$authorID];30]]**
-$onlyIf[$isBot[$authorID]!=true;]
-$onlyIf[$sum[$multi[$getGlobalUserVar[Stone;$authorID];3];$multi[$getGlobalUserVar[Gold;$authorID];20];$multi[$getGlobalUserVar[Diamond;$authorID];30]]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
-$suppressErrors[Something went wrong. You probably have nothing to sell.]
-`
-},
-
-{
 name: "sell diamond",
 aliases: ["selldiamond", "sell diamonds", "selldiamonds"],
 $if: "v4",
