@@ -1,5 +1,6 @@
 module.exports = {
 name: "sellall",
+aliases: ["sell all", "sell"],
 $if: "v4",
 code: `
 $setGlobalUserVar[Gold;0;$authorID]
