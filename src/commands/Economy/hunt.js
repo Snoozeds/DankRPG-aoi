@@ -32,16 +32,16 @@ $setGlobalUserVar[foxStock;0;$authorID]
 $setGlobalUserVar[deerStock;0;$authorID]
 $setGlobalUserVar[mooseStock;0;$authorID]
 $setGlobalUserVar[rabbitStock;0;$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$sum[$multi[$getGlobalUserVar[foxStock;$authorID];100];$multi[$getGlobalUserVar[deerStock;$authorID];150];$multi[$getGlobalUserVar[mooseStock;$authorID];200];$multi[$getGlobalUserVar[rabbitStock;$authorID];250]]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$sum[$multi[$getGlobalUserVar[foxStock;$authorID];50];$multi[$getGlobalUserVar[deerStock;$authorID];75];$multi[$getGlobalUserVar[mooseStock;$authorID];100];$multi[$getGlobalUserVar[rabbitStock;$authorID];125]]];$authorID]
 $wait[1s]
 You sold:
 **$getGlobalUserVar[foxStock] Foxes**
 **$getGlobalUserVar[deerStock] Deer**
 **$getGlobalUserVar[mooseStock] Moose**
 **$getGlobalUserVar[rabbitStock] Rabbits**
-For: $getVar[Coi]**$sum[$multi[$getGlobalUserVar[foxStock;$authorID];100];$multi[$getGlobalUserVar[deerStock;$authorID];150];$multi[$getGlobalUserVar[mooseStock;$authorID];200];$multi[$getGlobalUserVar[rabbitStock;$authorID];250]]**
+For: $getVar[Coi]**$sum[$multi[$getGlobalUserVar[foxStock;$authorID];50];$multi[$getGlobalUserVar[deerStock;$authorID];75];$multi[$getGlobalUserVar[mooseStock;$authorID];100];$multi[$getGlobalUserVar[rabbitStock;$authorID];125]]**
 $onlyIf[$isBot[$authorID]!=true;]
-$onlyIf[$sum[$multi[$getGlobalUserVar[foxStock;$authorID];100];$multi[$getGlobalUserVar[deerStock;$authorID];150];$multi[$getGlobalUserVar[mooseStock;$authorID];200];$multi[$getGlobalUserVar[rabbitStock];250]]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]hunt\` to hunt for animals.]
+$onlyIf[$sum[$multi[$getGlobalUserVar[foxStock;$authorID];50];$multi[$getGlobalUserVar[deerStock;$authorID];75];$multi[$getGlobalUserVar[mooseStock;$authorID];100];$multi[$getGlobalUserVar[rabbitStock];125]]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]hunt\` to hunt for animals.]
 `
 },
 
@@ -51,11 +51,11 @@ aliases: ["sellfox", "sell foxes", "sellfoxes"],
 $if: "v4",
 code: `
 $setGlobalUserVar[foxStock;0;$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[foxStock;$authorID];100]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[foxStock;$authorID];50]];$authorID]
 $wait[1s]
 You sold:
 **$getGlobalUserVar[foxStock] Foxes**
-For: $getVar[Coi]**$multi[$getGlobalUserVar[foxStock;$authorID];100]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[foxStock;$authorID];50]**
 $onlyIf[$getGlobalUserVar[foxStock]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]hunt\` to hunt for animals.]
 `
 },
@@ -66,11 +66,11 @@ aliases: ["selldeer", "sell deers", "selldeers"],
 $if: "v4",
 code: `
 $setGlobalUserVar[deerStock;0;$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[deerStock;$authorID];150]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[deerStock;$authorID];75]];$authorID]
 $wait[1s]
 You sold:
 **$getGlobalUserVar[deerStock] Deer**
-For: $getVar[Coi]**$multi[$getGlobalUserVar[deerStock;$authorID];150]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[deerStock;$authorID];75]**
 $onlyIf[$getGlobalUserVar[deerStock]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]hunt\` to hunt for animals.]
 `
 },
@@ -81,11 +81,11 @@ aliases: ["sellmoose", "sell mooses", "sellmooses", "sellmeese", "sell meese"],
 $if: "v4",
 code: `
 $setGlobalUserVar[mooseStock;0;$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[mooseStock;$authorID];200]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[mooseStock;$authorID];100]];$authorID]
 $wait[1s]
 You sold:
 **$getGlobalUserVar[mooseStock] Moose**
-For: $getVar[Coi]**$multi[$getGlobalUserVar[mooseStock;$authorID];200]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[mooseStock;$authorID];100]**
 $onlyIf[$getGlobalUserVar[mooseStock]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]hunt\` to hunt for animals.]
 `
 },
@@ -96,11 +96,11 @@ aliases: ["sellrabbit", "sell rabbits", "sellrabbits"],
 $if: "v4",
 code: `
 $setGlobalUserVar[rabbitStock;0;$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[rabbitStock;$authorID];250]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[rabbitStock;$authorID];125]];$authorID]
 $wait[1s]
 You sold:
 **$getGlobalUserVar[rabbitStock] Rabbits**
-For: $getVar[Coi]**$multi[$getGlobalUserVar[rabbitStock;$authorID];250]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[rabbitStock;$authorID];125]**
 $onlyIf[$getGlobalUserVar[rabbitStock]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]hunt\` to hunt for animals.]
 `
 }]
