@@ -10,8 +10,10 @@ $setGlobalUserVar[deerStock;0;$authorID]
 $setGlobalUserVar[mooseStock;0;$authorID]
 $setGlobalUserVar[rabbitStock;0;$authorID]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$sum[$multi[$getGlobalUserVar[Stone;$authorID];3];$multi[$getGlobalUserVar[Gold;$authorID];20];$multi[$getGlobalUserVar[Diamond;$authorID];30];$multi[$getGlobalUserVar[foxStock;$authorID];50];$multi[$getGlobalUserVar[deerStock;$authorID];75];$multi[$getGlobalUserVar[mooseStock;$authorID];100];$multi[$getGlobalUserVar[rabbitStock;$authorID];125]]];$authorID]
+
 $wait[1s]
-You sold **$sum[$getGlobalUserVar[foxStock];$sum[$getGlobalUserVar[deerStock];$getGlobalUserVar[mooseStock];$getGlobalUserVar[rabbitStock];$getGlobalUserVar[Stone;$authorID];$getGlobalUserVar[Gold;$authorID];$getGlobalUserVar[Diamond;$authorID]]] items** for $getGlobalUserVar[Coins;$authorID] coins.
+$setGlobalUserVar[sellingPrice;$getGlobalUserVar[Coins;$authorID];$authorID]
+You sold **$sum[$getGlobalUserVar[foxStock];$sum[$getGlobalUserVar[deerStock];$getGlobalUserVar[mooseStock];$getGlobalUserVar[rabbitStock];$getGlobalUserVar[Stone;$authorID];$getGlobalUserVar[Gold;$authorID];$getGlobalUserVar[Diamond;$authorID]]] items** for $sub[$getGlobalUserVar[Coins;$authorID];$getGlobalUserVar[sellingPrice;$authorID]] coins.
 $suppressErrors[Something went wrong. You probably have nothing to sell.]
 `
 }
