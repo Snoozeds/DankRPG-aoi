@@ -10,6 +10,7 @@ $setGlobalUserVar[Coins;0;$authorID]
 $setGlobalUserVar[ATK;1;$authorID]
 $else
 
+$title[1;$username[$authorID]: Fight]
 $description[1;
 You fight an enemy with **$getGlobalUserVar[ATK;$authorID]ATK**.
 You gain $getVar[Coi]**$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]** and lose **$getVar[Heart]$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];12]]**.
