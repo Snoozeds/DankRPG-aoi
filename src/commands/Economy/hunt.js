@@ -14,6 +14,7 @@ $if[$randomText[Animal;Animal;Animal;hpLoss]==hpLoss]
 $title[1;Hunting]
 $description[1;You go hunting.\nThe animal attacks you! You lose $getVar[Heart]$random[25;30].\nYou now have $getVar[Heart]**$getGlobalUserVar[HP;$authorID]/$getGlobalUserVar[MaxHP;$authorID]**.]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[25;30]];$authorID]
 
 $else
 $title[1;Hunting]
