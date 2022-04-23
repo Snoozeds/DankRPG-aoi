@@ -24,7 +24,8 @@ credits, whois, avatar, privacy\`
 \`inventory, achievements\`
 
 **Shop Commands**:
-\`shop, petshop, buypet, abandon, petinfo, heal, upgrade\`
+\`shop, petshop, buypet, abandon, petinfo, heal, upgrade,
+itemlist, sellall, sell<item>\`
  
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)
