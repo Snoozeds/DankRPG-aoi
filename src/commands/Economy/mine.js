@@ -31,6 +31,7 @@ name: "sell diamond",
 aliases: ["selldiamond", "sell diamonds", "selldiamonds"],
 $if: "v4",
 code: `
+$if[$message==all]
 $setGlobalUserVar[Diamond;0;$authorID]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Diamond;$authorID];30]];$authorID]
 $wait[1s]
@@ -39,6 +40,17 @@ $getVar[DiamondEmoji]**$getGlobalUserVar[Diamond]**
 For: $getVar[Coi]**$multi[$getGlobalUserVar[Diamond;$authorID];30]**
 $onlyIf[$getGlobalUserVar[Diamond]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
 $suppressErrors[Something went wrong. You probably have nothing to sell.]
+$else
+$setGlobalUserVar[Diamond;$sub[$getGlobalUserVar[Diamond;$authorID];$message];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$message;30]];$authorID]
+$wait[1s]
+You sold:
+$getVar[DiamondEmoji]**$message**
+For: $getVar[Coi]**$multi[$message;30]**
+$onlyIf[$getGlobalUserVar[Diamond]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
+$onlyIf[$getGlobalUserVar[Diamond]>=$message;You don't have that many diamonds to sell.]
+$endif
+$onlyIf[$message!=;Please specify how many you want to sell, with either \`all\` or a number.]
 `
 },
 
@@ -47,6 +59,7 @@ name: "sell gold",
 aliases: ["sellgold", "sell gold"],
 $if: "v4",
 code: `
+$if[$message==all]
 $setGlobalUserVar[Gold;0;$authorID]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Gold;$authorID];20]];$authorID]
 $wait[1s]
@@ -55,6 +68,17 @@ $getVar[GoldEmoji]**$getGlobalUserVar[Gold]**
 For: $getVar[Coi]**$multi[$getGlobalUserVar[Gold;$authorID];20]**
 $onlyIf[$getGlobalUserVar[Gold]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
 $suppressErrors[Something went wrong. You probably have nothing to sell.]
+$else
+$setGlobalUserVar[Gold;$sub[$getGlobalUserVar[Gold;$authorID];$message];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$message;20]];$authorID]
+$wait[1s]
+You sold:
+$getVar[GoldEmoji]**$message**
+For: $getVar[Coi]**$multi[$message;20]**
+$onlyIf[$getGlobalUserVar[Gold]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
+$onlyIf[$getGlobalUserVar[Gold]>=$message;You don't have that many gold to sell.]
+$endif
+$onlyIf[$message!=;Please specify how many you want to sell, with either \`all\` or a number.]
 `
 },
 
@@ -63,6 +87,7 @@ name: "sell stone",
 aliases: ["sellstone", "sellstones", "sell stones"],
 $if: "v4",
 code: `
+$if[$message==all]
 $setGlobalUserVar[Stone;0;$authorID]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Stone;$authorID];3]];$authorID]
 $wait[1s]
@@ -71,6 +96,17 @@ $getVar[StoneEmoji]**$getGlobalUserVar[Stone]**
 For: $getVar[Coi]**$multi[$getGlobalUserVar[Stone;$authorID];3]**
 $onlyIf[$getGlobalUserVar[Stone]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
 $suppressErrors[Something went wrong. You probably have nothing to sell.]
+$else
+$setGlobalUserVar[Stone;$sub[$getGlobalUserVar[Stone;$authorID];$message];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$message;3]];$authorID]
+$wait[1s]
+You sold:
+$getVar[StoneEmoji]**$message**
+For: $getVar[Coi]**$multi[$message;3]**
+$onlyIf[$getGlobalUserVar[Stone]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
+$onlyIf[$getGlobalUserVar[Stone]>=$message;You don't have that many stones to sell.]
+$endif
+$onlyIf[$message!=;Please specify how many you want to sell, with either \`all\` or a number.]
 `
 }
 ] 
