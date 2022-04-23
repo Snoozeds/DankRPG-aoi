@@ -3,7 +3,7 @@ name: "fight",
 aliases: "attack",
 $if: "v4",
 code:`
-$if[$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];10]]<=$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];10]]]
+$if[$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]<=$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]
 You die because you have run out of HP.
 $setGlobalUserVar[HP;100;$authorID]
 $setGlobalUserVar[Coins;0;$authorID]
@@ -12,7 +12,7 @@ $else
 
 $description[1;
 You fight an enemy with **$getGlobalUserVar[ATK;$authorID]ATK**.
-You gain $getVar[Coi]**$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]** and lose **$getVar[Heart]$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];10]]**.
+You gain $getVar[Coi]**$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]** and lose **$getVar[Heart]$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];12]]**.
 You now have **$getVar[Heart]$getGlobalUserVar[HP;$authorID]/$getGlobalUserVar[MaxHP;$authorID]**]
 $setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]];$authorID]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];20]]];$authorID]
