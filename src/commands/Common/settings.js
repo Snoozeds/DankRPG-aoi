@@ -28,6 +28,20 @@ $suppressErrors
 $onlyIf[$isBot[$authorID]!=true;]`
 },
 
+
+{
+name: "serversettings",
+aliases: "serveroptions",
+code: `
+$title[1;Server Settings]
+$description[1;Here are all the settings you can change.
+    
+**Prefix** - This will change the prefix for the server.
+$getServerVar[Prefix]prefix <prefix>
+Your value: $getServerVar[Prefix;$guildID]\n
+`
+},
+
 {
 name : "changecolor",
 aliases: "changecolour",
