@@ -3,7 +3,6 @@ name: "petshop",
 aliases: "shop pet",
 code: `$title[1;Pet Shop]
 $description[1;Welcome to the pet shop $username! Here's what we have. $addField[1;Dog;Increases your MaxHP by **125**.\nPrice: $getVar[Coi]**750**]
-$addField[1;Cat;Has a chance to find $getVar[Coi] while you run commands\nPrice: $getVar[Coi]**1000**]]
 $footer[1;d!buypet <opt>]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
@@ -15,18 +14,6 @@ name: "buypet",
 aliases: "buy pet",
 $if: "v4",
 code: `
-$if[$message==cat]
-$title[1;You bought a cat!]
-$description[1;Enjoy your new furry friend.]
-$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$thumbnail[1;https://i.ibb.co/sFrm0HH/cat.png]
-$setGlobalUserVar[HasPet;true;$authorID]
-$setGlobalUserVar[PetType;cat;$authorID]
-$setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];1000];$authorID]
-$setGlobalUserVar[PetIMG;https://i.ibb.co/sFrm0HH/cat.png;$authorID]
-$onlyIf[$getGlobalUserVar[Coins;$authorID]>999;You do not have enough $getVar[Coi] for a cat.]
-$endif
-
 $if[$message==dog]
 $title[1;You bought a dog!]
 $description[1;Enjoy your new furry friend.]
