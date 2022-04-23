@@ -10,7 +10,6 @@ $setGlobalUserVar[ATK;1;$authorID]
 $else
 
 $if[$getGlobalUserVar[FirstFarm;$authorID]==False]
-$if[$getGlobalUserVar[HP;$authorID]<$sub[$getGlobalUserVar[MaxHP;$authorID];50]]
 $title[1;$username's farm]
 $description[1;You farmed $getVar[FarmK]$getVar[FarmO]$getVar[FarmS] and earned <:RPGCoin:855767372534906920>**$random[25;50]**.\nYou fruit healed you for **$getVar[Heart]$random[25;35]**. You now have $getVar[Heart]**$getGlobalUserVar[HP;$authorID]/$getGlobalUserVar[MaxHP;$authorID]**.]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];$random[25;50]]]
