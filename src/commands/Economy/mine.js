@@ -8,7 +8,7 @@ $setGlobalUserVar[Gold;$sum[$getGlobalUserVar[Gold;$authorID];$random[5;10]];$au
 $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$authorID];$random[1;5]];$authorID]
 $setGlobalUserVar[Stone;$sum[$getGlobalUserVar[Stone;$authorID];$random[10;20]];$authorID]
 $wait[10m]
-$channelSendMessage[$channelID;You have started mining. Come back in $getGlobalUserVar[MiningTime;$authorID] to see what you have mined.\n> To make your mining faster, you can now buy a pickaxe. \`$getServerVar[Prefix]shop\`]
+$channelSendMessage[$channelID;You have started mining. Come back in $getGlobalUserVar[MiningTime;$authorID] to see what you have mined.]
 
 $else
 $if[$getGlobalUserVar[MiningTime;$authorID]==5m]
