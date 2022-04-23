@@ -33,7 +33,6 @@ $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];50]]
 $setGlobalUserVar[FirstFarm;False]
 $endif
 $endif
-$endif
 $globalCooldown[30s;Please wait **%time%** before farming again.]
 $onlyIf[$isBot[$authorID]!=true;]
 `
