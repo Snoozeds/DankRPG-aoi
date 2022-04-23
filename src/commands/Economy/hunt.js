@@ -27,7 +27,7 @@ $footer[1;Bait active. Double the animals.]
 $endif
 $endif
 
-$globalCooldown[30s;Please wait **%time%** before running this command again.]
+$globalCooldown[20s;Please wait **%time%** before running this command again.]
 `
 },
 
