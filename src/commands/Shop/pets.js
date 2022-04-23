@@ -11,7 +11,7 @@ $onlyIf[$isBot[$authorID]!=true;]`
 
 {
 name: "buypet",
-aliases: "buy pet",
+aliases: ["buy pet", "buy"],
 $if: "v4",
 code: `
 $if[$message==dog]
@@ -65,18 +65,8 @@ $onlyIf[$isBot[$authorID]!=true;]`
 
 {
 name: "abandon",
-code:`Are you sure you want to abandon your pet? You can only do this once a day!\nPlease type 'yes' below, or wait for the command to run out of time.
-$awaitMessages[$authorID;15s;yes;AbandonYes;Response timed out. **Your pet has not been abandoned**.]
-$globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
-$onlyIf[$isBot[$authorID]!=true;]`
-},
-
-{
-name: "AbandonYes",
-type: "awaited",
 $if: "v4",
-code: `
-You have abandoned your pet. It's name has been reset, and you can no longer access pet commands, until you buy a new pet.
+code:`You have abandoned your pet. It's name has been reset, and you can no longer access pet commands, until you buy a new pet.
 $setGlobalUserVar[HasPet;false;$authorID]
 $setGlobalUserVar[PetType;none;$authorID]
 $setGlobalUserVar[PetName;Your pet hasn't been named yet. Run \`<prefix>petname <name>\`;$authorID]
@@ -86,5 +76,4 @@ $setGlobalUserVar[MaxHP;$sub[$getGlobalUserVar[MaxHP;$authorID];125];$authorID]
 $endif
 `
 }
-
 ]
