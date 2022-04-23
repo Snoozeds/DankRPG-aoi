@@ -17,11 +17,6 @@ Your Value: $getGlobalUserVar[FamilyMode;$authorID]\n
 $getServerVar[Prefix]userint <true/false>
 Your value: $getGlobalUserVar[UserInt;$authorID] \n
 
-**Cat Notifications** - Whether or not cat notifications are send in chat (finding coins).
-$getServerVar[Prefix]catnotifications <true/false>
-Your value: $getGlobalUserVar[CatNotificationsOn;$authorID]]
-$footer[1;True = Enabled | False = Disabled]
-
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 $suppressErrors
@@ -98,29 +93,6 @@ Please provide a proper argument. Example: \`$getServerVar[Prefix]userint true\`
 $endif
 $suppressErrors
 $onlyIf[$isBot[$authorID]!=true;]`
-},
-
-{
-name: "catnotifications",
-aliases : ["catnoti", "catnotif", "catnotifs"],
-$if: "v4",
-code: `
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-$if[$message==true]
-Turned on cat notifications (they are now sent in chat)
-$setGlobalUserVar[CatNotificationsOn;True;$authorID]
-$endif
-$if[$message==false]
-Turned off cat notifications (they are now no longer sent)
-$setGlobalUserVar[CatNotificationsOn;False;$authorID]
-$endif
-
-$if[$message==]
-Please provide a proper argument. Example: \`$getServerVar[Prefix]catnotifications true\`\
-$endif
-$suppressErrors
-$onlyIf[$isBot[$authorID]!=true;]`
 }
-
 
 ]
