@@ -85,31 +85,6 @@ $if[$getGlobalUserVar[PetType;$authorID]==dog]
 $setGlobalUserVar[MaxHP;$sub[$getGlobalUserVar[MaxHP;$authorID];125];$authorID]
 $endif
 `
-},
-
-{
-name: "$alwaysExecute",
-$if: "v4",
-code: `
-$if[$getGlobalUserVar[CatNotificationsOn;$authorID]==False]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];$authorID]
-$elseIf[$getGlobalUserVar[CatNotificationsOn;$authorID]==True]
-$if[$random[1;3]==1]]
-$description[1;Your cat found you $getVar[Coi] **$random[25;50]!**]
-$footer[1;To turn off these notifications run: "$getServerVar[Prefix]catnotif false"]
-$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$thumbnail[1;$getGlobalUserVar[PetIMG;$authorID]]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[25;50]];$authorID]
-$endif
-$endelseIf
-$endif
-$onlyIf[$getGlobalUserVar[PetType;$authorID]!=dog;]
-$onlyIf[$getGlobalUserVar[PetType;$authorID]!=none;]
-$onlyIf[$checkContains[$message;$getServerVar[Prefix;$guildID]]!=false;]
-$globalCooldown[15s;]
-$onlyIf[$isBot[$authorID]!=true;]
-$suppressErrors
-`
 }
 
 ]
