@@ -3,14 +3,21 @@ name: "hunt",
 aliases: ["hunting"],
 $if: "v4",
 code: `
-$if[$randomText[Animal;Animal;Animal;Nothing]==Nothing]
+$if[$getGlobalUserVar[HP;$authorID]<=30]
+You die because you have run out of HP.
+$setGlobalUserVar[HP;100;$authorID]
+$setGlobalUserVar[Coins;0;$authorID]
+$setGlobalUserVar[ATK;1;$authorID]
+$endif
+
+$if[$randomText[Animal;Animal;Animal;hpLoss]==hpLoss]
 $title[1;Hunting]
-$description[1;<@!$authorID> goes hunting.\nThey find: **Nothing!**\nSucks to suck.]
+$description[1;You go hunting.\nThe animal attacks you! You lose $getVar[Heart]$random[25;30].]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 
 $else
 $title[1;Hunting]
-$description[1;<@!$authorID> goes hunting.\nThey find: a **$randomText[fox;deer;moose;rabbit]**!]
+$description[1;You go hunting.\nYou find: a **$randomText[fox;deer;moose;rabbit]**!]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $if[$getGlobalUserVar[BoughtBait;$authorID]==False]
 $setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];1];$authorID]
