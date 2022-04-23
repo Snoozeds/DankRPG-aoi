@@ -11,7 +11,7 @@ $onlyIf[$isBot[$authorID]!=true;]`
 
 {
 name: "buypet",
-aliases: ["buy pet", "buy"],
+aliases: ["buy pet", "buy dog", "buydog"],
 $if: "v4",
 code: `
 $if[$message==dog]
