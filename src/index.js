@@ -92,7 +92,6 @@ bot.variables({
   mooseStock: "0",
   rabbitStock: "0",
   foxStock: "0",
-  sellingPrice: "", // the balance of the user before they use sellall.
   // These are the DEFAULTS for each variable.
   })
 
