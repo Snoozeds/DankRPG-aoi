@@ -1,5 +1,7 @@
 # The Guide
-Please note that this project mainly for people who want to see the code of DankRPG, and learn from it. I have provided this guide for the people that wish to self host DankRPG, but you will most likely encounter errors. You will have to edit some of the code yourself (e.g removing all top.gg lines, updating emotes).
+Please note that this project mainly for people who want to see the code of DankRPG, and learn from it. I have provided this guide for the people that wish to self host DankRPG, but you will most likely encounter errors. You will have to edit some of the code yourself (e.g removing all top.gg lines, updating emotes). \
+
+However, you CANNOT upload your bot to top.gg if it just consists of this source code. They won't allow it, and frankly, it's a dumb idea in the first place. The top.gg lines are there because I use them.
 
 #### First of all: Note that the current version of the "main" branch is most likely not stable. For the most up-to-date and stable version, download the code from "releases". The latest release will be the latest public version of the bot.
 
