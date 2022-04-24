@@ -16,6 +16,7 @@ $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=True;You are in a relations
 $onlyIf[$findUser[$message;no]!=$authorID;Yes, we all wish this was possible, but is it? No.]
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Wow, even a bot doesn't want to marry you.]
 $onlyIf[$memberExists[$findUser[$message;no]]!=false;User is not in this server. Try again.]
+$onlyIf[$findUser[$message;no]!=855479925863481345;<:ew:937451020534034525>]
 $globalCooldown[3s;]
 `
 },
