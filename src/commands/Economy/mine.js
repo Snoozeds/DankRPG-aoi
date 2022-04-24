@@ -33,16 +33,16 @@ $if: "v4",
 code: `
 $if[$message==all]
 $setGlobalUserVar[Diamond;0;$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Diamond;$authorID];30]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$getGlobalUserVar[Diamond;$authorID];100]];$authorID]
 $wait[1s]
 You sold:
 $getVar[DiamondEmoji]**$getGlobalUserVar[Diamond]**
-For: $getVar[Coi]**$multi[$getGlobalUserVar[Diamond;$authorID];30]**
+For: $getVar[Coi]**$multi[$getGlobalUserVar[Diamond;$authorID];100]**
 $onlyIf[$getGlobalUserVar[Diamond]!=0;You have nothing to sell. Try \`$getServerVar[Prefix;$guildID]mine\` to mine some resources.]
 $suppressErrors[Something went wrong. You probably have nothing to sell.]
 $else
 $setGlobalUserVar[Diamond;$sub[$getGlobalUserVar[Diamond;$authorID];$message];$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$message;30]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$message;100]];$authorID]
 $wait[1s]
 You sold:
 $getVar[DiamondEmoji]**$message**
