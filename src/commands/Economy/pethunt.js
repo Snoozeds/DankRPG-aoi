@@ -5,12 +5,12 @@ $if: "v4",
 code:`
 <@!$authorID>
 $title[1;$username[$authorID]'s Pet Hunt]
-$description[1;Your pet found you: a **$randomText[fox;deer;moose;rabbit]**!]
+$description[1;Your pet found you: 2 **$randomText[fox;deer;moose;rabbit]**!]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $if[$getGlobalUserVar[BoughtBait;$authorID]==False]
-$setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];1];$authorID]
-$else
 $setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];2];$authorID]
+$else
+$setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];4];$authorID]
 $footer[1;Bait active. Double the animals.]
 $endif
 $wait[10m]
