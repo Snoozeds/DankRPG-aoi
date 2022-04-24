@@ -1,6 +1,6 @@
 module.exports = {
 name: "pethunt",
-aliases: ["pet hunt", "petshunt", "pets hunt"],
+aliases: ["pet hunt", "petshunt", "pets hunt", "phunt", "ph"],
 $if: "v4",
 code:`
 <@!$authorID>
