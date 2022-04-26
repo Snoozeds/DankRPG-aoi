@@ -25,9 +25,8 @@ $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];750];$authorID]
 $setGlobalUserVar[MaxHP;$sum[$getGlobalUserVar[MaxHP;$authorID];125];$authorID]
 $setGlobalUserVar[PetIMG;https://i.ibb.co/brt0Q3j/dog.png;$authorID]
 $onlyIf[$getGlobalUserVar[Coins;$authorID]>749;You do not have enough $getVar[Coi] for a dog.]
+$onlyIf[$getGlobalUserVar[HasPet;$authorID]!=true;:x: You already have a pet. Run \`$getServerVar[Prefix]abandon\` to abandon it.]
 $endif
-
-$onlyIf[$getUserVar[HasPet]!=true;:x: You already have a pet. Run \`$getServerVar[Prefix]abandon\` to abandon it.]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
 $onlyIf[$isBot[$authorID]!=true;]
 `
