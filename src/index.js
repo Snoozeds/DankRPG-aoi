@@ -1,8 +1,8 @@
-const aoijs = require('aoi.js');
-const config = require('./config.json');
+const { Bot, CustomEvent } = require('aoi.js');
+require('dotenv').config();
 
-const bot = new aoijs.Bot({
-  token: config.token,
+const client = new Bot({
+  token: process.env.TOKEN,
   prefix: ["$getServerVar[Prefix]", "$getServerVar[Prefix] ", "<@!$clientID>", "<@$clientID> "], // Client ID trigger is mentioning the bot. Can be useful if a user doesn't know the prefix.
   intents : ['guilds','guildMessages'],
   suppressAllErrors: true
@@ -13,7 +13,7 @@ const bot = new aoijs.Bot({
 const express = require('express') 
 const Topgg = require('@top-gg/sdk')
 const app = express()
-const event = new aoijs.CustomEvent(bot)
+const event = new CustomEvent(client)
 
 event.command({
 listen: "votes",
@@ -23,7 +23,7 @@ $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$eventData[[0]]];1];$ev
 })
 event.listen("votes")
 
-const webhook = new Topgg.Webhook(config.topgg)
+const webhook = new Topgg.Webhook(process.env.TOPGG)
 app.post('/', webhook.listener(vote => {
 event.emit('votes', vote.user)
 }))
@@ -31,13 +31,13 @@ event.emit('votes', vote.user)
 app.listen(69) // It is best to change this port and keep it private. It is also recommended to only open the port you select (using something like ufw).
 ////////////////////////////////////////////////////////////////////////////
 
-bot.status({
+client.status({
     text: "d!help | dankrpg.xyz", 
     type: "PLAYING",
     time: "12",
     })
 
-bot.variables({
+client.variables({
   Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier.
   Heart: "<:RPGHeart:855755205102534686>", // Variable to make typing the hp emoji easier.
   Coins: "0",
@@ -95,11 +95,11 @@ bot.variables({
   // These are the DEFAULTS for each variable.
   })
 
-bot.onMessage({respondToBots: false})
-bot.onInteractionCreate
+client.onMessage({respondToBots: false})
+client.onInteractionCreate
 
-const loader = new aoijs.LoadCommands(bot)
-loader.load(bot.cmd,"./commands/")
+const loader = new aoijs.LoadCommands(client)
+loader.load(client.cmd,"./commands/")
 
 // Error handler so bot doesn't kaboom
 try{}catch(error){console.log(error)}
