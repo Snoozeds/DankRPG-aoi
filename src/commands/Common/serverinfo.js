@@ -9,8 +9,6 @@ code: `$description[1;
 ]
 $thumbnail[1;$serverIcon[$guildID]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-
-$if[$authorID!=$getVar[ownid]]
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-$endif`
+$onlyIf[$isBot[$authorID]!=true;]`
 }

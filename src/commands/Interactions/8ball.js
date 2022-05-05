@@ -10,10 +10,8 @@ $description[1;$addField[1;Answer:;$httpRequest[https://apiv1.snoozeds.repl.co/8
 $thumbnail[1;https://assets.dankrpg.xyz/Images/8ball.png]
 $addTimestamp[1;]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$endif
-
-$if[$authorID!=$getVar[ownid]]
 $globalCooldown[10s;Please wait **%time%**.]
 $endif
+$onlyIf[$isBot[$authorID]!=true;]
 `
 }

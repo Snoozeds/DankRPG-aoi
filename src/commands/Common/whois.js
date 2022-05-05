@@ -10,9 +10,7 @@ $description[1;
 ]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
-
-$if[$authorID!=$getVar[ownid]]
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-$endif
+$onlyIf[$isBot[$authorID]!=true;]
 `
 }

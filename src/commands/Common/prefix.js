@@ -7,6 +7,5 @@ $suppressErrors
 $onlyPerms[manageserver;This server's prefix is $getServerVar[Prefix;$guildID]\n**(You can't change this because you don't have the "manage server" permission)**]
 $onlyIf[$isBot[$authorID]!=true;]
 $onlyIf[$message!=;You need to provide a proper prefix.]
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
 `
 }

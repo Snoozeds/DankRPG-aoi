@@ -17,8 +17,5 @@ Node: $nodeVersion
 Aoi.JS: v$packageVersion]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $footer[1;Bot by Snoozeds#0802 <3]
-
-$if[$authorID!=$getVar[ownid]]
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-$endif`
+$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]`
 } // Remove that footer if you'd like. Just credit me somewhere.

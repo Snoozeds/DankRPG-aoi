@@ -29,10 +29,5 @@ A more detailed version of this privacy policy can be found on our [website](htt
 Note: By inviting DankRPG, you have already agreed to this privacy policy.
 ]
 $footer[1;Discord Version Last Updated: 19/04/22 (BST)]
-$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-
-$if[$authorID!=$getVar[ownid]]
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-$endif
-`
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]`
 }
