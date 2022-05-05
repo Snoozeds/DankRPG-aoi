@@ -4,5 +4,8 @@ code: `
 $description[1;<@$authorID> laughs!]
 $image[1;$httpRequest[https://api.dankrpg.xyz/anime/laugh;GET;;url]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$globalCooldown[10s;Please don't spam commands. :)\n(**%time%**)]`
+
+$if[$authorID!=$getVar[ownid]]
+$globalCooldown[10s;Please don't spam commands. :)\n(**%time%**)]
+$endif`
 }

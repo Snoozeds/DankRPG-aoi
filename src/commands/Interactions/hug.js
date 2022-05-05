@@ -2,8 +2,6 @@ module.exports = {
 name: "hug",
 $if: "v4",
 code: `
-$globalCooldown[5s;Please wait **%time%** before using this social command again.]
-
 $if[$findUser[$message;no]==$authorID]
 $title[1;Dank RPG hugs $username[$authorID]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
@@ -23,5 +21,10 @@ $endif
 $endif
 $suppressErrors[Mention someone.]
 $onlyIf[$isBot[$authorID]!=true;]
+
+$if[$authorID!=$getVar[ownid]]
+$globalCooldown[10s;Please wait **%time%**.]
+$endif
+
 `
 }

@@ -18,9 +18,10 @@ $getServerVar[Prefix]userint <true/false>
 Your value: $getGlobalUserVar[UserInt;$authorID] \n
 
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+
+$if[$authorID!=$getVar[ownid]]
 $globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
-$suppressErrors
-$onlyIf[$isBot[$authorID]!=true;]`
+$endif`
 },
 
 

@@ -12,7 +12,9 @@ $description[1;
 ]
 $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
 $color[1;$getGlobalUserVar[EmbedColor]]
+
+$if[$authorID!=$getVar[ownid]]
 $globalCooldown[5s;Funny spam (**%time%** left)]
-$onlyIf[$isBot[$authorID]!=true;]
+$endif
 `
 }
