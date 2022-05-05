@@ -38,6 +38,7 @@ bot.status({
     })
 
 bot.variables({
+  ownid: "764564962815115267", // Change this to your own ID. This is for when $botOwnerID won't work with multiple IDs (like in an $if statement). Can ONLY BE ONE ID.
   Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier.
   Heart: "<:RPGHeart:855755205102534686>", // Variable to make typing the hp emoji easier.
   Coins: "0",
@@ -92,6 +93,8 @@ bot.variables({
   mooseStock: "0",
   rabbitStock: "0",
   foxStock: "0",
+  cooldownTicketStock: "1",
+  ticketE: "<:ticket:971386544411783218>",
   // These are the DEFAULTS for each variable.
   })
 
