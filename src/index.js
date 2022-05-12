@@ -93,6 +93,10 @@ bot.variables({
   mooseStock: "0",
   rabbitStock: "0",
   foxStock: "0",
+  bjActive: "False",
+  bjBet: "",
+  bjTotal: "", // Dealer's total.
+  bjPlayerTotal: "", // Player's total.
   // These are the DEFAULTS for each variable.
   })
 
