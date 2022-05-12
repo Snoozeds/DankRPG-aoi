@@ -1,6 +1,6 @@
 module.exports = [{
 name: "dungeon",
-aliases: "startdungeon",
+aliases: ["startdungeon", "dun", "dung", "du"],
 $if: "v4",
 code: `
 You start a dungeon.
