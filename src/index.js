@@ -93,8 +93,6 @@ bot.variables({
   mooseStock: "0",
   rabbitStock: "0",
   foxStock: "0",
-  cooldownTicketStock: "1",
-  ticketE: "<:ticket:971386544411783218>",
   // These are the DEFAULTS for each variable.
   })
 
