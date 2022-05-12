@@ -95,7 +95,6 @@ bot.variables({
   foxStock: "0",
   bjActive: "False",
   bjBet: "",
-  bjTotal: "", // Dealer's total.
   bjPlayerTotal: "", // Player's total.
   // These are the DEFAULTS for each variable.
   })
