@@ -34,7 +34,7 @@ $onlyIf[$isBot[$authorID]!=true;]
 
 {
 name: "pet info",
-aliases: "petinfo",
+aliases: ["petinfo", "pet", "pi"],
 code: `
 $title[1;Your pet $getGlobalUserVar[PetType;$authorID]]
 $description[1;
