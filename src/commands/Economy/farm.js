@@ -1,5 +1,6 @@
 module.exports = {
 name: "farm",
+aliases: ["crops", "farming"],
 $if: "v4",
 code: `
 $if[$getGlobalUserVar[HP;$authorID]<=35]
