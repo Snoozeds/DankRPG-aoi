@@ -3,7 +3,7 @@ name: "dungeon",
 aliases: ["startdungeon", "dun", "dung", "du"],
 $if: "v4",
 code: `
-You start a dungeon.
+**$username:** You start a dungeon.
 $if[$randomText[Loot;Enemy]==Enemy]
 You find an enemy. It damages you, and you lose $getVar[Heart]$random[10;20].
 $setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[10;20]];$authorID]
