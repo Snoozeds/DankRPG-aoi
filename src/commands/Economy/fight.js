@@ -16,7 +16,7 @@ You fight an enemy with **$getGlobalUserVar[ATK;$authorID]ATK**.
 You gain $getVar[Coi]**$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]** and lose **$getVar[Heart]$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];12]]**.
 You now have **$getVar[Heart]$getGlobalUserVar[HP;$authorID]/$getGlobalUserVar[MaxHP;$authorID]**]
 $setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];12]]];$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];20]]];$authorID]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]];$authorID]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $endif
 $globalCooldown[10s;Please wait **%time%** before fighting again.]
