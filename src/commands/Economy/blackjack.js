@@ -53,7 +53,7 @@ aliases: ["h"],
 $if: "v4",
 code: `
 
-$if[$randomText[Win;Lose]==Win]
+$if[$randomText[Win;Lose;Lose]==Win]
 $title[1;$username's Blackjack]
 $description[1;**Bet: $getVar[Coi]$getGlobalUserVar[bjBet;$authorID]**
 
@@ -86,7 +86,7 @@ aliases: ["s"],
 $if: "v4",
 code: `
 
-$if[$randomText[Win;Lose]==Win]
+$if[$randomText[Win;Lose;Lose]==Win]
 $title[1;$username's Blackjack]
 $description[1;**Bet: $getVar[Coi]$getGlobalUserVar[bjBet;$authorID]**
 
