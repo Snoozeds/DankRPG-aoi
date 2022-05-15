@@ -7,7 +7,8 @@ Bot Ping: $round[$ping]ms
 Database Ping: $round[$dbPing]ms
 Uptime: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$uptime; week,;w;1];days,;d;1]; hours,;h;1]; minutes,;m;1]; seconds;s;1]; day,;d;1]; hour,;h;1]; minute,;m;1]; second;s;1]
 Server Count: $serverCount
-$username[$clientID] Invite: [link](https://discord.com/oauth2/authorize?client_id=$clientID&scope=bot%20applications.commands&permissions=2147863552) \n
+Member Count: $allMembersCount
+
 **__Server Info__**
 OS: Linux, Ubuntu (20.04.3)
 RAM Usage: $round[$ram]MBs
