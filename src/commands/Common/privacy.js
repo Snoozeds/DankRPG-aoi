@@ -13,7 +13,7 @@ We may collect the following:
 Discord Server IDs (for server variables)
 Discord User IDs (for user variables)
 Command cooldown times
-Messages sent within Discord servers (for commands that always trigger)
+Global User Count. This is anonymous. 
 Prefixes (provided by the server owner)
 User settings
 
@@ -28,6 +28,6 @@ Removing DankRPG will stop database information from being used. However, it won
 A more detailed version of this privacy policy can be found on our [website](https://dankrpg.com/privacy).
 Note: By inviting DankRPG, you have already agreed to this privacy policy.
 ]
-$footer[1;Discord Version Last Updated: 19/04/22 (BST)]
+$footer[1;Discord Version Last Updated: 15/05/22 (BST)]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]`
 }
