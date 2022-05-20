@@ -31,7 +31,7 @@ $description[1;**Bet: $getVar[Coi]$message[1]**
 :black_joker: **$random[10;12]**
 
 **__Your Hand__**
-:black_joker: **$random[10;13]**
+:black_joker: **$random[12;13]**
 
 Respond with either \`$getServerVar[Prefix;$guildID]h\` or \`$getServerVar[Prefix;$guildID]s\`]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
