@@ -1,6 +1,6 @@
 module.exports = {
 name: "whois",
-aliases: "wi",
+aliases: ["wi", "ui", "userinfo"],
 code: `
 $description[1;
 \`$username[$findUser[$message;yes]]#$discriminator[$findUser[$message;yes]]\`
