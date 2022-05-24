@@ -15,7 +15,7 @@ $footer[1;Bait active. Double the animals.]
 $endif
 $wait[10m]
 $channelSendMessage[$channelID;$username[$authorID]: Your pet has begun hunting for you. Come back in 10m to claim its findings.]
+$onlyIf[$getGlobalUserVar[HasPet;$authorID]!=False;<:alert:977143489697558569> You don't have a pet. \`You need to buy one from $getServerVar[Prefix;$serverID]petshop\`]
 $globalCooldown[15m;Your pet has already been hunting recently. Please wait **%time%**.]
-$onlyIf[$getGlobalUserVar[HasPet;$authorID]!=False;You don't have a pet.]
 `
 }
