@@ -10,7 +10,7 @@ $randomText[\[⭐\]\[⭐\]\[⭐\];\[🎁\]\[🎁\]\[🎁\];\[💰\]\[💰\]\[�
 + $getVar[Coi]**$multi[$message;2]**]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$multi[$message;2]];$authorID]
-$globalCooldown[5s;Please wait %time%.]
+$globalCooldown[5s;Please wait. %time%]
 $else
 
 $title[1;You lose!]
@@ -18,7 +18,7 @@ $description[1;$randomText[\[🎁\]\[⭐\]\[⭐\];\[⭐\]\[🎁\]\[⭐\];\[⭐\]
 - $getVar[Coi]**$message**]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];$message];$authorID]
-$globalCooldown[5s;Please wait %time%.]
+$globalCooldown[5s;Please wait. %time%]
 $endif
 
 $onlyIf[$message!=;You need to mention how much to bet!]

@@ -2,7 +2,7 @@ module.exports = {
 name: "hug",
 $if: "v4",
 code: `
-$globalCooldown[5s;Please wait **%time%** before using this social command again.]
+$globalCooldown[5s;Please wait before using this social command again. This helps us enforce ratelimits. %time%]
 
 $if[$findUser[$message;no]==$authorID]
 $title[1;Dank RPG hugs $username[$authorID]]

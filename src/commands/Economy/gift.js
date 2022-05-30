@@ -14,7 +14,7 @@ $onlyIf[$message!=;**Usage**: \`$getServerVar[Prefix]give <@username> <amount>\`
 $onlyIf[$isNumber[$message[2]]!=false;**Usage**: \`$getServerVar[Prefix]give <@username> <amount>\` (error: not a number)]
 $onlyIf[$checkContains[$message[2];-]!=true;No negative values allowed.]
 $onlyIf[$message[2]<=$getGlobalUserVar[Coins;$authorID];You don't have this much.]
-$globalCooldown[5s;I'm sure you don't need to give $username[$mentioned[1]] money all the time :upside_down: (**%time%**)]
+$globalCooldown[5s;You're a lovely person, but please wait. %time%]
 $suppressErrors
 $onlyIf[$isBot[$authorID]!=true;]
 `

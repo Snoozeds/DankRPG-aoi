@@ -2,7 +2,7 @@ module.exports = {
 name: "avatar",
 aliases: "av",
 code: `
-$globalCooldown[5s;Please wait **%time%** before using this command again.]
+$globalCooldown[5s;Please wait before using this command again. This helps us enforce ratelimits. %time%]
 $title[1;$username[$findUser[$message;yes]]'s Avatar]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $image[1;$userAvatar[$findUser[$message;yes]]]

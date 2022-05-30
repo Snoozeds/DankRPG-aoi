@@ -18,7 +18,7 @@ $getServerVar[Prefix]userint <true/false>
 Your value: $getGlobalUserVar[UserInt;$authorID] \n
 
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $suppressErrors
 $onlyIf[$isBot[$authorID]!=true;]`
 },
@@ -45,7 +45,7 @@ code: `
 $onlyif[$isValidHex[$replaceText[$message;#;;-1]]!=false;This is not a valid hex code. Please visit <https://colorpicker.me> to find a valid hex code.]
 Changed all embed colors to #$replaceText[$message;#;;-1].
 $setGlobalUserVar[EmbedColor;$message;$authorID]
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $suppressErrors
 $onlyIf[$isBot[$authorID]!=true;]
 `
@@ -56,7 +56,7 @@ name: "familymode",
 aliases : "fmm",
 $if: "v4",
 code: `
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $if[$message==true]
 Turned on family mode. Stay safe!
 $setGlobalUserVar[FamilyMode;True;$authorID]
@@ -78,7 +78,7 @@ name: "userint",
 aliases: ["user interactions", "interactions"],
 $if: "v4",
 code: `
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $if[$message==true]
 Turned on user interactions.
 $setGlobalUserVar[UserInt;True;$authorID]

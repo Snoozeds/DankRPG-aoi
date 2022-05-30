@@ -6,7 +6,7 @@ $onlyIf[$getGlobalUserVar[FamilyMode;$findUser[$message;no]]!=True;User has fami
 $onlyIf[$findUser[$message;no]!=$clientID;haha I am immortal\nL]
 $onlyIf[$findUser[$message;no]!=$authorID;I can't allow you to do that to yourself.]
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has interactions turned off.]
-$globalCooldown[5s;Please wait **%time%** before using this social command again.]
+$globalCooldown[5s;Please wait before using this social command again. This helps us enforce ratelimits. %time%]
 $suppressErrors[Please mention a user.]
 $onlyIf[$isBot[$authorID]!=true;]
 	`

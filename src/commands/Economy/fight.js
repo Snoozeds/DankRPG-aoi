@@ -19,6 +19,6 @@ $setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUser
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]];$authorID]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $endif
-$globalCooldown[10s;Please wait **%time%** before fighting again.]
+$globalCooldown[10s;Please wait before fighting again. %time%]
 `
 }
