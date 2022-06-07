@@ -5,7 +5,7 @@ $description[1;
 **__Bot Info__**
 Bot Ping: $round[$ping]ms
 Database Ping: $round[$dbPing]ms
-Uptime: $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$uptime; week,;w;1];days,;d;1]; hours,;h;1]; minutes,;m;1]; seconds;s;1]; day,;d;1]; hour,;h;1]; minute,;m;1]; second;s;1]
+Uptime: $uptime
 Server Count: $serverCount
 Member Count: $allMembersCount
 
