@@ -1,9 +1,7 @@
+## Forewarning: Always download the latest version from "Releases". The main branch will be unstable.
+
 # The Guide
-Please note that this project mainly for people who want to see the code of DankRPG, and learn from it. I have provided this guide for the people that wish to self host DankRPG, but you will most likely encounter errors. You will have to edit some of the code yourself (e.g removing all top.gg lines, updating emotes).
-
-However, you CANNOT upload your bot to top.gg if it just consists of this source code. They won't allow it, and frankly, it's a dumb idea in the first place. The top.gg lines are there because I use them.
-
-#### First of all: Note that the current version of the "main" branch is most likely not stable. For the most up-to-date and stable version, download the code from "releases". The latest release will be the latest public version of the bot.
+Please note that this project mainly for people who want to see the code of DankRPG, and learn from it. I have provided this guide for the people that wish to self host DankRPG, but you will most likely encounter errors. You will have to edit some of the code yourself.
 
 If you wish to continue:
 - First update the config.json file.
@@ -12,20 +10,20 @@ If you wish to continue:
 - Take note of the [license](https://tldrlegal.com/license/mit-license).
 
 ## Hosting DankRPG | Step 1: Picking the correct host
-Personally I chose DigitalOcean (though they have pretty STEEP prices), as it was the easiest to use with Github's education pack. But, there are a wide range of hosting options out there.\
+Personally I chose DigitalOcean (education pack), but you should check multiple providers for the best pricing. You could also use an online IDE, like replit. \
 Just make sure the one you choose supports: 
-- Linux (I recommend **Ubuntu/Other Debian distros**, as they share they same commands.)
+- Linux (I recommend Ubuntu/Debian distros. I will be mentioning Ubuntu commands below.)
 - 24/7 hosting 
 - (optional) pay as you go.
 
 ## Hosting DankRPG | Step 2: Connecting to your host
+You should skip this step when using an online IDE.
 
 For Linux users (your personal machine), I recommend **EasySSH** + **FileZilla** or **Termius** for accessing the server. \
-For Windows users (your personal machine), I recommend **Bitvise** or **Termius**\
-**Note that these are just recommendations from apps that I've used personally. There are countless options out there.**
+For Windows users (your personal machine), I recommend **Bitvise** or **Termius**. \
 
 To use these applications, they will usually ask for a couple of things:
-- The host/address: This is the ipv4 address provided by your server provider.
+- The host/address: This is the ipv4 address provided by your hosting provider.
 - The username: Usually "root" on linux servers.
 - The password: Set by yourself through your hosting provider.
 - The port: Usually "22", but check with your hosting provider.
@@ -59,9 +57,11 @@ Assuming you are using **Ubuntu**, run the following commands:
 
 ## Owner-Only commands from DankRPG:
 ```<prefix>eval <code> - evaluate code to make sure it runs without errors```
+```<prefix>addcoins <user> <amount>```
+```refresh - updates changed commands, instead of restarting the entire process.```
 
-## The Future of DankRPG:
+## Support DankRPG:
 I am not interested in monetizing DankRPG. \
-However, if you'd like to support the future of this project, feel free to use my DigitalOcean referral code: \
+However, if you'd still like to support DankRPG, feel free to use my DigitalOcean referral code: \
  \
 <a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" /></a>
