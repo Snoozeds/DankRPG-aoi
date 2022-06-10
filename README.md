@@ -59,7 +59,7 @@ Assuming you are using **Ubuntu**, run the following commands:
 ## Owner-Only commands from DankRPG:
 ```<prefix>eval <code> - evaluate code to make sure it runs without errors``` \
 ```<prefix>addcoins <user> <amount>``` \
-```refresh - updates changed commands, instead of restarting the entire process.```
+```<prefix>refresh - updates changed commands, instead of restarting the entire process.```
 
 ## Support DankRPG:
 I am not interested in monetizing DankRPG. \
