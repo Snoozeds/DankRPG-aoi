@@ -4,15 +4,10 @@ code: `
 $description[1;
 **__Bot Info__**
 Bot Ping: $round[$ping]ms
-Database Ping: $round[$dbPing]ms
 Uptime: $uptime
 Server Count: $serverCount
 Member Count: $allMembersCount
 
-**__Server Info__**
-OS: Linux, Ubuntu (20.04.3)
-RAM Usage: $round[$ram]MBs
-CPU Usage: $cpu[os]% \n 
 **__Package Info__**
 Node: $nodeVersion
 Aoi.JS: v$packageVersion]
