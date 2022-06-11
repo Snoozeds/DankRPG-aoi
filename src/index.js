@@ -99,8 +99,15 @@ bot.variables({
   })
 
 bot.onMessage({respondToBots: false})
-bot.onInteractionCreate()
+bot.onInteractionCreate() // Used for slash commands. Read below.
 
+/* To make slash commands in servers, you'll have to eval this code:
+
+$createApplicationCommand[global;prefix;check the prefix of the current server.;true;slash]
+$createApplicationCommand[global;info;view info about Dank RPG.;true;slash]
+
+
+*/
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./commands/")
 
