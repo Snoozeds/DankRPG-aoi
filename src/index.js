@@ -99,7 +99,7 @@ bot.variables({
   })
 
 bot.onMessage({respondToBots: false})
-bot.onInteractionCreate
+bot.onInteractionCreate()
 
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./commands/")

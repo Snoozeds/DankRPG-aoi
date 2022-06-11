@@ -8,7 +8,7 @@ Slash commands may take up to 3 hours to appear inside discord.
 
 ***You only need to run this once***
 
-$createApplicationCommand[global;Prefix;View the prefix for the current server.;true]
+$createApplicationCommand[global;prefix;check the prefix of the current server.;true;slash]
 $onlyForIDs[$botOwnerID[;];]
 `
 }
