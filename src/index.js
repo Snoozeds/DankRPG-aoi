@@ -105,6 +105,7 @@ bot.onInteractionCreate() // Used for slash commands. Read below.
 
 $createApplicationCommand[global;prefix;check the prefix of the current server.;true;slash]
 $createApplicationCommand[global;info;view info about Dank RPG.;true;slash]
+$createApplicationCommand[global;coinflip;flips a coin.;true;slash]
 
 
 */
