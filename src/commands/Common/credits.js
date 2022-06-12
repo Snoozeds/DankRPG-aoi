@@ -11,7 +11,7 @@ Commissioned by castelonia.
 [OFL-1.1](https://opensource.org/licenses/OFL-1.1) | [Link](https://github.com/googlefonts/noto-emoji)
 
 **Mining resources**:
-My good friend, shup#5870.
+shup#5870
 
 You may view the source code for this bot on [GitHub](https://github.com/SnoozedsGithub/DankRPG)
 ]
