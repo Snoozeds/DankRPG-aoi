@@ -3,7 +3,7 @@ name: "mine",
 $if: "v4",
 code: `
 $if[$getGlobalUserVar[MiningTime;$authorID]==10m]
-$channelSendMessage[$channelID;<@$authorID>\nYou mined:\n$getVar[StoneEmoji]**$random[10;20]** Stone\n $getVar[GoldEmoji]**$random[5;10]** Gold\n $getVar[DiamondEmoji]**$random[1;5]** Diamond(s)]
+$channelSendMessage[$channelID;<@$authorID>\nYou mined:\n$getVar[StoneEmoji]**$random[10;20]** Stone\n$getVar[GoldEmoji]**$random[5;10]** Gold\n$getVar[DiamondEmoji]**$random[1;5]** Diamond(s)]
 $setGlobalUserVar[Gold;$sum[$getGlobalUserVar[Gold;$authorID];$random[5;10]];$authorID]
 $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$authorID];$random[1;5]];$authorID]
 $setGlobalUserVar[Stone;$sum[$getGlobalUserVar[Stone;$authorID];$random[10;20]];$authorID]
