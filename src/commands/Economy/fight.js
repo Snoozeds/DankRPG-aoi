@@ -3,22 +3,29 @@ name: "fight",
 aliases: ["attack", "battle"],
 $if: "v4",
 code:`
-$if[$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]<=$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];15]]]
-You die because you have run out of HP.
+$if[$getGlobalUserVar[HP;$authorID]<=0]
+$title[1;$username[$authorID]'s Fight]
+$description[1;$username[$authorID] starts a fight.
+$username[$authorID] **dies in battle**. Their stats get reset.]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$setGlobalUserVar[MaxHP;100;$authorID]
 $setGlobalUserVar[HP;100;$authorID]
 $setGlobalUserVar[Coins;0;$authorID]
 $setGlobalUserVar[ATK;1;$authorID]
 $else
-
-$title[1;$username[$authorID]: Fight]
-$description[1;
-You fight an enemy with **$getGlobalUserVar[ATK;$authorID]ATK**.
-You gain $getVar[Coi]**$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]** and lose **$getVar[Heart]$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];12]]**.
-You now have **$getVar[Heart]$getGlobalUserVar[HP;$authorID]/$getGlobalUserVar[MaxHP;$authorID]**]
-$setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[$getGlobalUserVar[ATK;$authorID];$multi[$getGlobalUserVar[ATK;$authorID];12]]];$authorID]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$multi[$getGlobalUserVar[ATK;$authorID];15];$multi[$getGlobalUserVar[ATK;$authorID];25]]];$authorID]
-$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$title[1;$username[$authorID]'s Fight]
+$description[1;$username[$authorID] starts a fight.
+$if[$randomText[WinCond;LoseCond;LoseCond;LoseCond]==LoseCond]
+$username[$authorID] loses **$getVar[Heart]$random[$round[$divide[$getGlobalUserVar[MaxHP;$authorID];10]];$round[$divide[$getGlobalUserVar[MaxHP;$authorID];9]]]**
+They also find a **$randomText[chest;body;hidden stash]** and gain **$getVar[Coi]$random[$round[$divide[$getGlobalUserVar[MaxHP;$authorID];11]];$round[$divide[$getGlobalUserVar[MaxHP;$authorID];9]]]**
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$round[$divide[$getGlobalUserVar[MaxHP;$authorID];10]];$round[$divide[$getGlobalUserVar[MaxHP;$authorID];9]]]];$authorID]
+$setGlobalUserVar[HP;$sub[$getGlobalUserVar[HP;$authorID];$random[$round[$divide[$getGlobalUserVar[MaxHP;$authorID];10]];$round[$divide[$getGlobalUserVar[MaxHP;$authorID];9]]]];$authorID]
+$else$username[$authorID] finds a **$randomText[chest;body;hidden stash]** and gains **$getVar[Coi]$random[$round[$divide[$getGlobalUserVar[MaxHP;$authorID];11]];$round[$divide[$getGlobalUserVar[MaxHP;$authorID];9]]]**
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$round[$divide[$getGlobalUserVar[MaxHP;$authorID];10]];$round[$divide[$getGlobalUserVar[MaxHP;$authorID];9]]]];$authorID]
 $endif
+]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[10s;Please wait before fighting again. %time%]
+$endif
 `
 }
