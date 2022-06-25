@@ -21,7 +21,7 @@ Just make sure the one you choose supports:
 You should skip this step when using an online IDE.
 
 For Linux users (your personal machine), I recommend **EasySSH** + **FileZilla** or **Termius** for accessing the server. \
-For Windows users (your personal machine), I recommend **Bitvise** or **Termius**. \
+For Windows users (your personal machine), I recommend **Bitvise** or **Termius**.
 
 To use these applications, they will usually ask for a couple of things:
 - The host/address: This is the ipv4 address provided by your hosting provider.
