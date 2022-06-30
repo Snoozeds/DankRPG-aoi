@@ -37,9 +37,9 @@ Respond with either \`$getServerVar[Prefix;$guildID]h\` or \`$getServerVar[Prefi
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 
 $onlyIf[$message!=;You need to mention how much to bet!]
-$onlyIf[$isNumber[$message]!=false;Not a number.]
+$onlyIf[$isNumber[$message]!=false;Not a number.\n**Tip**: You can also try \`$getServerVar[Prefix;$guildID]blackjack all\`]
 $onlyIf[$checkContains[$message;-]!=true;No negative values allowed.]
-$onlyIf[$message<$getGlobalUserVar[Coins;$authorID];You don't have this much.]
+$onlyIf[$message<=$getGlobalUserVar[Coins;$authorID];You don't have this much.]
 $onlyIf[$message>49;You need to bet at least $getVar[Coi]**50**.]
 
 $setGlobalUserVar[bjActive;True;$authorID]
