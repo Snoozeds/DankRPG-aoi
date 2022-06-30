@@ -7,15 +7,15 @@ $interactionReply[
 ;    
 {newEmbed:
     {description:
-    **__Bot Info__**
-    Bot Ping: $round[$ping]ms
-    Uptime: $uptime
-    Server Count: $serverCount
-    Member Count: $allMembersCount
+**__Bot Info__**
+Bot Ping: $round[$ping]ms
+Uptime: $uptime
+Server Count: $serverCount
+Member Count: $allMembersCount
         
-    **__Package Info__**
-    Node: $nodeVersion
-    Aoi.JS: v$packageVersion}
+**__Package Info__**
+Node: $nodeVersion
+Aoi.JS: v$packageVersion}
 
     {color:$getGlobalUserVar[EmbedColor]}
     {footer:Bot by Snoozeds#0802 <3}
