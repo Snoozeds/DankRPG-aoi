@@ -32,8 +32,8 @@ $cooldown[15s;Calm down you addict. %time%]
 $onlyIf[$message!=;You need to mention how much to bet!]
 $onlyIf[$isNumber[$message]!=false;Not a number.]
 $onlyIf[$checkContains[$message;-]!=true;No negative values allowed.]
-$onlyIf[$message<$getGlobalUserVar[Coins;$authorID];You don't have this much.]
+$onlyIf[$message<=$getGlobalUserVar[Coins;$authorID];You don't have this much.]
 $onlyIf[$message>49;You need to bet at least $getVar[Coi]**50**.]
-$onlyIf[$message<9999;You can't gamble more than $getVar[Coi]9,999. Sorry.]
+$onlyIf[$message<9999;You can't gamble more than $getVar[Coi]9999. Sorry.]
 `
 }
