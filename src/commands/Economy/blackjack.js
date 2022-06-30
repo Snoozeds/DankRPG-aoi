@@ -4,7 +4,7 @@ aliases: ["bj"],
 $if: "v4",
 code: `
 
-$if[$message==max]
+$if[$message==all]
 $title[1;$username's Blackjack]
 $description[1;**Bet: $getVar[Coi]$getGlobalUserVar[Coins;$authorID]**
 
