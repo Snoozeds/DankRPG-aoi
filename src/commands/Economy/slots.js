@@ -2,7 +2,6 @@ module.exports = {
 name: "slots",
 $if: "v4",
 code: `
-
 $if[$randomText[Lose;Lose;Lose;Win]==Win]
 $title[1;You win!]
 $description[1;
@@ -21,6 +20,14 @@ $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];$message];$autho
 $globalCooldown[5s;Please wait. %time%]
 $endif
 
+$if[$getGlobalUserVar[slotAchievement;$authorID]!=<:Unlocked:899050875719393281>]
+$if[$getGlobalUserVar[slotAmount;$authorID]>1000]
+**Congratulations!** You unlocked an achievement: "Slots Addict"\n+$getVar[Coi]**100**.
+$setGlobalUserVar[slotAchievement;<:Unlocked:899050875719393281>;$authorID]
+$endif
+$endif
+
+$setGlobalUserVar[slotAmount;$sum[$getGlobalUservar[slotAmount;$authorID];$message[1]];$authorID]
 $onlyIf[$message!=;You need to mention how much to bet!]
 $onlyIf[$isNumber[$message]!=false;Not a number.]
 $onlyIf[$checkContains[$message;-]!=true;No negative values allowed.]

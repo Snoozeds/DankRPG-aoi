@@ -1,5 +1,4 @@
 
-*.png
 *.json
 src/index.js
 src/config.json

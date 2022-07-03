@@ -95,6 +95,8 @@ bot.variables({
   foxStock: "0",
   bjActive: "False",
   bjBet: "",
+  slotAchievement: "<:Locked:899050875916541963>",
+  slotAmount: "0",
   // These are the DEFAULTS for each variable.
   })
 
