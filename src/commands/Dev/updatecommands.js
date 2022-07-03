@@ -1,7 +1,7 @@
 module.exports = {
 name: "update",
 aliases: ["refresh", "refreshcommands", "updatecommands"],
-code: `$onlyForIDs[$botOwnerID[;];]
+code: `$onlyForIDs[$getVar[ownid];]
 $channelSendMessage[$channelID;Updated commands.]
 $updateCommands
 $onlyIf[$isBot[$authorID]!=true;]`
