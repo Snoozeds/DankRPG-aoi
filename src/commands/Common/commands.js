@@ -18,7 +18,7 @@ divorce\`
 
 **Misc Commands**:
 \`commands, settings, ping, info, serverinfo, feedback, 
-credits, userinfo, avatar, privacy\`
+credits, userinfo, avatar, banner, privacy\`
 
 **Stat Commands:**
 \`inventory, achievements\`
