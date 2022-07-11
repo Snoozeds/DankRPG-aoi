@@ -4,8 +4,9 @@ aliases: "si",
 code: `$description[1;
 \`$serverName ($guildID)\`
 :bust_in_silhouette: **Server Owner:** <@$ownerID>
-<:Boosted:917749329295454238> **Boost Count:** $serverBoostCount[$guildID] boosts
-:slight_smile: **Emoji Count:** $emojiCount[$guildID] emojis
+<:Boosted:917749329295454238> **Boost Count:** $serverBoostCount[$guildID] boosts 
+<:boost_level:996067829335998534> **Boost Level:** $replaceText[$serverBoostLevel[$guildID];TIER_;;1]
+:slight_smile: **Emote Count:** $emojiCount[$guildID] emotes
 ]
 $thumbnail[1;$serverIcon[$guildID]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
