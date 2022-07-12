@@ -10,8 +10,8 @@ If you wish to continue:
 - Take note of the [license](https://tldrlegal.com/license/mit-license).
 
 ## Hosting DankRPG | Step 1: Picking the correct host
-Personally I chose DigitalOcean (education pack), but you should check multiple providers for the best pricing. \
-You could also use an online IDE, like replit. \
+Here are some I trust/have used before.\
+You could also use an online IDE, like replit. Though these will usually not allow root access.\
 Just make sure the one you choose supports: 
 - Linux (I recommend Ubuntu/Debian distros. I will be mentioning Ubuntu commands below.)
 - 24/7 hosting 
@@ -60,9 +60,3 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```<prefix>eval <code> - evaluate code to make sure it runs without errors``` \
 ```<prefix>addcoins <user> <amount>``` \
 ```<prefix>refresh - updates changed commands, instead of restarting the entire process.```
-
-## Support DankRPG:
-I am not interested in monetizing DankRPG. \
-However, if you'd still like to support DankRPG, feel free to use my DigitalOcean referral code: \
- \
-<a href="https://www.digitalocean.com/?refcode=2b52a47c01fc&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" /></a>
