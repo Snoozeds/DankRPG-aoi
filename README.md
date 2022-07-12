@@ -34,7 +34,7 @@ To use these applications, they will usually ask for a couple of things:
 Assuming you are using **Ubuntu**, run the following commands:
 
 **Installing Nodejs v17 (normal apt version is outdated):** \
-```curl -sL https://deb.nodesource.com/setup_18.x | bash -``` \
+```curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -``` \
 ```sudo apt-get install -y nodejs``` 
 
 **Installing npm (may be outdated):** \
