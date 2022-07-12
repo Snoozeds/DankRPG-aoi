@@ -10,7 +10,7 @@ If you wish to continue:
 - Take note of the [license](https://tldrlegal.com/license/mit-license).
 
 ## Hosting DankRPG | Step 1: Picking the correct host
-Here are some I trust/have used before.\
+There are multiple providers out there, with some even offering free credit. Choose what suits you best.\
 You could also use an online IDE, like replit. Though these will usually not allow root access.\
 Just make sure the one you choose supports: 
 - Linux (I recommend Ubuntu/Debian distros. I will be mentioning Ubuntu commands below.)
