@@ -1,6 +1,6 @@
 module.exports = {
 name: "commands",
-aliases: ["help", "cmds"],
+aliases: ["help", "cmds", "cmd"],
 code: `
 $title[1;Commands]
 $color[1;$getGlobalUserVar[EmbedColor]]

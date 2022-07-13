@@ -1,6 +1,6 @@
 module.exports = [{
 name: "hunt",
-aliases: ["hunting"],
+aliases: ["hunting", "h"],
 $if: "v4",
 code: `
 $if[$getGlobalUserVar[HP;$authorID]<=30]

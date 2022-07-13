@@ -1,5 +1,6 @@
 module.exports = {
 name: "info",
+aliases: ["inf"],
 code: `
 $description[1;
 **__Bot Info__**

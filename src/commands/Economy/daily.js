@@ -1,5 +1,6 @@
 module.exports = {
 name: "daily",
+aliases: ["d"],
 $if: "v4",
 code: `
 $if[$getGlobalUserVar[FirstDaily;$authorID]==False]

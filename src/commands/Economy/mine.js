@@ -1,5 +1,6 @@
 module.exports = [{
 name: "mine",
+aliases: ["m"],
 $if: "v4",
 code: `
 $if[$getGlobalUserVar[MiningTime;$authorID]==10m]
