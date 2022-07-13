@@ -82,6 +82,7 @@ $title[1;Level Up!]
 $description[1;
 Your pet \`$getGlobalUserVar[PetName;$authorID]\` has leveled up!
 They are now level 2.
+MaxHP +75
 ]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $setGlobalUserVar[MaxHP;$sum[$getGlobalUserVar[MaxHP;$authorID];75];$authorID]
