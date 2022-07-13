@@ -39,9 +39,8 @@ $title[1;$getGlobalUserVar[PetName;$authorID]]
 $description[1;
 Pet type: Dog
 ]
-$footer[1;Level: $getGlobalUserVar[PetLevel;$authorID]/2]
+$footer[1;Level: $getGlobalUserVar[PetLevel;$authorID]/2 | $getServerVar[Prefix;$guildID]petupgrade]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$footer[1;$username's pet]
 $thumbnail[1;https://i.ibb.co/brt0Q3j/dog.png]
 $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=false;:x: You do not have a pet. See: \`$getServerVar[Prefix]petshop\`]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]

@@ -24,7 +24,7 @@ credits, userinfo, avatar, banner, privacy\`
 \`inventory, achievements\`
 
 **Shop Commands**:
-\`shop, petshop, buypet, abandon, petinfo, heal, upgrade,
+\`shop, petshop, buypet, abandon, petinfo, petupgrade, heal, upgrade,
 itemlist, sellall, sell<item>\`
  
 **__Bot Links__**
