@@ -58,4 +58,6 @@ module.exports = {
   bjBet: "",
   slotAchievement: "<:Locked:899050875916541963>",
   slotAmount: "0",
+  PetLevel: "1",
+  PetLevelCost: "500",
 }
