@@ -49,9 +49,11 @@ $createApplicationCommand[global;info;view info about Dank RPG.;true;slash]
 $createApplicationCommand[global;coinflip;flips a coin.;true;slash]
 $createApplicationCommand[global;meme;sends a random meme.;true;slash]
 $createApplicationCommand[global;neko;sends a neko.;true;slash]
+$createApplicationCommand[global;say;sends a message.;true;slash;{string:message:the message you'd like me to say.:yes}]
 
 
 */
+
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./commands/")
 
