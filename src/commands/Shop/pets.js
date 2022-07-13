@@ -83,7 +83,8 @@ $description[1;
 Your pet \`$getGlobalUserVar[PetName;$authorID]\` has leveled up!
 They are now level 2.
 ]
-$setGlobalUserVar[HP;$sum[$getGlobalUserVar[HP;$authorID];75];$authorID]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$setGlobalUserVar[MaxHP;$sum[$getGlobalUserVar[MaxHP;$authorID];75];$authorID]
 $setGlobalUserVar[PetLevel;$sum[$getGlobalUserVar[PetLevel;$authorID];1];$authorID]
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];500];$authorID]
 $onlyIf[$getGlobalUserVar[PetLevelCost;$authorID]<$getGlobalUserVar[Coins;$authorID];:x: You do not have enough $getVar[Coi] for this level up. You need $getVar[Coi]**$getGlobalUserVar[PetLevelCost;$authorID]**.]
