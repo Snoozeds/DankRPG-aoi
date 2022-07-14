@@ -13,6 +13,6 @@ Member Count: $allMembersCount
 Node: $nodeVersion
 Aoi.JS: v$packageVersion]
 $color[1;$getGlobalUserVar[EmbedColor]]
-$footer[1;Bot by Snoozeds#0802 <3 | Build: v22]
+$footer[1;Bot by Snoozeds#0802 <3 | Build: v23]
 $globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]`
 } // Remove that footer if you'd like. Just credit me somewhere.
