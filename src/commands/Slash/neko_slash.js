@@ -14,6 +14,5 @@ $interactionReply[
 }
 
 ]
-$cooldown[5s;Chillax. Wait before requesting again. %time%]
 `
 }
