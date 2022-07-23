@@ -9,6 +9,7 @@ code: `$description[1;
 :slight_smile: **Emote Count:** $emojiCount[$guildID] emotes
 ]
 $thumbnail[1;$serverIcon[$guildID]]
+$image[$serverBanner[$guildID;2048]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $onlyIf[$isBot[$authorID]!=true;]`
