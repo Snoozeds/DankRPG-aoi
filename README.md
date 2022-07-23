@@ -45,7 +45,7 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```mkdir folder_name``` (upload files here through your chosen program) \
 ```cd folder_name``` \
 ```npm init``` \
-```npm install aoi.js@5.5.0``` \
+```npm install aoi.js@5.5.5``` \
 ```npm install pm2 -g``` (this will host the bot 24/7 and install pm2 globally) \
 ```pm2 start index.js```
 
