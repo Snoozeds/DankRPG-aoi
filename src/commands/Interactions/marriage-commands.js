@@ -68,7 +68,7 @@ $setGlobalUserVar[Sender;;$findUser[$message;no]]
 $setGlobalUserVar[Sender;;$authorID]
 $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=False;You are NOT in a relationship... :face_with_raised_eyebrow:]
 $onlyIf[$getGlobalUserVar[MarriedTo]==$findUser[$message;yes];You are not married to this person, weirdo.]
-$onlyIf[$message!=;Mention someone to divorce]
+$onlyIf[$message!=;Mention someone to divorce. You can use their userID if they are no longer in this server.]
 $globalCooldown[5s;]
 $onlyIf[$isBot[$authorID]!=true;]
 `
