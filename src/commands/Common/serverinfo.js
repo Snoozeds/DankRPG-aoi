@@ -1,16 +1,35 @@
 module.exports = {
 name: "serverinfo",
 aliases: "si",
-code: `$description[1;
+$if: "v4",
+code: `
+$if[$serverBanner==]
+$description[1;
 \`$serverName ($guildID)\`
-:bust_in_silhouette: **Server Owner:** <@$ownerID>
-<:Boosted:917749329295454238> **Boost Count:** $serverBoostCount[$guildID] boosts 
-<:boost_level:996067829335998534> **Boost Level:** $replaceText[$serverBoostLevel[$guildID];TIER_;;1]
-:slight_smile: **Emote Count:** $emojiCount[$guildID] emotes
+**Server Owner:** <@$ownerID>
+**Server Created:** <t:$truncate[$divide[$creationDate[$guildID;ms];1000]]:R>
+**Emote Count:** $emojiCount[$guildID] emotes
+**Boost Level:** $replaceText[$serverBoostLevel[$guildID];NONE;0;1]
+
+Links: [Icon]($serverIcon[$guildID])
+]
+$thumbnail[1;$serverIcon[$guildID]]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+
+$else
+$description[1;
+\`$serverName ($guildID)\`
+**Server Owner:** <@$ownerID>
+**Server Created:** <t:$truncate[$divide[$creationDate[$guildID;ms];1000]]:R>
+**Emote Count:** $emojiCount[$guildID] emotes
+**Boost Level:** $replaceText[$serverBoostLevel[$guildID];NONE;0;1]
+
+Links: [Icon]($serverIcon[$guildID]) | [Banner]($serverBanner[$guildID]) 
 ]
 $thumbnail[1;$serverIcon[$guildID]]
 $image[$serverBanner[$guildID;2048]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
-$onlyIf[$isBot[$authorID]!=true;]`
+$endif
+
+$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]`
 }
