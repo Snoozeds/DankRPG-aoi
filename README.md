@@ -33,11 +33,11 @@ To use these applications, they will usually ask for a couple of things:
 
 Assuming you are using **Ubuntu**, run the following commands:
 
-**Installing Nodejs v17 (normal apt version is outdated):** \
-```curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -``` \
+**Installing Nodejs v18 (normal apt version is outdated):** \
+```curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -``` \
 ```sudo apt-get install -y nodejs``` 
 
-**Installing npm (may be outdated):** \
+**Installing npm (if you do not have it included with Nodejs):** \
 ```sudo apt install npm```
 
 **-- Here you want to upload the bot's files to a new folder.** \
