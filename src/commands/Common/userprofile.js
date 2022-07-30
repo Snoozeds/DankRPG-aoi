@@ -11,6 +11,7 @@ $description[1;
 <:ATKF:915551150093250592>**$getGlobalUserVar[ATK;$findUser[$message;yes]]** \`ATK\`
 ]
 $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
+$image[1;$replaceText[$getUserBanner[$findUser[$message;yes];1024];null;;1]]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $globalCooldown[5s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $onlyIf[$isBot[$authorID]!=true;]
