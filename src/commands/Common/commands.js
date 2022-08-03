@@ -7,7 +7,7 @@ $color[1;$getGlobalUserVar[EmbedColor]]
 $description[1;
 **Economy Commands**:
 \`daily, fight, farm, forage, slots, dungeon, mine,
-give, sellall, pethunt, hunt, blackjack, gamble\`
+give, sellall, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Social Commands**:
 \`hug, kill, slap, wave, laugh, marry, marriage,
@@ -18,17 +18,14 @@ divorce\`
 
 **Misc Commands**:
 \`commands, settings, ping, info, serverinfo, feedback, 
-credits, userinfo, avatar, banner, privacy\`
-
-**Stat Commands:**
-\`inventory, achievements\`
+credits, userinfo, avatar, banner, privacy, achievements\`
 
 **Shop Commands**:
 \`shop, petshop, buypet, abandon, petinfo, petupgrade,
 heal, upgrade, itemlist, sellall, sell<item>\`
  
 **__Bot Links__**
-[Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)
+[Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)]
 $footer[1;Command Count: $commandsCount]
 $suppressErrors
 $globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
