@@ -9,7 +9,7 @@ $description[1;
 **Server Owner:** <@$ownerID>
 **Server Created:** <t:$truncate[$divide[$creationDate[$guildID;ms];1000]]:R>
 **Member Count:** $membersCount members
-**Boost Level:** $replaceText[$serverBoostLevel[$guildID];NONE;0;1]
+**Boost Level:** $replaceText[$replaceText[$serverBoostLevel[$guildID];NONE;0;1];TIER_;;1]
 
 Links: [Icon]($serverIcon[$guildID])
 ]
@@ -22,7 +22,7 @@ $description[1;
 **Server Owner:** <@$ownerID>
 **Server Created:** <t:$truncate[$divide[$creationDate[$guildID;ms];1000]]:R>
 **Member Count:** $membersCount members
-**Boost Level:** $replaceText[$serverBoostLevel[$guildID];NONE;0;1]
+**Boost Level:** $replaceText[$replaceText[$serverBoostLevel[$guildID];NONE;0;1];TIER_;;1]
 
 Links: [Icon]($serverIcon[$guildID]) | [Banner]($serverBanner[$guildID]) 
 ]
