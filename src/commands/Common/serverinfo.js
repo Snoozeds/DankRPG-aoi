@@ -8,7 +8,7 @@ $description[1;
 \`$serverName ($guildID)\`
 **Server Owner:** <@$ownerID>
 **Server Created:** <t:$truncate[$divide[$creationDate[$guildID;ms];1000]]:R>
-**Emote Count:** $emojiCount[$guildID] emotes
+**Member Count:** $membersCount members
 **Boost Level:** $replaceText[$serverBoostLevel[$guildID];NONE;0;1]
 
 Links: [Icon]($serverIcon[$guildID])
@@ -21,7 +21,7 @@ $description[1;
 \`$serverName ($guildID)\`
 **Server Owner:** <@$ownerID>
 **Server Created:** <t:$truncate[$divide[$creationDate[$guildID;ms];1000]]:R>
-**Emote Count:** $emojiCount[$guildID] emotes
+**Member Count:** $membersCount members
 **Boost Level:** $replaceText[$serverBoostLevel[$guildID];NONE;0;1]
 
 Links: [Icon]($serverIcon[$guildID]) | [Banner]($serverBanner[$guildID]) 
