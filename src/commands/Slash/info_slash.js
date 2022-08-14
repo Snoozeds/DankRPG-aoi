@@ -6,7 +6,7 @@ code:`
 $interactionReply[
 ;    
 {newEmbed:
-    {description:
+{description:
 **__Bot Info__**
 Bot Ping: $round[$ping]ms
 Uptime: $uptime
@@ -17,8 +17,8 @@ Member Count: $allMembersCount
 Node: $nodeVersion
 Aoi.JS: v$packageVersion}
 
-    {color:$getGlobalUserVar[EmbedColor]}
-    {footer:Bot by Snoozeds#0802 <3}
+{color:$getGlobalUserVar[EmbedColor]}
+{footer:Bot by Snoozeds#0802 <3 | Build v23}
 }
 
 ]
