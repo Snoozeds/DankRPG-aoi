@@ -61,20 +61,6 @@ $onlyIf[$isBot[$authorID]!=true;]`
 },
 
 {
-name: "abandon",
-$if: "v4",
-code:`You have abandoned your pet. It's name has been reset, and you can no longer access pet commands, until you buy a new pet.
-$setGlobalUserVar[HasPet;false;$authorID]
-$setGlobalUserVar[PetType;none;$authorID]
-$setGlobalUserVar[PetName;Your pet hasn't been named yet. Run \`<prefix>petname <name>\`;$authorID]
-$globalCooldown[1d;You have already abandoned another pet today. Please come back in **%time%**.]
-$if[$getGlobalUserVar[PetType;$authorID]==dog]
-$setGlobalUserVar[MaxHP;$sub[$getGlobalUserVar[MaxHP;$authorID];125];$authorID]
-$endif
-`
-},
-
-{
 name: "upgradepet",
 aliases: ["petupgrade", "pet upgrade", "upgrade pet", "levelup pet", "leveluppet"],
 code: `
