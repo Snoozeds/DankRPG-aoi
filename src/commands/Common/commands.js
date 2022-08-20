@@ -24,7 +24,7 @@ credits, avatar, banner, privacy, achievements\`
 heal, upgrade, sellall, sell<item>\`
 
 **Admin Commands**:
-\`serversettings\`
+\`serversettings, addcoins, removecoins\`
  
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)]
