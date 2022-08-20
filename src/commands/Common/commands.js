@@ -10,19 +10,21 @@ $description[1;
 give, sellall, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Social Commands**:
-\`hug, kill, slap, wave, laugh, marry, marriage,
-divorce\`
+\`hug, kill, slap, wave, laugh, marry, marriage\`
 
 **Fun Commands**:
 \`repeat, 8ball, coinflip, neko, meme\`
 
 **Misc Commands**:
-\`commands, settings, ping, info, serverinfo, feedback, 
-credits, userinfo, avatar, banner, privacy, achievements\`
+\`settings, ping, info, serverinfo, userinfo,
+credits, avatar, banner, privacy, achievements\`
 
 **Shop Commands**:
-\`shop, petshop, buypet, abandon, petinfo, petupgrade,
-heal, upgrade, itemlist, sellall, sell<item>\`
+\`shop, petshop, buypet, petinfo, petupgrade,
+heal, upgrade, sellall, sell<item>\`
+
+**Admin Commands**:
+\`serversettings\`
  
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Docs](https://docs.dankrpg.xyz) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)]

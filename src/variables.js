@@ -60,4 +60,5 @@ module.exports = {
   slotAmount: "0",
   PetLevel: "1",
   PetLevelCost: "500",
+  Permissions: "manageserver",
 }
