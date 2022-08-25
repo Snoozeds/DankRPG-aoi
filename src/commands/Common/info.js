@@ -11,7 +11,10 @@ Member Count: $allMembersCount
 
 **__Package Info__**
 Node: $nodeVersion
-Aoi.JS: v$packageVersion]
+Aoi.JS: v$packageVersion
+
+Links: [Docs](https://dankrpg.xyz/docs)
+]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $footer[1;Bot by Snoozeds#0802 <3 | Build: v24]
 $globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]`

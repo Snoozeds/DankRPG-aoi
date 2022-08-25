@@ -15,10 +15,12 @@ Member Count: $allMembersCount
         
 **__Package Info__**
 Node: $nodeVersion
-Aoi.JS: v$packageVersion}
+Aoi.JS: v$packageVersion
+
+Links: [Docs](https://dankrpg.xyz/docs)}
 
 {color:$getGlobalUserVar[EmbedColor]}
-{footer:Bot by Snoozeds#0802 <3 | Build v23}
+{footer:Bot by Snoozeds#0802 <3 | Build v24}
 }
 
 ]
