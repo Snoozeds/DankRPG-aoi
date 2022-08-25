@@ -27,7 +27,7 @@ heal, upgrade, sellall, sell<item>\`
 \`serversettings, addcoins, removecoins\`
  
 **__Bot Links__**
-[Privacy](https://dankrpg.xyz/privacy) | [Docs](https://dankrpg.xyz/docs/variables) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)]
+[Privacy](https://dankrpg.xyz/privacy) | [Docs](https://dankrpg.xyz/docs/Intro/welcome) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)]
 $footer[1;Command Count: $commandsCount]
 $suppressErrors
 $globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
