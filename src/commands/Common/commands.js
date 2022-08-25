@@ -6,7 +6,7 @@ $title[1;Commands]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $description[1;
 **Economy Commands**:
-\`daily, fight, farm, forage, slots, dungeon, mine,
+\`profile, daily, fight, farm, forage, slots, dungeon, mine,
 give, sellall, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Social Commands**:
