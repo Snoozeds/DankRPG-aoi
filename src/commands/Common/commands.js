@@ -17,7 +17,7 @@ give, sellall, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Misc Commands**:
 \`settings, ping, info, serverinfo, userinfo,
-credits, avatar, banner, privacy, achievements\`
+credits, avatar, banner, achievements\`
 
 **Shop Commands**:
 \`shop, petshop, buypet, petinfo, petupgrade,
