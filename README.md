@@ -5,9 +5,11 @@ Please note that this project mainly for people who want to see the code of Dank
 
 If you wish to continue:
 - First update the config.json file.
-- Update some of the vars in index.js
+- Update some of the vars in variables.js
 - Read through code and change what you'd like to.
 - Take note of the [license](https://tldrlegal.com/license/mit-license).
+- Read the DankRPG docs for command info: https://docs.dankrpg.xyz
+- Read the aoi.js docs: https://aoi.js.org/docs/
 
 ## Hosting DankRPG | Step 1: Picking the correct host
 There are multiple providers out there, with some even offering free credit. Choose what suits you best.\
@@ -55,8 +57,3 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```pm2 restart index.js - restarts the file``` \
 ```pm2 stop index.js - stops the file``` \
 ```pm2 ls - lists all processes running```
-
-## Owner-Only commands from DankRPG:
-```<prefix>eval <code> - evaluate code to make sure it runs without errors``` \
-```<prefix>addcoins <user> <amount>``` \
-```<prefix>refresh - updates changed commands, instead of restarting the entire process.```
