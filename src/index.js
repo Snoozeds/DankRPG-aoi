@@ -54,6 +54,7 @@ $createApplicationCommand[global;userinfo;displays info about a user.;true;slash
 $createApplicationCommand[global;profile;displays a user's rpg stats;true;slash;[{"name":"member", "description":"the member who's profile you want to see.","type":"USER", "required": true}]]
 $createApplicationCommand[global;serverinfo;displays info about the current server.;true;slash] 
 $createApplicationCommand[global;settings;displays the settings menu.;true;slash]
+$createApplicationCommand[global;changecolor;changes your embed colors.;true;slash;[{"name":"color", "description":"the HEX color you want to change your embeds to.","type":"STRING", "required": true}]]
 
 */
 
