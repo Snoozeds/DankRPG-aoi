@@ -53,6 +53,7 @@ $createApplicationCommand[global;say;sends a message;true;slash;{"name" : "messa
 $createApplicationCommand[global;userinfo;displays info about a user.;true;slash;[{"name":"member", "description":"the member who's info you want to see.","type":"USER", "required": true}]]
 $createApplicationCommand[global;profile;displays a user's rpg stats;true;slash;[{"name":"member", "description":"the member who's profile you want to see.","type":"USER", "required": true}]]
 $createApplicationCommand[global;serverinfo;displays info about the current server.;true;slash] 
+$createApplicationCommand[global;settings;displays the settings menu.;true;slash]
 
 */
 
