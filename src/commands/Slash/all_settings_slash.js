@@ -21,7 +21,7 @@ Your Value: $getGlobalUserVar[FamilyMode;$authorID]
 </userinteractions:1014688372494704640> \`True/False\`
 Your value: $getGlobalUserVar[UserInt;$authorID]
 
-Confused? Check out our slash command documentation [here](https://dankrpg.xyz/docs/slash-commands).
+Confused? Check out our user settings documentation [here](https://dankrpg.xyz/docs/The-Basics/user-settings).
 }
 {color:$getGlobalUserVar[EmbedColor;$authorID]}
 {footer:Tip! You can click on the highlighted slash text to quickly change the setting.}
