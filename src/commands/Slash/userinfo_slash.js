@@ -12,7 +12,7 @@ $interactionReply[
 **Joined Discord:** <t:$truncate[$divide[$creationDate[$interactionData[options.data[0].value];$guildID;ms];1000]]:R>
 **Joined Server:** <t:$truncate[$divide[$memberJoinedDate[$interactionData[options.data[0].value];$guildID;ms];1000]]:R>
 
-Links: [Avatar]($userAvatar[$interactionData[options.data[0].value]]) | [Banner]($replaceText[$getUserBanner[$interactionData[options.data[0].value]];null;;1])
+Links: [Avatar]($userAvatar[$interactionData[options.data[0].value]])$replaceText[$replaceText[$checkCondition[$getUserBanner[$interactionData[options.data[0].value]]!=null];true; | [Banner]($getUserBanner[$interactionData[options.data[0].value]]);1];false;;1]
 }
 {image:$replaceText[$getUserBanner[$interactionData[options.data[0].value]];null;;1]}
 {thumbnail:$userAvatar[$interactionData[options.data[0].value]]}
