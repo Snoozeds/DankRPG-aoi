@@ -57,6 +57,9 @@ $createApplicationCommand[global;settings;displays the settings menu.;true;slash
 $createApplicationCommand[global;changecolor;changes your embed colors.;true;slash;[{"name":"color", "description":"the HEX color you want to change your embeds to.","type":"STRING", "required": true}]]
 $createApplicationCommand[global;familymode;family mode option.;true;slash;[{"name":"value", "description":"whether family mode is enabled or not.","type":"BOOLEAN", "required": true}]]
 $createApplicationCommand[global;userinteractions;user interactions option.;true;slash;[{"name":"value", "description":"whether users can mention you in commands or not.","type":"BOOLEAN", "required": true}]]
+$createApplicationCommand[global;serversettings;displays the server settings menu.;true;slash]
+$createApplicationCommand[global;changeprefix;changes the prefix of the current server, requires the correct perms.;true;slash;[{"name":"value", "description":"the new prefix","type":"STRING", "required": true}]]
+$createApplicationCommand[global;permissions;changes the required permissions for admin commands, Server owner only.;true;slash;[{"name":"value", "description":"manageserver or admin","type":"STRING", "required": true}]]
 */
 
 const loader = new aoijs.LoadCommands(bot)
