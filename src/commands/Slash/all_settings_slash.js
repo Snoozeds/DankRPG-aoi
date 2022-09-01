@@ -59,6 +59,21 @@ $endif
 ]`
 }, // Note that discord's booleans are lowercase, meaning "true" and "false". The FamilyMode variable is uppercase, so it will be converted to uppercase.
 
-
+{
+name: "userinteractions",
+prototype: "slash",
+type: "interaction",
+$if: "v4",
+code: `
+$interactionReply[
+$if[$interactionData[options.data[0].value]==true]
+Set user interactions to $interactionData[options.data[0].value].
+$setGlobalUserVar[UserInt;True;$authorID]
+$else
+Set user interactions to $interactionData[options.data[0].value].
+$setGlobalUserVar[UserInt;False;$authorID]
+$endif
+]`
+}
 
 ]
