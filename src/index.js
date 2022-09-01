@@ -55,6 +55,7 @@ $createApplicationCommand[global;profile;displays a user's rpg stats;true;slash;
 $createApplicationCommand[global;serverinfo;displays info about the current server.;true;slash] 
 $createApplicationCommand[global;settings;displays the settings menu.;true;slash]
 $createApplicationCommand[global;changecolor;changes your embed colors.;true;slash;[{"name":"color", "description":"the HEX color you want to change your embeds to.","type":"STRING", "required": true}]]
+$createApplicationCommand[global;familymode;changes your embed colors.;true;slash;[{"name":"value", "description":"whether family mode is enabled or not.","type":"BOOLEAN", "required": true}]]
 
 */
 
