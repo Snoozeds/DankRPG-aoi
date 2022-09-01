@@ -9,22 +9,26 @@ $interactionReply[
 {title:Settings}
 {description:Here are all the settings you can change.
 
-**Embed color** - This will change the color of embeds to your own choice. [Color Picker](https://colorpicker.me 'Color Picker')
-/changecolor \`#hexid\`
+**Embed color** - This will change the color of embeds to your own choice.
+</changecolor:1014678076254322739> \`#hexID\`
 Your value: $getGlobalUserVar[EmbedColor;$authorID]
 
 **Family Mode** - Removes swearing/references from commands.
-/familymode \`true/false\`
+</familymode:1014688145561899128> \`True/False\`
 Your Value: $getGlobalUserVar[FamilyMode;$authorID]
 
 **UserInteractions** - Whether or not users can use commands that mention you.
-/userinteractions \`true/false\`
-Your value: $getGlobalUserVar[UserInt;$authorID]}
+</userinteractions:1014688372494704640> \`True/False\`
+Your value: $getGlobalUserVar[UserInt;$authorID]
+
+Confused? Check out our slash command documentation [here](https://dankrpg.xyz/docs/slash-commands).
+}
 {color:$getGlobalUserVar[EmbedColor;$authorID]}
+{footer:Tip! You can click on the highlighted slash text to quickly change the setting.}
 }
 ]
 `
-},
+}, // If you have slash commands, you must change the </NAME:ID> to your own respective slash command names and IDs.
 
 {
 name: "changecolor",
