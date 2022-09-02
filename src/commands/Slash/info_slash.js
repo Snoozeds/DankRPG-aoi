@@ -24,7 +24,7 @@ Links: [Docs](https://dankrpg.xyz/docs)}
 }
 
 ]
-$cooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
+$globalCooldown[5s;$interactionReply[Please wait before running this command again. This helps us enforce ratelimits.]]
 `
 }
 

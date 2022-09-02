@@ -60,6 +60,7 @@ $createApplicationCommand[global;userinteractions;user interactions option.;true
 $createApplicationCommand[global;serversettings;displays the server settings menu.;true;slash]
 $createApplicationCommand[global;changeprefix;changes the prefix of the current server, requires the correct perms.;true;slash;[{"name":"value", "description":"the new prefix","type":"STRING", "required": true}]]
 $createApplicationCommand[global;permissions;changes the required permissions for admin commands, Server owner only.;true;slash;[{"name":"value", "description":"manageserver or admin","type":"STRING", "required": true}]]
+$createApplicationCommand[global;commands;displays all available commands.;true;slash]
 */
 
 const loader = new aoijs.LoadCommands(bot)
