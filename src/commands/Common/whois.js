@@ -22,6 +22,6 @@ $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
 $image[1;$replaceText[$getUserBanner[$findUser[$message;yes];1024];null;;1]]
 $endif
 
-$globalCooldown[10s;Please wait **%time%** before running this command again. This helps us enforce ratelimits.]
+$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 `
 }
