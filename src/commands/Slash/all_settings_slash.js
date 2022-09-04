@@ -27,6 +27,13 @@ Confused? Check out our user settings documentation [here](https://dankrpg.xyz/d
 {footer:Tip! You can click on the highlighted slash text to quickly change the setting.}
 }
 ]
+$globalCooldown[10s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]
 `
 }, // If you have slash commands, you must change the </NAME:ID> to your own respective slash command names and IDs.
 
@@ -43,6 +50,13 @@ $else
 Changed all embed colors to #$replaceText[$interactionData[options.data[0].value];#;;-1].
 $setGlobalUserVar[EmbedColor;$interactionData[options.data[0].value];$authorID]
 $endif
+$globalCooldown[15s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]
 `
 },
 
@@ -60,7 +74,14 @@ $else
 Set family mode to $interactionData[options.data[0].value].
 $setGlobalUserVar[FamilyMode;False;$authorID]
 $endif
-]`
+]
+$globalCooldown[15s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]`
 }, // Note that discord's booleans are lowercase, meaning "true" and "false". The FamilyMode variable is uppercase, so it will be converted to uppercase.
 
 {
@@ -77,7 +98,14 @@ $else
 Set user interactions to $interactionData[options.data[0].value].
 $setGlobalUserVar[UserInt;False;$authorID]
 $endif
-]`
+]
+$globalCooldown[15s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]`
 }
 
 ]

@@ -19,5 +19,13 @@ Links: [Avatar]($userAvatar[$interactionData[options.data[0].value]])$replaceTex
 {color:$getGlobalUserVar[EmbedColor;$authorID]}
 }
 ]
+
+$globalCooldown[15s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]
 `
 }

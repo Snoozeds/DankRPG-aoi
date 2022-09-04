@@ -16,5 +16,13 @@ Links: [Icon]($serverIcon[$guildID])$replaceText[$replaceText[$checkCondition[$s
 {thumbnail:$serverIcon[$guildID]}
 {color:$getGlobalUserVar[EmbedColor;$authorID]}
 ]
+
+$globalCooldown[15s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]
 `
 }

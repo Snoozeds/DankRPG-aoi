@@ -14,5 +14,13 @@ $interactionReply[
 }
 
 ]
+
+$globalCooldown[5s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]
 `
 }
