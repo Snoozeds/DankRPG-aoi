@@ -14,6 +14,5 @@ $interactionReply[
 }
 
 ]
-$cooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 `
 }

@@ -23,8 +23,6 @@ Links: [Docs](https://dankrpg.xyz/docs)}
 {footer:Bot by Snoozeds#0802 <3 | Build v25}
 }
 
-]
-$globalCooldown[5s;$interactionReply[Please wait before running this command again. This helps us enforce ratelimits.]]
-`
+]`
 }
 
