@@ -7,8 +7,8 @@ $interactionReply[
 ;    
 {newEmbed:
 {title:🐱}
-{description:[Source]($httpRequest[https://api.nekos.rest/neko;GET;;source]) | [Artist]($httpRequest[https://api.nekos.rest/neko;GET;;artist])}
-{image:$httpRequest[https://api.nekos.rest/neko;GET;;url]}
+{description:[Source]($httpRequest[https://nekos.rest/api/neko;GET;;source]) | [Artist]($httpRequest[https://nekos.rest/api/neko;GET;;artist])}
+{image:$httpRequest[https://nekos.rest/api/neko;GET;;url]}
 {color:$getGlobalUserVar[EmbedColor;$authorID]}
 {footer:nekos.rest}
 }
