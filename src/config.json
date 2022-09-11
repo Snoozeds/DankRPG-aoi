@@ -1,6 +1,7 @@
 {
     "token": "Grab this from https://discord.com/developers",
-    "topgg": "",
+    "topgg": "API Auth.",
+    "topggAuth": "Webhook Auth.",
     "intents" : "MESSAGE_CONTENT"
 }
 

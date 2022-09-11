@@ -41,7 +41,7 @@ $setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$eventData[[0]]];1];$ev
 })
 event.listen("votes")
 
-const webhook = new Topgg.Webhook(config.topgg)
+const webhook = new Topgg.Webhook(config.topggAuth)
 app.post('/', webhook.listener(vote => {
 event.emit('votes', vote.user)
 }))
