@@ -1,5 +1,6 @@
 const aoijs = require('aoi.js');
 const config = require('./config.json');
+const { AutoPoster } = require('topgg-autoposter');
 
 const bot = new aoijs.Bot({
   token: config.token,
@@ -8,7 +9,24 @@ const bot = new aoijs.Bot({
   suppressAllErrors: true
 });
 
-// Top.gg Voting from: https://pastebin.com/AXQysNsz ///////////////////////
+
+// Posts stats for top.gg. Safe to remove.
+// The discord.js bot here isn't actually used for anything but grabbing the bot's server count and POSTing it to top.gg.
+
+const { Client, GatewayIntentBits } = require('discord.js');
+const client = new Client({ intents: [] });
+client.login(config.token)
+
+const ap = AutoPoster(config.topgg, client)
+
+ap.on('posted', () => {
+  console.log('Posted stats to Top.gg!')
+})
+
+//
+
+
+// Top.gg Voting from: https://pastebin.com/AXQysNsz, safe to remove.
 
 const express = require('express') 
 const Topgg = require('@top-gg/sdk')
@@ -28,8 +46,9 @@ app.post('/', webhook.listener(vote => {
 event.emit('votes', vote.user)
 }))
  
-app.listen(69) // It is best to change this port and keep it private. It is also recommended to only open the port you select (using something like ufw).
-////////////////////////////////////////////////////////////////////////////
+app.listen(69)
+
+//
 
 bot.status({
     text: "d!help | dankrpg.xyz", 
