@@ -14,7 +14,7 @@ $description[1;**Bet: $getVar[Coi]$getGlobalUserVar[Coins;$authorID]**
 **__Your Hand__**
 :black_joker: **$random[12;13]**
 
-Respond with either \`$getServerVar[Prefix;$guildID]h\` or \`$getServerVar[Prefix;$guildID]s\`]
+Respond with either \`$getServerVar[Prefix;$guildID]hit\` or \`$getServerVar[Prefix;$guildID]stand\`]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 
 $onlyIf[$getGlobalUserVar[Coins;$authorID]>49;You need to bet at least $getVar[Coi]**50**.]
@@ -33,7 +33,7 @@ $description[1;**Bet: $getVar[Coi]$message[1]**
 **__Your Hand__**
 :black_joker: **$random[12;13]**
 
-Respond with either \`$getServerVar[Prefix;$guildID]h\` or \`$getServerVar[Prefix;$guildID]s\`]
+Respond with either \`$getServerVar[Prefix;$guildID]hit\` or \`$getServerVar[Prefix;$guildID]stand\`]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 
 $onlyIf[$message!=;You need to mention how much to bet!]
@@ -55,7 +55,6 @@ $globalCooldown[10s;
 
 {
 name: "hit",
-aliases: ["h"],
 $if: "v4",
 code: `
 
@@ -88,7 +87,6 @@ $onlyIf[$getGlobalUserVar[bjActive;$authorID]!=False;]
 
 {
 name: "stand",
-aliases: ["s"],
 $if: "v4",
 code: `
 
