@@ -12,6 +12,11 @@ $description[1;
 $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
 $image[1;$replaceText[$getUserBanner[$findUser[$message;yes];1024];null;;1]]
 $color[1;$getGlobalUserVar[EmbedColor]]
-$globalCooldown[5s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
+
+$globalCooldown[5s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`profile\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

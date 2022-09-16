@@ -16,8 +16,11 @@ shup#5870
 You may view the source code for this bot on [GitHub](https://github.com/SnoozedsGithub/DankRPG)
 ]
 $color[1;$getGlobalUserVar[EmbedColor]]
-$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
-$suppressErrors
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`credits\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

@@ -2,8 +2,6 @@ module.exports = {
 name: "hug",
 $if: "v4",
 code: `
-$globalCooldown[5s;Please wait before using this social command again. This helps us enforce ratelimits. %time%]
-
 $if[$findUser[$message;no]==$authorID]
 $title[1;Dank RPG hugs $username[$authorID]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
@@ -22,6 +20,11 @@ $image[1;$httpRequest[https://api.dankrpg.xyz/anime/hug;GET;;url]]
 $endif
 $endif
 $suppressErrors[Mention someone.]
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[5s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`hug\` again in **%min%m %sec%s**.}
+{color:#ff2050}}]
 `
 }

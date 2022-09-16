@@ -10,8 +10,12 @@ $description[1;$addField[1;Answer:;$httpRequest[https://apiv1.snoozeds.repl.co/8
 $thumbnail[1;https://assets.dankrpg.xyz/Images/8ball.png]
 $addTimestamp[1;]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$globalCooldown[10s;Please wait. %time%]
 $endif
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`8ball\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

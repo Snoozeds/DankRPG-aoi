@@ -22,7 +22,11 @@ $channelSendMessage[$channelID;You have started mining. Come back in $getGlobalU
 $endif
 $endif
 
-$globalCooldown[$sum[$replaceText[$getGlobalUserVar[MiningTime;$authorID];m; ;-1];5]m;You have already mined recently, please wait. %time%]
+$globalCooldown[$sum[$replaceText[$getGlobalUserVar[MiningTime;$authorID];m; ;-1];5]m;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`mine\` again in **%min%m %sec%s**.}
+{color:#ff2050}}]
 `
 },
 

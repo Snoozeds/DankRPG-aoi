@@ -27,13 +27,17 @@ $footer[1;Chance of winning: 1/3]
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];$message[1]]]
 $endif
 
-$cooldown[15s;Calm down you addict. %time%]
-
 $onlyIf[$message!=;You need to mention how much to bet!]
 $onlyIf[$isNumber[$message]!=false;Not a number.]
 $onlyIf[$checkContains[$message;-]!=true;No negative values allowed.]
 $onlyIf[$message<=$getGlobalUserVar[Coins;$authorID];You don't have this much.]
 $onlyIf[$message>49;You need to bet at least $getVar[Coi]**50**.]
 $onlyIf[$message<9999;You can't gamble more than $getVar[Coi]9999. Sorry.]
+
+$globalCooldown[15s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`bet\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

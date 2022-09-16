@@ -16,8 +16,12 @@ $elseIf[$randomText[ChestEvent;MinigameEvent]==MinigameEvent]
 $awaitMessages[$authorID;7s;$randomText[Dank;Fight;Defend];DungeonR;:x: Sorry, you didn't respond in time. You don't get anything.]
 $endelseIf
 $endif
-$globalCooldown[30s;Please wait before starting another dungeon. %time%]
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[30s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`dungeon\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 },
 

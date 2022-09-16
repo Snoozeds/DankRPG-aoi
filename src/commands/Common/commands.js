@@ -29,7 +29,11 @@ heal, upgrade, sellall, sell<item>\`
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Docs](https://dankrpg.xyz/docs/Intro/welcome) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)]
 $footer[1;Command Count: $commandsCount]
-$suppressErrors
-$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`commands\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

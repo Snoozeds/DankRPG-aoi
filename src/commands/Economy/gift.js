@@ -14,8 +14,11 @@ $onlyIf[$message!=;**Usage**: \`$getServerVar[Prefix]give <@username> <amount>\`
 $onlyIf[$isNumber[$message[2]]!=false;**Usage**: \`$getServerVar[Prefix]give <@username> <amount>\` (error: not a number)]
 $onlyIf[$checkContains[$message[2];-]!=true;No negative values allowed.]
 $onlyIf[$message[2]<=$getGlobalUserVar[Coins;$authorID];You don't have this much.]
-$globalCooldown[5s;You're a lovely person, but please wait. %time%]
-$suppressErrors
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`give\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

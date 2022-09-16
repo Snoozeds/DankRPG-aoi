@@ -45,7 +45,12 @@ $onlyIf[$message>49;You need to bet at least $getVar[Coi]**50**.]
 $setGlobalUserVar[bjActive;True;$authorID]
 $setGlobalUserVar[bjBet;$message;$authorID]
 $endif
-$globalCooldown[5s;Calm down you blackjack addict. %time%]`
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`blackjack\` again in **%sec%s**.}
+{color:#ff2050}}]`
 },
 
 {

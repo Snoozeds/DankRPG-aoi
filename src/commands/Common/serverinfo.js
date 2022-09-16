@@ -14,5 +14,10 @@ Links: [Icon]($serverIcon[$guildID])$replaceText[$replaceText[$checkCondition[$s
 ]
 $thumbnail[1;$serverIcon[$guildID]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]`
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`serverinfo\` again in **%sec%s**.}
+{color:#ff2050}}]`
 }

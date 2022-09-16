@@ -2,8 +2,6 @@ module.exports = {
 name: "slap",
 $if: "v4",
 code: `
-$globalCooldown[5s;Please wait before using this social command again. This helps us enforce ratelimits. %time%]
-
 $if[$findUser[$message;no]==$authorID]
 $title[1;Dank RPG slaps $username[$authorID]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
@@ -17,6 +15,11 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $image[1;$httpRequest[https://api.dankrpg.xyz/anime/slap;GET;;url]]
 $endif
 $onlyIf[$message!=;Mention someone.]
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`slap\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

@@ -37,7 +37,11 @@ $setGlobalUserVar[FarmAchievement;<:Unlocked:899050875719393281>]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];50]]
 $setGlobalUserVar[FirstFarm;False]
 $endif
-$globalCooldown[30s;Please wait before farming again. %time%]
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[30s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`farm\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

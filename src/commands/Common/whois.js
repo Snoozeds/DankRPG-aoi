@@ -22,6 +22,10 @@ $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
 $image[1;$replaceText[$getUserBanner[$findUser[$message;yes];1024];null;;1]]
 $endif
 
-$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`userinfo\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 }

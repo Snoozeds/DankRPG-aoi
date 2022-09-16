@@ -17,5 +17,10 @@ Links: [Docs](https://dankrpg.xyz/docs)
 ]
 $color[1;$getGlobalUserVar[EmbedColor]]
 $footer[1;Bot by Snoozeds#0802 <3 | Build: v25]
-$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]`
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`info\` again in **%sec%s**.}
+{color:#ff2050}}]`
 } // Remove that footer if you'd like. Just credit me somewhere.

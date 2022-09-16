@@ -49,8 +49,12 @@ $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
 $onlyIf[$getGlobalUserVar[InRelationship;$findUser[$message;yes]]!=False;This user is not married.]
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has interaction commands disabled from their settings.]
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;Bots marrying people... hmm.]
-$globalCooldown[5s;Please don't spam commands. %time%]
-$onlyIf[$isBot[$authorID]!=true;]
+
+$globalCooldown[5s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`marriage\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 },
 

@@ -2,6 +2,10 @@ module.exports = {
 name: "uptime",
 aliases: ["upt", "up"],
 code: `My uptime is: \`$uptime\`
-$globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
-$onlyIf[$isBot[$authorID]!=true;]`
+
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`uptime\` again in **%sec%s**.}
+{color:#ff2050}}]`
 }

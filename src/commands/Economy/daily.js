@@ -14,7 +14,10 @@ $setGlobalUserVar[DailyAchievement;<:Unlocked:899050875719393281>]
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];200]]
 $setGlobalUserVar[FirstDaily;False]
 $endif
-$globalCooldown[24h;You have already collected your daily reward today. Please come back in **%time%**.]
-$suppressErrors
-$onlyIf[$isBot[$authorID]!=true;]`
+
+$globalCooldown[1d;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`daily\` again in **%hour%h %min%m %sec%s**.}
+{color:#ff2050}}]`
 }

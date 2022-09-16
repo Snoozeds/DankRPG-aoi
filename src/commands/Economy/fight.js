@@ -25,7 +25,11 @@ $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[$round[$
 $endif
 ]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$globalCooldown[10s;Please wait before fighting again. %time%]
+$globalCooldown[10s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`fight\` again in **%sec%s**.}
+{color:#ff2050}}]
 $endif
 `
 }

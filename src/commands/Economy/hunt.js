@@ -28,7 +28,11 @@ $footer[1;Bait active. Double the animals.]
 $endif
 $endif
 
-$globalCooldown[20s;Please wait before running this command again. %time%]
+$globalCooldown[20s;
+{newEmbed:
+{title:Slow down $username[$authorID]!}
+{description:You can use \`hunt\` again in **%sec%s**.}
+{color:#ff2050}}]
 `
 },
 
