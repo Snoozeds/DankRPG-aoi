@@ -24,7 +24,7 @@ $if[$getGlobalUserVar[BoughtBait;$authorID]==False]
 $setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];1];$authorID]
 $else
 $setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];2];$authorID]
-$footer[1;Bait active. Double the animals.]
+$footer[1;Bait active. Double the animals (2).]
 $endif
 $endif
 

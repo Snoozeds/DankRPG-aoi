@@ -11,7 +11,7 @@ $if[$getGlobalUserVar[BoughtBait;$authorID]==False]
 $setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];2];$authorID]
 $else
 $setGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$sum[$getGlobalUserVar[$randomText[fox;deer;moose;rabbit]Stock;$authorID];4];$authorID]
-$footer[1;Bait active. Double the animals.]
+$footer[1;Bait active. Double the animals. (4)]
 $endif
 $wait[10m]
 $channelSendMessage[$channelID;$username[$authorID]: Your pet has begun hunting for you. Come back in 10m to claim its findings.]
