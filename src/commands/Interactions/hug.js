@@ -24,7 +24,7 @@ $suppressErrors[Mention someone.]
 $globalCooldown[5s;
 {newEmbed:
 {title:Slow down $username[$authorID]!}
-{description:You can use \`hug\` again in **%min%m %sec%s**.}
+{description:You can use \`hug\` again in **%sec%s**.}
 {color:#ff2050}}]
 `
 }
