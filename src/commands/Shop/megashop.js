@@ -19,7 +19,7 @@ Requires \`Daily MC\`.
 
 **Mega Sword: [$getVar[MegaCoi]10]**
 + Less chance of taking damage in \`dungeon\`.
-+ Substantially higher chance of gaining MegaCoins in \`dungeon\`.
++ Substantially higher chance of rewards ($getVar[MegaCoi], $getVar[Coi]) in \`dungeon\`.
 
 **Mega Pickaxe: [$getVar[MegaCoi]25]**
 Your mine time is now 1m.\n
