@@ -65,4 +65,6 @@ module.exports = {
   Permissions: "manageserver",
   DailyMCGain: "0",
   DailyMCGain_Price: "5",
+  MegaPickaxe: "False",
+  MegaSword: "False",
 }

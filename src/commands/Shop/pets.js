@@ -14,6 +14,12 @@ name: "buypet",
 aliases: ["buy pet"],
 $if: "v4",
 code: `
+$if[$getGlobalUserVar[HasPet;$authorID]==true]
+$title[1;You already have a pet!]
+$description[1;You already have a pet. Run \`$getServerVar[Prefix]abandon\` to abandon it.]
+$color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$endif
+
 $if[$message==dog]
 $title[1;You bought a dog!]
 $description[1;Enjoy your new furry friend.]
@@ -24,7 +30,6 @@ $setGlobalUserVar[PetType;dog;$authorID]
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];750];$authorID]
 $setGlobalUserVar[MaxHP;$sum[$getGlobalUserVar[MaxHP;$authorID];125];$authorID]
 $onlyIf[$getGlobalUserVar[Coins;$authorID]>749;You do not have enough $getVar[Coi] for a dog.]
-$onlyIf[$getGlobalUserVar[HasPet;$authorID]!=true;:x: You already have a pet. Run \`$getServerVar[Prefix]abandon\` to abandon it.]
 $endif
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
 $onlyIf[$isBot[$authorID]!=true;]

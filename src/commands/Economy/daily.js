@@ -18,13 +18,11 @@ $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins];200]]
 $setGlobalUserVar[FirstDaily;False]
 $endif
 
-$if[$authorID!=$getVar[ownid]]
 $globalCooldown[1d;
 {newEmbed:
 {title:Slow down $username[$authorID]!}
 {description:You can use \`daily\` again in **%hour%h %min%m %sec%s**.}
-{color:#ff2050}}]
-$endif`
+{color:#ff2050}}]`
 }
 
 // Unfortunately, I still have to substitute for the fact that somebody may never use the daily command until they buy the Daily MC upgrade.
