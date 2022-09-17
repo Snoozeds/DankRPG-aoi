@@ -2,7 +2,7 @@ module.exports = [{
 name: "petshop",
 aliases: "shop pet",
 code: `$title[1;Pet Shop]
-$description[1;Welcome to the pet shop $username! Here's what we have. $addField[1;Dog;Increases your MaxHP by **125**.\nPrice: $getVar[Coi]**750**]
+$description[1;Welcome to the pet shop $username! Here's what we have. $addField[1;Dog;Increases your MaxHP by **125**.\nYou can have a MaxHP of 1200 with a fully upgraded pet.\nPrice: $getVar[Coi]**750**]
 $footer[1;$getServerVar[Prefix;$guildID]buypet <opt>]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $globalCooldown[5s;Please stop spamming commands, ty :upside_down:]
@@ -44,7 +44,7 @@ $title[1;$getGlobalUserVar[PetName;$authorID]]
 $description[1;
 Pet type: Dog
 ]
-$footer[1;Level: $getGlobalUserVar[PetLevel;$authorID]/2 | $getServerVar[Prefix;$guildID]petupgrade]
+$footer[1;Level: $getGlobalUserVar[PetLevel;$authorID]/2 | $getServerVar[Prefix;$guildID]petupgrade ($getVar[Coi]500)]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $thumbnail[1;https://i.ibb.co/brt0Q3j/dog.png]
 $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=false;:x: You do not have a pet. See: \`$getServerVar[Prefix]petshop\`]
@@ -71,8 +71,8 @@ aliases: ["petupgrade", "pet upgrade", "upgrade pet", "levelup pet", "leveluppet
 code: `
 $title[1;Level Up!]
 $description[1;
-Your pet \`$getGlobalUserVar[PetName;$authorID]\` has leveled up!
-They are now level 2.
+Your pet "$getGlobalUserVar[PetName;$authorID]" has leveled up for $getVar[Coi]500.
+They are now level 2!
 MaxHP +75
 ]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
