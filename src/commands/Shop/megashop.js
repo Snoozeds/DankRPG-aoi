@@ -44,7 +44,7 @@ $onlyIf[$getGlobalUserVar[Coins;$authorID]>=$getVar[Coi]5000;You don't have enou
 
 {
 name: "buy daily mc amount",
-aliases: ["buydailymcamount", "buydailymegacoinsamount", "buy daily megacoins amount", "buy daily mega coins amount", "buy dailymcamount"],
+aliases: ["buydailymcamount", "buydailymegacoinsamount", "buy daily megacoins amount", "buy daily mega coins amount", "buy dailymcamount", "buydailymcgain", "buy dailymcgain", "buy daily mc gain"],
 code: `
 $setGlobalUserVar[DailyMCGain;$sum[$getGlobalUserVar[DailyMCGain;$authorID];1];$authorID]
 $setGlobalUserVar[MegaCoins;$sub[$getGlobalUserVar[MegaCoins;$authorID];5];$authorID]
