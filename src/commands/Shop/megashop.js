@@ -10,7 +10,7 @@ $description[1;
 **Daily MC: [$getVar[Coi]5000]**
 The \`daily\` command now gives you +$getVar[MegaCoi]**1**.
 
-**Daily MC Amount: [$getVar[MegaCoi]$getGlobalUserVar[DailyMCGain_Price;$authorID]]**
+**Daily MC Amount: [$getVar[MegaCoi]5]**
 Increases your MegaCoin gain in \`daily\` by **1**.
 Currently: **$getGlobalUserVar[DailyMCGain;$authorID]**.
 Requires \`Daily MC\`.
@@ -19,8 +19,7 @@ Requires \`Daily MC\`.
 
 **Mega Sword: [$getVar[MegaCoi]10]**
 + Less chance of taking damage in \`dungeon\`.
-+ Small chance of healing in \`dungeon\`.
-+ Greatly increases your Coin rewards in \`dungeon\`.
++ Substantially higher chance of gaining MegaCoins in \`dungeon\`.
 
 **Mega Pickaxe: [$getVar[MegaCoi]25]**
 Your mine time is now 1m.\n
@@ -47,14 +46,13 @@ $onlyIf[$getGlobalUserVar[Coins;$authorID]>=$getVar[Coi]5000;You don't have enou
 name: "buy daily mc amount",
 aliases: ["buydailymcamount", "buydailymegacoinsamount", "buy daily megacoins amount", "buy daily mega coins amount", "buy dailymcamount"],
 code: `
-$setGlobalUserVar[DailyMCGain_Price;$sum[$getGlobalUserVar[DailyMCGain_Price;$authorID];1];$authorID]
 $setGlobalUserVar[DailyMCGain;$sum[$getGlobalUserVar[DailyMCGain;$authorID];1];$authorID]
-$setGlobalUserVar[MegaCoins;$sub[$getGlobalUserVar[MegaCoins;$authorID];$getGlobalUserVar[DailyMCGain_Price;$authorID]];$authorID]
+$setGlobalUserVar[MegaCoins;$sub[$getGlobalUserVar[MegaCoins;$authorID];5];$authorID]
 $title[1;Success!]
-$description[1;You bought **Daily MC Amount** for **$getVar[MegaCoi]$getGlobalUserVar[DailyMCGain_Price;$authorID]**.]
+$description[1;You bought **Daily MC Amount** for **$getVar[MegaCoi]5**.]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $onlyIf[$getGlobalUserVar[DailyMCGain;$authorID]!=0;You don't have the \`Daily MC\` upgrade!]
-$onlyIf[$getGlobalUserVar[MegaCoins;$authorID]>=$getVar[MegaCoi]$getGlobalUserVar[DailyMCGain_Price;$authorID];You don't have enough MegaCoins!]
+$onlyIf[$getGlobalUserVar[MegaCoins;$authorID]>=$getVar[MegaCoi]5;You don't have enough MegaCoins!]
 `
 },
 
