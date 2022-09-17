@@ -29,10 +29,10 @@ You **lose $getVar[Coi]$replaceText[$replaceText[$checkCondition[$getGlobalUserV
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $endif
 
-$globalCooldown[1d;
+$globalCooldown[1h;
 {newEmbed:
 {title:Slow down $username[$authorID]!}
-{description:You are tired from your last dungeon.\nYou can use \`dungeon\` again in **%hour%h %min%m %sec%s**.}
+{description:You are tired from your last dungeon.\nYou can use \`dungeon\` again in **%min%m %sec%s**.}
 {color:#ff2050}}]
 `
 }]
