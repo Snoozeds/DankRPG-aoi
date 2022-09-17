@@ -44,7 +44,7 @@ $title[1;$getGlobalUserVar[PetName;$authorID]]
 $description[1;
 Pet type: Dog
 ]
-$footer[1;Level: $getGlobalUserVar[PetLevel;$authorID]/2 | $getServerVar[Prefix;$guildID]petupgrade ($getVar[Coi]500)]
+$footer[1;Level: $getGlobalUserVar[PetLevel;$authorID]/2 | $getServerVar[Prefix;$guildID]petupgrade $replaceText[$replaceText[$checkCondition[$getGlobalUserVar[PetLevel]==2];true;;1];false;(500 Coins);1]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $thumbnail[1;https://i.ibb.co/brt0Q3j/dog.png]
 $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=false;:x: You do not have a pet. See: \`$getServerVar[Prefix]petshop\`]
