@@ -5,8 +5,9 @@ code: `
 $onlyIf[$isBot[$findUser[$message;yes]]!=true;You cannot check a bot's profile.]
 $title[1;$username[$findUser[$message;yes]]'s profile]
 $description[1;
-<:RPGCoin:855767372534906920>**$getGlobalUserVar[Coins;$findUser[$message;yes]]** \`Coins\`
-<:RPGHeart:855755205102534686>$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[HP;$findUser[$message;yes]]==$getGlobalUserVar[MaxHP;$findUser[$message;yes]]];true;**$getGlobalUserVar[HP;$findUser[$message;yes]]**;1];false;**$getGlobalUserVar[HP;$findUser[$message;yes]]/$getGlobalUserVar[MaxHP;$findUser[$message;yes]]**;1] \`HP\`
+$getVar[Coi]**$getGlobalUserVar[Coins;$findUser[$message;yes]]** \`Coins\`
+$getVar[MegaCoi]**$getGlobalUserVar[MegaCoins;$findUser[$message;yes]]** \`MegaCoins\`
+$getVar[Heart]$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[HP;$findUser[$message;yes]]==$getGlobalUserVar[MaxHP;$findUser[$message;yes]]];true;**$getGlobalUserVar[HP;$findUser[$message;yes]]**;1];false;**$getGlobalUserVar[HP;$findUser[$message;yes]]/$getGlobalUserVar[MaxHP;$findUser[$message;yes]]**;1] \`HP\`
 <:ATKF:915551150093250592>**$getGlobalUserVar[ATK;$findUser[$message;yes]]** \`ATK\`
 ]
 $thumbnail[1;$userAvatar[$findUser[$message;yes]]]

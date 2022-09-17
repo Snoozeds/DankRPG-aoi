@@ -1,9 +1,10 @@
 module.exports = {
   ownid: "764564962815115267", // Change this to your own ID. This is for when $botOwnerID won't work with multiple IDs (like in an $if statement). Can ONLY BE ONE ID.
   Coi: "<:RPGCoin:855767372534906920>", // Variable to make typing the coin emoji easier.
-  MCoi: "<:MegaCoin:1020409529915146332>", // Variable to make typing the MegaCoin emoji easier.
+  MegaCoi: "<:MegaCoin:1020409529915146332>", // Variable to make typing the MegaCoin emoji easier.
   Heart: "<:RPGHeart:855755205102534686>", // Variable to make typing the hp emoji easier.
   Coins: "0",
+  MegaCoins: "0",
   HP: "100",
   MaxHP : "100",
   ATK: "1",
@@ -62,4 +63,6 @@ module.exports = {
   PetLevel: "1",
   PetLevelCost: "500",
   Permissions: "manageserver",
+  DailyMCGain: "0",
+  DailyMCGain_Price: "5",
 }
