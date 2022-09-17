@@ -20,7 +20,7 @@ $onlyIf[$getGlobalUserVar[HasPet;$authorID]!=False;<:alert:977143489697558569> Y
 $globalCooldown[15m;
 {newEmbed:
 {title:Slow down $username[$authorID]!}
-{description:You can use \`pethunt\` again in **%sec%s**.}
+{description:You can use \`pethunt\` again in **%min%m %sec%s**.}
 {color:#ff2050}}]
 `
 }
