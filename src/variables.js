@@ -67,4 +67,5 @@ module.exports = {
   DailyMCGain_Price: "5",
   MegaPickaxe: "False",
   MegaSword: "False",
+  VoteCount: "0",
 }
