@@ -19,7 +19,7 @@ $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];$message];$autho
 $endif
 
 $if[$getGlobalUserVar[slotAchievement;$authorID]!=<:Unlocked:899050875719393281>]
-$if[$getGlobalUserVar[slotAmount;$authorID]>1000]
+$if[$getGlobalUserVar[slotAmount;$authorID]>=1000]
 **Congratulations!** You unlocked an achievement: "Slots Addict"\n+$getVar[Coi]**100**.
 $setGlobalUserVar[slotAchievement;<:Unlocked:899050875719393281>;$authorID]
 $endif
