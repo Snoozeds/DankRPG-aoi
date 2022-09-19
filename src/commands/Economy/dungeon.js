@@ -22,10 +22,10 @@ $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$authorID];$random[500;1000
 $endif
 
 $else
-$setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaSword;$authorID]==True];true;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];6]];$round[$divide[$getGlobalUserVar[Coins;$authorID];7]]]];false;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];3]];$round[$divide[$getGlobalUserVar[Coins;$authorID];4]]];1]];$authorID]
+$setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$authorID];$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaSword;$authorID]==True];true;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];6]];$round[$divide[$getGlobalUserVar[Coins;$authorID];7]]]];false;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];4]];$round[$divide[$getGlobalUserVar[Coins;$authorID];5]]];1]];$authorID]
 $title[1;$username[$authorID], you start a dungeon...]
 $description[1;You get attacked while in the dungeon!
-You **lose $getVar[Coi]$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaSword;$authorID]==True];true;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];6]];$round[$divide[$getGlobalUserVar[Coins;$authorID];7]]]];false;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];3]];$round[$divide[$getGlobalUserVar[Coins;$authorID];4]]];1]** while escaping!]
+You **lose $getVar[Coi]$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaSword;$authorID]==True];true;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];6]];$round[$divide[$getGlobalUserVar[Coins;$authorID];7]]]];false;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];4]];$round[$divide[$getGlobalUserVar[Coins;$authorID];5]]];1]** while escaping!]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $endif
 
