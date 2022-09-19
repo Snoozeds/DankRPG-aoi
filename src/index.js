@@ -35,9 +35,9 @@ const event = new aoijs.CustomEvent(bot)
 
 event.command({
 listen: "votes",
-code: `$sendDM[Thanks for voting!\nYou earned:\n**$getVar[Coi]100\n$getVar[DiamondEmoji]1**;$eventData[[0]];no]
-$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$eventData[[0]]];100];$eventData[[0]]]
-$setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$eventData[[0]]];1];$eventData[[0]]]`
+code: `
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$eventData[[0]]];500];$eventData[[0]]]
+$setGlobalUserVar[MegaCoins;$sum[$getGlobalUserVar[MegaCoins;$eventData[[0]]];1];$eventData[[0]]]`
 })
 event.listen("votes")
 
