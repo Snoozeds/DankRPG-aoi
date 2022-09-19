@@ -28,7 +28,7 @@ heal, upgrade, sellall, sell<item>\`
  
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Docs](https://dankrpg.xyz/docs/Intro/welcome) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)]
-$footer[1;Command Count: $commandsCount]
+$footer[1;Command Count: $commandsCount | Server prefix: $getServerVar[Prefix;$guildID]]
 
 $globalCooldown[10s;
 {newEmbed:
