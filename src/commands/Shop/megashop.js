@@ -22,7 +22,7 @@ Requires \`Daily MC\`.
 + Substantially higher chance of rewards ($getVar[MegaCoi], $getVar[Coi]) in \`dungeon\`.
 + Lose less Coins in \`dungeon\`.
 
-**Mega Pickaxe: [$getVar[MegaCoi]25]**
+**Mega Pickaxe: [$getVar[MegaCoi]15]**
 Your mine time is now 1m.\n
 ]
 $footer[1;$getServerVar[Prefix]buy <upgrade/item> to buy something.]
@@ -77,12 +77,12 @@ aliases: ["buymegapickaxe", "buy megapickaxe"],
 code: `
 $setGlobalUserVar[MegaPickaxe;True;$authorID]
 $setGlobalUserVar[MiningTime;1m;$authorID]
-$setGlobalUserVar[MegaCoins;$sub[$getGlobalUserVar[MegaCoins;$authorID];25];$authorID]
+$setGlobalUserVar[MegaCoins;$sub[$getGlobalUserVar[MegaCoins;$authorID];15];$authorID]
 $title[1;Success!]
-$description[1;You bought a **Mega Pickaxe** for **$getVar[MegaCoi]25**.]
+$description[1;You bought a **Mega Pickaxe** for **$getVar[MegaCoi]15*.]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $onlyIf[$getGlobalUserVar[MegaPickaxe;$authorID]!=True;You already have this item!]
-$onlyIf[$getGlobalUserVar[MegaCoins;$authorID]>=$getVar[MegaCoi]25;You don't have enough MegaCoins!]
+$onlyIf[$getGlobalUserVar[MegaCoins;$authorID]>=$getVar[MegaCoi]15;You don't have enough MegaCoins!]
 `
 }
 ]
