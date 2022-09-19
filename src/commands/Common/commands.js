@@ -7,7 +7,7 @@ $color[1;$getGlobalUserVar[EmbedColor]]
 $description[1;
 **Economy Commands**:
 \`profile, daily, fight, farm, forage, slots, dungeon, mine,
-give, sellall, pethunt, hunt, blackjack, gamble, inventory\`
+give, vote, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Social Commands**:
 \`hug, kill, slap, wave, laugh, marry, marriage\`
