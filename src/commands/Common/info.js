@@ -16,7 +16,7 @@ Aoi.JS: v$packageVersion
 Links: [Docs](https://dankrpg.xyz/docs)
 ]
 $color[1;$getGlobalUserVar[EmbedColor]]
-$footer[1;Bot by Snoozeds#0802 <3 | Build: v25]
+$footer[1;Bot by Snoozeds#0802 <3 | Build: v26]
 
 $globalCooldown[10s;
 {newEmbed:
