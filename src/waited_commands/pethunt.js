@@ -21,6 +21,5 @@ $globalCooldown[15m;
 {newEmbed:
 {title:Slow down $username[$authorID]!}
 {description:You can use \`pethunt\` again in **%min%m %sec%s**.}
-{color:#ff2050}}]
-`
+{color:#ff2050}}]`
 }
