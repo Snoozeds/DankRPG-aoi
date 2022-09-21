@@ -7,22 +7,22 @@ $title[1;Welcome to my MEGA shop!]
 $description[1;
 **__UPGRADES__**
 
-**Daily MC: [$getVar[Coi]5000]**
+**Daily MC: [$getVar[Coi]5000]** **[$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaCoins;$authorID]==0];true;:x:;1];false;:white_check_mark:;1]]**
 The \`daily\` command now gives you +$getVar[MegaCoi]**1**.
+Only buyable once.
 
-**Daily MC Amount: [$getVar[MegaCoi]5]**
+**Daily MC Amount: [$getVar[MegaCoi]5]** **[$sub[$getGlobalUserVar[DailyMCGain;$authorID];1]]**
 Increases your MegaCoin gain in \`daily\` by **1**.
-Currently: **$getGlobalUserVar[DailyMCGain;$authorID]**.
 Requires \`Daily MC\`.
 
 **__ITEMS__**
 
-**Mega Sword: [$getVar[MegaCoi]10]**
+**Mega Sword: [$getVar[MegaCoi]10]** **[$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaSword;$authorID]==False];true;:x:;1];false;:white_check_mark:;1]]**
 + Less chance of taking damage in \`dungeon\`.
 + Substantially higher chance of rewards ($getVar[MegaCoi], $getVar[Coi]) in \`dungeon\`.
 + Lose less Coins in \`dungeon\`.
 
-**Mega Pickaxe: [$getVar[MegaCoi]15]**
+**Mega Pickaxe: [$getVar[MegaCoi]15]** **[$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaPickaxe;$authorID]==False];true;:x:;1];false;:white_check_mark:;1]]**
 Your mine time is now 1m.\n
 ]
 $footer[1;$getServerVar[Prefix]buy <upgrade/item> to buy something.]
