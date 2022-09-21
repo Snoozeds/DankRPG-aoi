@@ -53,7 +53,7 @@ $title[1;Success!]
 $description[1;You bought **Daily MC Amount** for **$getVar[MegaCoi]5**.]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $onlyIf[$getGlobalUserVar[DailyMCGain;$authorID]!=0;You don't have the \`Daily MC\` upgrade!]
-$onlyIf[$getGlobalUserVar[MegaCoins;$authorID]>=$getVar[MegaCoi]5;You don't have enough MegaCoins!]
+$onlyIf[$getGlobalUserVar[MegaCoins;$authorID]>=5;You don't have enough MegaCoins!]
 $onlyIf[$getGlobalUserVar[DailyMCGain;$authorID]<=50;You have the maximum amount of \`Daily MC Amount\` upgrades!]
 `
 },
