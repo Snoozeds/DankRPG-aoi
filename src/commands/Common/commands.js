@@ -21,7 +21,7 @@ credits, avatar, banner, achievements\`
 
 **Shop Commands**:
 \`shop, petshop, buypet, petinfo, petupgrade,
-heal, upgrade, sellall, sell<item>\`
+heal, upgrade, sellall, sell<item>, iteminfo\`
 
 **Admin Commands**:
 \`serversettings, addcoins, removecoins\`
