@@ -48,8 +48,10 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```cd folder_name``` \
 ```npm init``` \
 ```npm install aoi.js@5.5.5``` \
-```npm install pm2 -g``` (this will host the bot 24/7 and install pm2 globally) \
-```pm2 start index.js```
+```npm install pm2 -g```
+
+```pm2 start index.js``` \
+```pm2 start wait.js``` **(for $wait commands like hunt, pethunt, mine.)**
 
 **Alternatively:** run ```node index.js``` to see any errors occuring (this will not host the bot 24/7!)
 
