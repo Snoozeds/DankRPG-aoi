@@ -38,7 +38,8 @@ listen: "votes",
 code: `
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$eventData[[0]]];500];$eventData[[0]]]
 $setGlobalUserVar[MegaCoins;$sum[$getGlobalUserVar[MegaCoins;$eventData[[0]]];1];$eventData[[0]]]
-$setGlobalUserVar[VoteCount;$sum[$getGlobalUserVar[VoteCount;$eventData[[0]]];1];$eventData[[0]]]`
+$setGlobalUserVar[VoteCount;$sum[$getGlobalUserVar[VoteCount;$eventData[[0]]];1];$eventData[[0]]]
+$setGlobalUserVar[HPPotion;$sum[$getGlobalUserVar[HPPotion;$eventData[[0]]];1];$eventData[[0]]]]`
 })
 event.listen("votes")
 

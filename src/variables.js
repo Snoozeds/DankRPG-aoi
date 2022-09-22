@@ -68,4 +68,5 @@ module.exports = {
   MegaPickaxe: "False",
   MegaSword: "False",
   VoteCount: "0",
+  HPPotion: "0",
 }
