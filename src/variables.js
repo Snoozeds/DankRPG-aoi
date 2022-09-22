@@ -69,4 +69,5 @@ module.exports = {
   MegaSword: "False",
   VoteCount: "0",
   HPPotion: "0",
+  voteAchievement: "<:Locked:899050875916541963>",
 }
