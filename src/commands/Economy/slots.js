@@ -31,6 +31,7 @@ $onlyIf[$isNumber[$message]!=false;Not a number.]
 $onlyIf[$checkContains[$message;-]!=true;No negative values allowed.]
 $onlyIf[$message<=$getGlobalUserVar[Coins;$authorID];You don't have this much.]
 $onlyIf[$message>49;You need to bet at least $getVar[Coi]**50**.]
+$onlyIf[$getGlobalUserVar[FamilyMode;$authorID]!=True;Gambling commands are **disabled**.\n(Family mode enabled.)]
 
 $globalCooldown[5s;
 {newEmbed:

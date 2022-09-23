@@ -9,7 +9,7 @@ $description[1;Here are all the settings you can change.
 $getServerVar[Prefix]changecolor <#hexid>
 Your value: $getGlobalUserVar[EmbedColor;$authorID]\n
 
-**Family Mode** - Removes swearing/references from commands. 
+**Family Mode** - Disables gambling commands. (\`blackjack\`, \`slots\`, \`bet\`)
 $getServerVar[Prefix]familymode <true/false>
 Your Value: $getGlobalUserVar[FamilyMode;$authorID]\n
 
