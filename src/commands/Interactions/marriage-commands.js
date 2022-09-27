@@ -42,9 +42,9 @@ $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=True;You are already marrie
 name: "marriage",
 aliases: ["marriageinfo"],
 code: `
-$title[1;🌸 | Marriage info: $nickname[$findUser[$message;yes]]]
+$title[1;🌸 | Marriage info: $username[$findUser[$message;yes]]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
-$description[1;<@$findUser[$message;yes]> is married to: $username[$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]]\nMarried since: <t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]:R>]
+$description[1;<@$findUser[$message;yes]> is married to: $replaceText[$replaceText[$checkCondition[$memberExists[$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]]==true];true;<@$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]>;1];false;$username[$getGlobalUserVar[MarriedTo;$findUser[$message;yes]]];1]\nMarried since: <t:$getGlobalUserVar[MarriageDate;$findUser[$message;yes]]:R>]
 $thumbnail[1;$userAvatar[$findUser[$message;yes]]]
 $onlyIf[$getGlobalUserVar[InRelationship;$findUser[$message;yes]]!=False;This user is not married.]
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has interaction commands disabled from their settings.]
