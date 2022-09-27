@@ -48,8 +48,8 @@ Assuming you are using **Ubuntu**, run the following commands:
 ```cd folder_name``` \
 ```npm init``` \
 ```npm install aoi.js@5.5.5``` \
-```npm install pm2 -g```
-```pm2 start index.js``` \
+```npm install pm2 -g``` \
+```pm2 start index.js```
 
 **Alternatively:** run ```node index.js``` to see any errors occuring (this will not host the bot 24/7!)
 
