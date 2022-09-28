@@ -5,7 +5,7 @@ code: `
 $description[1;
 **__Bot Info__**
 Bot Ping: $round[$ping]ms
-Uptime: $uptime
+Uptime: $uptime[humanize]
 
 **__Stats__**
 Server Count: $serverCount
