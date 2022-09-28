@@ -20,7 +20,7 @@ give, vote, pethunt, hunt, blackjack, gamble, inventory\`
 credits, avatar, banner, achievements\`
 
 **Shop Commands**:
-\`shop, petshop, buypet, petinfo, petupgrade,
+\`shop, megashop, petshop, buypet, petinfo, petupgrade,
 heal, upgrade, sellall, sell<item>, iteminfo\`
 
 **Admin Commands**:
