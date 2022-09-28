@@ -6,8 +6,12 @@ $description[1;
 **__Bot Info__**
 Bot Ping: $round[$ping]ms
 Uptime: $uptime
+
+**__Stats__**
 Server Count: $serverCount
 Member Count: $allMembersCount
+Command Count: $commandsCount
+Variables Count: $variablesCount
 
 **__Package Info__**
 Node: $nodeVersion
