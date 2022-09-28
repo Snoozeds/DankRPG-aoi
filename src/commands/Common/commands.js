@@ -17,11 +17,11 @@ give, vote, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Misc Commands**:
 \`settings, ping, info, serverinfo, userinfo,
-credits, avatar, banner, achievements\`
+credits, avatar, banner, achievements commandinfo\`
 
 **Shop Commands**:
 \`shop, megashop, petshop, buypet, petinfo, petupgrade,
-heal, upgrade, sellall, sell<item>, iteminfo\`
+heal, upgrade, sellall, sell, iteminfo\`
 
 **Admin Commands**:
 \`serversettings, addcoins, removecoins\`
