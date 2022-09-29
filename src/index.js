@@ -84,6 +84,7 @@ $createApplicationCommand[global;changeprefix;changes the prefix of the current 
 $createApplicationCommand[global;permissions;changes the required permissions for admin commands, Server owner only.;true;slash;[{"name":"value", "description":"manageserver or admin","type":"STRING", "required": true}]]
 $createApplicationCommand[global;commands;displays all available commands.;true;slash]
 $createApplicationCommand[global;shop;displays the shop menu.;true;slash]
+$createApplicationCommand[global;8ball;the magic 8ball will answer your questions.;true;slash;[{"name":"question", "description":"the question you'd like to ask.","type":"STRING", "required": true}]]
 */
 
 const loader = new aoijs.LoadCommands(bot)
