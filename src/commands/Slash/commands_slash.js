@@ -10,7 +10,7 @@ $interactionReply[
 {description:
 **Economy Commands**:
 \`profile, daily, fight, farm, forage, slots, dungeon, mine,
-give, sellall, pethunt, hunt, blackjack, gamble, inventory\`
+give, vote, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Social Commands**:
 \`hug, kill, slap, wave, laugh, marry, marriage\`
@@ -20,15 +20,15 @@ give, sellall, pethunt, hunt, blackjack, gamble, inventory\`
 
 **Misc Commands**:
 \`settings, ping, info, serverinfo, userinfo,
-credits, avatar, banner, achievements\`
+credits, avatar, banner, achievements, commandinfo\`
 
 **Shop Commands**:
-\`shop, petshop, buypet, petinfo, petupgrade,
-heal, upgrade, sellall, sell<item>\`
+\`shop, megashop, petshop, buypet, petinfo, petupgrade,
+heal, upgrade, sellall, sell, iteminfo\`
 
 **Admin Commands**:
 \`serversettings, addcoins, removecoins\`
-
+ 
 **__Bot Links__**
 [Privacy](https://dankrpg.xyz/privacy) | [Docs](https://dankrpg.xyz/docs/Intro/welcome) | [Source Code](https://github.com/SnoozedsGithub/DankRPG) | [Support Server](https://discord.gg/Cc3xBSpWeB)}
 {footer:$commandsCount commands}
