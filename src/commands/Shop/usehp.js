@@ -9,9 +9,9 @@ $setGlobalUserVar[HPPotion;$sub[$getGlobalUserVar[HPPotion;$authorID];1];$author
 $onlyIf[$getGlobalUserVar[HP;$authorID]!=$getGlobalUserVar[MaxHP;$authorID];Your HP is already full! Your HP Potion was __not__ used.]
 $onlyIf[$getGlobalUserVar[HPPotion;$authorID]!=0;You don't have a HP Potion to use!]
 
-$globalCooldown[5s;
+$globalCooldown[1d;
 {newEmbed:
 {title:Slow down $username[$authorID]!}
-{description:You can use \`bet\` again in **%sec%s**.}
+{description:You can use \`usehp\` again in **%hour%h %min%m %sec%s**.}
 {color:#ff2050}}]`
 }
