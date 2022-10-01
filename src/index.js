@@ -85,6 +85,7 @@ $createApplicationCommand[global;permissions;changes the required permissions fo
 $createApplicationCommand[global;commands;displays all available commands.;true;slash]
 $createApplicationCommand[global;shop;displays the shop menu.;true;slash]
 $createApplicationCommand[global;8ball;the magic 8ball will answer your questions.;true;slash;[{"name":"question", "description":"the question you'd like to ask.","type":"STRING", "required": true}]]
+$createApplicationCommand[global;kill;kills a user.;true;slash;[{"name":"member", "description":"the member you'd like to kill.","type":"USER", "required": true}]]
 */
 
 const loader = new aoijs.LoadCommands(bot)
