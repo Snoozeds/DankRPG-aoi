@@ -19,7 +19,7 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 $image[1;$httpRequest[https://api.dankrpg.xyz/anime/hug;GET;;url]]
 $endif
 $endif
-$suppressErrors[Mention someone.]
+$onlyIf[$message!=;{newEmbed:{title:Error!}{description:You need to mention a user to hug!}{color:#ff2050}}]
 
 $globalCooldown[5s;
 {newEmbed:
