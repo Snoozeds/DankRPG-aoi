@@ -24,7 +24,7 @@ Aoi.JS: v$packageVersion
 Links: [Docs](https://dankrpg.xyz/docs)}
 
 {color:$getGlobalUserVar[EmbedColor]}
-{footer:Bot by Snoozeds#0802 <3 | Build v25}
+{footer:Bot by Snoozeds#0802 <3 | Build v27}
 }
 ]
 
