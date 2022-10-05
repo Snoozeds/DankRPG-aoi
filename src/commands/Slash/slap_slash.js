@@ -19,5 +19,13 @@ $interactionReply[;
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$interactionData[options.data[0].value]]]!=False;{
 "content": "This user has interactions disabled.","ephemeral": true,"options": {"interaction": true}}]
 $endif
-$createObject[$jsonRequest[https://api.dankrpg.xyz/anime/slap]]`
+$createObject[$jsonRequest[https://api.dankrpg.xyz/anime/slap]]
+
+$globalCooldown[10s;{
+"content": "Slow down! You're on a cooldown. %time%",
+"ephemeral": true,
+"options": {
+"interaction": true
+}
+}]`
 }
