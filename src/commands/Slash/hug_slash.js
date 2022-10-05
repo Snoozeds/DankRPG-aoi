@@ -11,9 +11,10 @@ $interactionReply[;
 {color:$getGlobalUserVar[EmbedColor;$authorID]}
 {image:$getObjectProperty[url]}}]
 $else
-$interactionReply[$username[$authorID] hugs <@$findUser[$interactionData[options.data[0].value]]>;
+$interactionReply[;
 {newEmbed:
-{color:#303136}
+{title:$username[$authorID] hug $username[$findUser[$interactionData[options.data[0].value]]]}
+{color:$getGlobalUserVar[EmbedColor;$authorID]}
 {image:$getObjectProperty[url]}}]
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$interactionData[options.data[0].value]]]!=False;{
 "content": "This user has interactions disabled.","ephemeral": true,"options": {"interaction": true}}]
