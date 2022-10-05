@@ -88,6 +88,7 @@ $createApplicationCommand[global;8ball;the magic 8ball will answer your question
 $createApplicationCommand[global;kill;kills a user.;true;slash;[{"name":"member", "description":"the member you'd like to kill.","type":"USER", "required": true}]]
 $createApplicationCommand[global;slap;slaps a user.;true;slash;[{"name":"member", "description":"the member you'd like to slap.","type":"USER", "required": true}]]
 $createApplicationCommand[global;hug;hugs a user.;true;slash;[{"name":"member", "description":"the member you'd like to hug.","type":"USER", "required": true}]]
+$createApplicationCommand[global;laugh;sends a laughing GIF.;true;slash]
 */
 
 const loader = new aoijs.LoadCommands(bot)
