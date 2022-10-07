@@ -14,6 +14,7 @@ $if[$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaSword;$autho
 $title[1;$username[$authorID], you start a dungeon...]
 $description[1;You find **$randomText[$getVar[Coi]$random[500;1000];$getVar[Coi]$random[500;1000];$getVar[MegaCoi]1]**!]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$globalCooldown[1h;{newEmbed:{title:Slow down $username[$authorID]!}{description:You are tired from your last dungeon.\nYou can use \`dungeon\` again in **%min%m %sec%s**.}{color:#ff2050}}]
 
 $if[$randomText[$getVar[Coi]$random[500;1000];$getVar[Coi]$random[500;1000];$getVar[MegaCoi]1]==$getVar[MegaCoi]1]
 $setGlobalUserVar[MegaCoins;$sum[$getGlobalUserVar[MegaCoins;$authorID];1];$authorID]
@@ -27,12 +28,7 @@ $title[1;$username[$authorID], you start a dungeon...]
 $description[1;You get attacked while in the dungeon!
 You **lose $getVar[Coi]$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[MegaSword;$authorID]==True];true;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];6]];$round[$divide[$getGlobalUserVar[Coins;$authorID];7]]]];false;$randomText[$round[$divide[$getGlobalUserVar[Coins;$authorID];4]];$round[$divide[$getGlobalUserVar[Coins;$authorID];5]]];1]** while escaping!]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
+$globalCooldown[1h;{newEmbed:{title:Slow down $username[$authorID]!}{description:You are tired from your last dungeon.\nYou can use \`dungeon\` again in **%min%m %sec%s**.}{color:#ff2050}}]
 $endif
-
-$globalCooldown[1h;
-{newEmbed:
-{title:Slow down $username[$authorID]!}
-{description:You are tired from your last dungeon.\nYou can use \`dungeon\` again in **%min%m %sec%s**.}
-{color:#ff2050}}]
 `
 }]
