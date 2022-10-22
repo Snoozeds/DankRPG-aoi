@@ -8,9 +8,8 @@ code: `
 $title[1;Command Info]
 $description[1;$replaceText[$replaceText[$checkCondition[$commandInfo[$message;name]==];true;Command not found!\nMake sure that you typed the command correctly.;1];false;
 **Name**: $commandInfo[$message;name]
-**Aliases**: $replaceText[$replaceText[$checkCondition[$commandInfo[$message;aliases]==];true;**N/A**;1];false;$joinSplitText[, ]
-$textSplit[$commandInfo[$message;aliases];,];1]
-;1]
+**Aliases**: $replaceText[$replaceText[$checkCondition[$commandInfo[$message;aliases]==];true;N/A;1];false;$joinSplitText[, ]
+$textSplit[$commandInfo[$message;aliases];,];1];1]
 **Category:** $commandInfo[$message;category]
 **Description:** $commandInfo[$message;description]
 **Usage:** $commandInfo[$message;usage]]
