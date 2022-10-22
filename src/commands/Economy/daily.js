@@ -2,6 +2,9 @@ module.exports = {
 name: "daily",
 aliases: ["d"],
 $if: "v4",
+category: "Economy",
+description: "Get your daily coins.",
+usage: "N/A",
 code: `
 $if[$getGlobalUserVar[FirstDaily;$authorID]==False]
 <:Unlocked:899050875719393281> You collected your daily reward of **$getVar[Coi]100**$replaceText[$replaceText[$checkCondition[$getGlobalUserVar[DailyMCGain;$authorID]>0];true; and **$getVar[MegaCoi]$getGlobalUserVar[DailyMCGain;$authorID]**;1];false;;1].

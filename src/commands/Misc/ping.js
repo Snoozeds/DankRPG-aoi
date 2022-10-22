@@ -1,5 +1,8 @@
 module.exports = ({
 name: "ping",
+category: "Misc",
+description: "Shows the bot's ping.",
+usage: "N/A",
 code: `**Websocket Ping**: \`$ping ms\`
 **Database Ping:** \`$dbPing ms\`
 

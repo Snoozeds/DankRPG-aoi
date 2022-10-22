@@ -1,6 +1,9 @@
 module.exports = {
 name: "addcoins",
 aliases: ["add coins"],
+category: "Admin",
+description: "Add coins to a user.",
+usage: "<user> <amount>",
 code: `
 $setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$findUser[$message[1];no]];$message[2]];$findUser[$message[1];no]]
 Gave $getVar[Coi]$message[2] to **$userTag[$findUser[$message[1];no]]**.

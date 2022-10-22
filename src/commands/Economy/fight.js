@@ -2,6 +2,9 @@ module.exports = {
 name: "fight",
 aliases: ["attack", "battle"],
 $if: "v4",
+category: "Economy",
+description: "Starts a fight against enemies.",
+usage: "N/A",
 code:`
 $if[$getGlobalUserVar[HP;$authorID]<=0]
 $title[1;$username[$authorID]'s Fight]

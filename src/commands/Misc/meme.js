@@ -1,6 +1,9 @@
 module.exports = {
 name : "meme",
 aliases: "memes",
+category: "Fun",
+description: "Sends a random meme.",
+usage: "N/A",
 code : `
 $title[1;$getObjectProperty[title]]
 $image[1;$getObjectProperty[url]]

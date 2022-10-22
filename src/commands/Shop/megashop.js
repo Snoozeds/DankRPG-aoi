@@ -2,6 +2,9 @@ module.exports = [{
 name: "megashop",
 aliases: "mega shop",
 $if: "v4",
+category: "Shop",
+description: "Shows the mega shop.",
+usage: "N/A",
 code: `
 $title[1;Welcome to my MEGA shop!]
 $description[1;
@@ -32,6 +35,9 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]`
 {
 name: "buy daily mc",
 aliases: ["buydailymc", "buydailymegacoins", "buy daily megacoins", "buy daily mega coins", "buy dailymc"],
+category: "Shop",
+description: "Buys the daily mega coins upgrade.",
+usage: "N/A",
 code: `
 $title[1;Success!]
 $description[1;You bought **Daily MC** for **$getVar[Coi]5000**.]
@@ -61,6 +67,9 @@ $onlyIf[$getGlobalUserVar[DailyMCGain;$authorID]<=50;You have the maximum amount
 {
 name: "buy mega sword",
 aliases: ["buymegasword", "buy megasword"],
+category: "Shop",
+description: "Buys the mega sword.",
+usage: "N/A",
 code: `
 $setGlobalUserVar[MegaSword;True;$authorID]
 $setGlobalUserVar[MegaCoins;$sub[$getGlobalUserVar[MegaCoins;$authorID];10];$authorID]
@@ -75,6 +84,9 @@ $onlyIf[$getGlobalUserVar[MegaCoins;$authorID]>=$getVar[MegaCoi]10;You don't hav
 {
 name: "buy mega pickaxe",
 aliases: ["buymegapickaxe", "buy megapickaxe"],
+category: "Shop",
+description: "Buys the mega pickaxe.",
+usage: "N/A",
 code: `
 $setGlobalUserVar[MegaPickaxe;True;$authorID]
 $setGlobalUserVar[MiningTime;1m;$authorID]

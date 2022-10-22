@@ -1,6 +1,9 @@
 module.exports = [{
 name: "petshop",
 aliases: "shop pet",
+category: "Shop",
+description: "Shows the pet shop.",
+usage: "N/A",
 code: `$title[1;Pet Shop]
 $description[1;Welcome to the pet shop $username! Here's what we have. $addField[1;Dog;Increases your MaxHP by **125**.\nYou can have a MaxHP of 1200 with a fully upgraded pet.\nPrice: $getVar[Coi]**750**]
 $footer[1;$getServerVar[Prefix;$guildID]buypet <opt> | Other commands: $getServerVar[Prefix;$guildID]petinfo, $getServerVar[Prefix;$guildID]petupgrade]
@@ -13,6 +16,9 @@ $onlyIf[$isBot[$authorID]!=true;]`
 name: "buypet",
 aliases: ["buy pet"],
 $if: "v4",
+category: "Shop",
+description: "Buys a pet.",
+usage: "<pet>",
 code: `
 $if[$getGlobalUserVar[HasPet;$authorID]==true]
 $title[1;You already have a pet!]
@@ -39,6 +45,9 @@ $onlyIf[$isBot[$authorID]!=true;]
 {
 name: "pet info",
 aliases: ["petinfo", "pet", "pi"],
+category: "Shop",
+description: "Shows your pet's info.",
+usage: "N/A",
 code: `
 $title[1;$getGlobalUserVar[PetName;$authorID]]
 $description[1;
@@ -56,6 +65,9 @@ $onlyIf[$isBot[$authorID]!=true;]
 {
 name: "namepet",
 aliases: ["name pet", "petname", "pet name"],
+category: "Shop",
+description: "Names your pet.",
+usage: "<name>",
 code: `
 Named your pet to \`$message\`.
 $setGlobalUserVar[PetName;$message;$authorID]
@@ -68,6 +80,9 @@ $onlyIf[$isBot[$authorID]!=true;]`
 {
 name: "upgradepet",
 aliases: ["petupgrade", "pet upgrade", "upgrade pet", "levelup pet", "leveluppet"],
+category: "Shop",
+description: "Upgrades your pet.",
+usage: "N/A",
 code: `
 $title[1;Level Up!]
 $description[1;

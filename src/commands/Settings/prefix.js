@@ -1,5 +1,8 @@
 module.exports = {
 name: "prefix",
+category: "Settings",
+description: "Changes the bot's prefix.",
+usage: "<new prefix>",
 code: `
 $setServerVar[Prefix;$message;$guildID]
 Changed prefix to \`$noEscapingMessage\`

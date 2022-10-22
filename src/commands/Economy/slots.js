@@ -1,6 +1,9 @@
 module.exports = {
 name: "slots",
 $if: "v4",
+category: "Economy",
+description: "Starts a game of slots. 1/4 chance of winning.",
+usage: "<bet amount>",
 code: `
 $if[$randomText[Lose;Lose;Lose;Win]==Win]
 $title[1;You win!]

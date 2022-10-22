@@ -1,6 +1,9 @@
 module.exports = {
 name: "commands",
 aliases: ["help", "cmds", "cmd"],
+category: "Misc",
+description: "Shows all available commands.",
+usage: "N/A",
 code: `
 $title[1;Commands]
 $color[1;$getGlobalUserVar[EmbedColor]]

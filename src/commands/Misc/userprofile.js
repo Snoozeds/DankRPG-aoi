@@ -1,6 +1,9 @@
 module.exports = {
 name : "p",
 aliases : ["profile", "user", "stats", "bal"],
+category : "Misc",
+description : "Shows your or another user's profile.",
+usage : "(optional: <user>)",
 code: `
 $onlyIf[$isBot[$get[u]]!=true;You cannot check a bot's profile.]
 $title[1;$username[$get[u]]'s profile]

@@ -2,6 +2,9 @@ module.exports = {
 name: "farm",
 aliases: ["crops", "farming", "f"],
 $if: "v4",
+category: "Economy",
+description: "Farm crops to earn coins. Has a chance to heal you.",
+usage: "N/A",
 code: `
 $if[$getGlobalUserVar[HP;$authorID]<$sub[$getGlobalUserVar[MaxHP;$authorID];15]]
 $title[1;$username's farm]

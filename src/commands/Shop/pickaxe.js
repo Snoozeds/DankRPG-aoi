@@ -1,6 +1,9 @@
 module.exports = {
 name: "buy pickaxe",
 aliases: ["buypickaxe", "buypick", "buy pick"],
+category: "Shop",
+description: "Buys a pickaxe.",
+usage: "N/A",
 code: `
 $channelSendMessage[$channelID;You bought a pickaxe for **100 Stone**.]
 $setGlobalUserVar[Stone;$sub[$getGlobalUserVar[Stone];100];$authorID]

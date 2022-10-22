@@ -1,6 +1,9 @@
 module.exports = [{
 name: "settings",
 aliases: "options",
+category: "Settings",
+description: "Shows your settings.",
+usage: "N/A",
 code: `
 $title[1;Settings]
 $description[1;Here are all the settings you can change.
@@ -27,6 +30,9 @@ $onlyIf[$isBot[$authorID]!=true;]`
 name : "changecolor",
 aliases: "changecolour",
 $if: "v4",
+category: "Settings",
+description: "Changes the color of embeds.",
+usage: "<#hexid>",
 code: `
 $onlyif[$isValidHex[$replaceText[$message;#;;-1]]!=false;This is not a valid hex code. Please visit <https://colorpicker.me> to find a valid hex code.]
 Changed all embed colors to #$replaceText[$message;#;;-1].
@@ -41,6 +47,9 @@ $onlyIf[$isBot[$authorID]!=true;]
 name: "familymode",
 aliases : "fmm",
 $if: "v4",
+category: "Settings",
+description: "Disables gambling commands.",
+usage: "<true/false>",
 code: `
 $globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $if[$message==true]
@@ -63,6 +72,9 @@ $onlyIf[$isBot[$authorID]!=true;]`
 name: "userint",
 aliases: ["user interactions", "interactions"],
 $if: "v4",
+category: "Settings",
+description: "Whether or not users can use commands that mention you (e.g hug, marry).",
+usage: "<true/false>",
 code: `
 $globalCooldown[10s;Please wait before running this command again. This helps us enforce ratelimits. %time%]
 $if[$message==true]

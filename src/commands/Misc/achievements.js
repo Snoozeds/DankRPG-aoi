@@ -2,6 +2,9 @@ module.exports = {
 name: "achievements",
 aliases: ["ach"],
 $if: "v4",
+category: "Misc",
+description: "Shows your or another user's achievements.",
+usage: "(optional: <user>)",
 code: `$onlyIf[$isBot[$get[u]]!=true;you cannot check a bot's achievements.]
 $onlyIf[$getGlobalUserVar[UserInt;$findUser[$message;no]]!=False;This user has interaction commands disabled from their settings.]
 $title[1;$username[$get[u]]'s achievements]

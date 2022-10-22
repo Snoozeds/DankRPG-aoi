@@ -1,6 +1,9 @@
 module.exports = {
 name: "avatar",
 aliases: "av",
+category: "Misc",
+description: "Shows your or another user's avatar.",
+usage: "(optional: <user>)",
 code: `
 $title[1;$username[$findUser[$message;yes]]'s Avatar]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]

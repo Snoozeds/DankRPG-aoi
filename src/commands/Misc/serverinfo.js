@@ -2,6 +2,9 @@ module.exports = {
 name: "serverinfo",
 aliases: "si",
 $if: "v4",
+category: "Misc",
+description: "Shows information about the server.",
+usage: "N/A",
 code: `
 $description[1;
 \`$serverName ($get[gid])\`

@@ -1,6 +1,9 @@
 module.exports = {
 name: "info",
 aliases: ["inf"],
+category: "Misc",
+description: "Shows information about the bot.",
+usage: "N/A",
 code: `
 $description[1;
 **__Bot Info__**

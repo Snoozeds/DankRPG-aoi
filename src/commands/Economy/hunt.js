@@ -1,6 +1,9 @@
 module.exports = {
 name: "hunt",
 aliases: ["hunting", "h"],
+category: "Economy",
+description: "Hunt for animals.",
+usage: "N/A",
 $if: "v4",
 code: `
 $if[$getGlobalUserVar[HP;$authorID]<=30]

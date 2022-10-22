@@ -1,6 +1,9 @@
 module.exports = {
 name: "usehp",
 aliases: ["use hp"],
+category: "Shop",
+description: "Uses a HP Potion, healing you to maxHP.",
+usage: "N/A",
 code: `
 You used 1x **<:hppotion:1022298361702920353>HP Potion**.
 Your HP is now **$getVar[Heart]$getGlobalUserVar[HP;$authorID]/$getGlobalUserVar[MaxHP;$authorID]**.

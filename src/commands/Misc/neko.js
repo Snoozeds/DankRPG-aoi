@@ -1,5 +1,9 @@
 module.exports = {
 name: "neko",
+aliases: "catgirl",
+category: "Fun",
+description: "Sends a random neko image.",
+usage: "N/A",
 code: `
 $title[1;🐱 | By $getObjectProperty[output.artist_name]]
 $image[1;$getObjectProperty[output.url]]

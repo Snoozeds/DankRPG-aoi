@@ -1,6 +1,9 @@
 module.exports = {
 name: "coinflip",
 aliases: ["cf", "fc", "flip", "flipcoin"],
+category: "Misc",
+description: "Flips a coin.",
+usage: "N/A",
 code: `
 Your coin landed on **$randomText[heads;tails]**!
 

@@ -1,6 +1,9 @@
 module.exports = {
 name: "commandinfo",
 aliases: ["cmdinfo", "cmdi", "command info", "cmd info", "cmd i"],
+category: "Misc",
+description: "Shows information about a command.",
+usage: "(command)",
 code: `
 $title[1;Command Info]
 $description[1;$replaceText[$replaceText[$checkCondition[$commandInfo[$message;name]==];true;Command not found!\nMake sure that you typed the command correctly.;1];false;

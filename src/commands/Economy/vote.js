@@ -1,5 +1,8 @@
 module.exports = {
 name: "vote",
+category: "Economy",
+description: "Vote for the bot to get coins, megacoins and a HP Potion.",
+usage: "N/A",
 code: `
 $author[Voting for DankRPG]
 $description[1;

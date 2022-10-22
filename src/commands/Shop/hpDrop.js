@@ -2,6 +2,9 @@ module.exports = {
 name: "buyhp",
 aliases: "buy hp",
 $if: "v4",
+category: "Shop",
+description: "Buys a hpDrop, increasing your MaxHP.",
+usage: "N/A",
 code: `
 $if[$getGlobalUserVar[HasPet;$authorID]==false]
 $onlyIf[$getGlobalUserVar[MaxHP;$authorID]<999;You have the maximum amount of hp.]

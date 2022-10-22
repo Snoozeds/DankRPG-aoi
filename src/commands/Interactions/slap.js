@@ -1,6 +1,9 @@
 module.exports = {
 name: "slap",
 $if: "v4",
+category: "Social",
+description: "Slaps someone.",
+usage: "<user>",
 code: `
 $if[$findUser[$message;no]==$authorID]
 $title[1;Dank RPG slaps $username[$authorID]]

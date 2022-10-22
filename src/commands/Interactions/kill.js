@@ -1,5 +1,8 @@
 module.exports = {
 name: "kill",
+category: "Social",
+description: "Kills someone.",
+usage: "<user>",
 code: `
 $username[$findUser[$message;no]] dies by: **$get[death]**
 

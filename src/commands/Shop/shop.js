@@ -1,6 +1,9 @@
 module.exports = {
 name: "shop",
 $if: "v4",
+category: "Shop",
+description: "Shows the shop.",
+usage: "N/A",
 code: `
 $title[1;Welcome to my shop!]
 $description[1;Here are my items on sale.\n

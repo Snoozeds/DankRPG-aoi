@@ -1,6 +1,9 @@
 module.exports = [{
 name: "iteminfo hpdrop",
 aliases: ["iteminfo hp", "iteminfohp", "iteminfohpdrop", "iteminfo hp drop"],
+category: "Shop",
+description: "Shows information about the hpDrop item.",
+usage: "N/A",
 code: `
 $title[1;Item Info]
 $description[1;
@@ -14,6 +17,9 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 {
 name: "iteminfo pickaxe",
 aliases: ["iteminfo pick", "iteminfopick", "iteminfopickaxe", "iteminfo pick axe"],
+category: "Shop",
+description: "Shows information about the pickaxe item.",
+usage: "N/A",
 code: `
 $title[1;Item Info]
 $description[1;
@@ -26,6 +32,9 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]`
 {
 name: "iteminfo bait",
 aliases: ["iteminfobait"],
+category: "Shop",
+description: "Shows information about the bait item.",
+usage: "N/A",
 code: `
 $title[1;Item Info]
 $description[1;
@@ -38,6 +47,9 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]`
 {
 name: "iteminfo megasword",
 aliases: ["iteminfosword", "iteminfo sword", "iteminfo mega sword", "iteminfomegasword"],
+category: "Shop",
+description: "Shows information about the megaSword item.",
+usage: "N/A",
 code: `
 $title[1;Item Info]
 $description[1;
@@ -53,6 +65,9 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]`
 {
 name: "iteminfo megapickaxe",
 aliases: ["iteminfomegapickaxe", "iteminfo megapickaxe", "iteminfo mega pickaxe", "iteminfo megapick", "iteminfomegapick", "iteminfo mega pick"],
+category: "Shop",
+description: "Shows information about the megaPickaxe item.",
+usage: "N/A",
 code: `
 $title[1;Item Info]
 $description[1;

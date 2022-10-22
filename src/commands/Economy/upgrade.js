@@ -2,6 +2,9 @@ module.exports = {
 name: "upgrade",
 $if: "v4",
 aliases: ["prestige", "rankup"],
+category: "Economy",
+description: "Upgrades your ATK.",
+usage: "N/A",
 code: `
 $if[$getGlobalUserVar[ATK;$authorID]==1]
 You upgraded to 2ATK for <:RPGCoin:855767372534906920>**500**.

@@ -1,6 +1,9 @@
 module.exports = {
 name: "buy bait",
 aliases: ["buybait"],
+category: "Shop",
+description: "Buys bait.",
+usage: "N/A",
 code: `
 You bought bait for **100 Slime**
 $setGlobalUserVar[Slime;$sub[$getGlobalUserVar[Slime];100];$authorID]

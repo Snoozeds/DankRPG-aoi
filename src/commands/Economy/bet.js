@@ -2,6 +2,9 @@ module.exports = {
 name: "bet",
 aliases: "gamble",
 $if: "v4",
+category: "Economy",
+description: "Gamble with your coins. 1/3 chance of winning double your bet.",
+usage: "<amount>",
 code: `
 
 $if[$randomText[Win;Lose;Lose]==Win]

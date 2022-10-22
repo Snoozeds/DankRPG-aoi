@@ -1,5 +1,8 @@
 module.exports = [{
 name: "marry",
+category: "Social",
+description: "Sends a marriage request for someone.",
+usage: "<user>",
 code: `
 $setGlobalUserVar[Sender;;$findUser[$message;no]]
 $wait[12h]
@@ -23,6 +26,9 @@ $globalCooldown[3s;]
 
 {
 name: "accept",
+category: "Social",
+description: "Accepts a marriage request (if one is active.)",
+usage: "N/A",
 code: `
 $channelSendMessage[$channelID;<@$getGlobalUserVar[Sender;$authorID]> is now married to <@$authorID>!]
     
@@ -41,6 +47,9 @@ $onlyIf[$getGlobalUserVar[InRelationship;$authorID]!=True;You are already marrie
 {
 name: "marriage",
 aliases: ["marriageinfo"],
+category: "Social",
+description: "Shows your or another user's marriage info.",
+usage: "(optional: <user>)",
 code: `
 $title[1;🌸 | Marriage info: $username[$findUser[$message;yes]]]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
@@ -60,6 +69,9 @@ $globalCooldown[5s;
 
 {
 name: "divorce",
+category: "Social",
+description: "Divorces your current partner.",
+usage: "<user>",
 code: `
 You divorced.
 $setGlobalUserVar[InRelationship;False;$authorID]

@@ -1,5 +1,8 @@
 module.exports = {
 name: "credits",
+category: "Misc",
+description: "Shows the credits/attribution for the bot.",
+usage: "N/A",
 code: `$title[1;Credits]
 $description[1;**Farm crops**:
 "[LPC] Crops" by bluecarrot16, Daniel Eddeland (daneeklu), Joshua Taylor, Richard Kettering (Jetrel).

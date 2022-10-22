@@ -1,5 +1,8 @@
 module.exports = {
 name: "wave",
+category: "Social",
+description: "Sends a waving GIF.",
+usage: "N/A",
 code: `
 $description[1;<@$authorID> waves.]
 $image[1;$httpRequest[https://api.dankrpg.xyz/anime/wave;GET;;url]]

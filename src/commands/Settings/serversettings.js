@@ -1,6 +1,9 @@
 module.exports = [{
 name: "serversettings",
 aliases: "serveroptions",
+category: "Settings",
+description: "Shows the server's settings.",
+usage: "N/A",
 code: `
 $title[1;Server Settings]
 $description[1;Here are all the settings you can change.
@@ -21,6 +24,9 @@ $color[1;$getGlobalUserVar[EmbedColor;$authorID]]
 name: "permissions",
 alias: ["perms", "permission"],
 $if: "v4",
+category: "Settings",
+description: "Changes the required permissions for admin commands.",
+usage: "<manageserver/admin>",
 code: `
 $if[$message==manageserver]
 $setServerVar[Permissions;manageserver;$guildID]

@@ -1,6 +1,9 @@
 module.exports = {
 name : "8ball",
 $if: "v4",
+category: "Fun",
+description: "Ask the magic 8ball a question.",
+usage: "<question>",
 code: `
 $if[$message==]
 Usage: $getServerVar[Prefix]8ball <question>

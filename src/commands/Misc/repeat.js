@@ -1,6 +1,9 @@
 module.exports = {
 name: "repeat",
 aliases: ["say"],
+category: "Misc",
+description: "Repeats what you say.",
+usage: "<message>",
 code: `$title[1;Repeated message from $username[$authorID]:]
 $description[1;\`$message\`]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]

@@ -2,6 +2,9 @@ module.exports = {
 name: "sellall",
 aliases: ["sell all", "sell"],
 $if: "v4",
+category: "Shop",
+description: "Sells all of your items.",
+usage: "N/A",
 code: `
 $setGlobalUserVar[Gold;0;$authorID]
 $setGlobalUserVar[Diamond;0;$authorID]

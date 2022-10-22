@@ -1,6 +1,9 @@
 module.exports = {
 name: "removecoins",
 aliases: ["remove coins"],
+category: "Admin",
+description: "Removes coins from a user.",
+usage: "<user> <amount>",
 code: `
 $setGlobalUserVar[Coins;$sub[$getGlobalUserVar[Coins;$findUser[$message[1];no]];$message[2]];$findUser[$message[1];no]]
 Removed $getVar[Coi]$message[2] from **$userTag[$findUser[$message[1];no]]**.

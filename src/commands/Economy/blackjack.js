@@ -2,6 +2,9 @@ module.exports = [{
 name: "blackjack",
 aliases: ["bj"],
 $if: "v4",
+category: "Economy",
+description: "Play blackjack with the bot.",
+usage: "<bet>",
 code: `
 
 $if[$message==all]

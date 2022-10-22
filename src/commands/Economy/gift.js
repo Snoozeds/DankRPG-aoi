@@ -1,6 +1,9 @@
 module.exports = {
 name: "gift",
 aliases: "give",
+category: "Economy",
+description: "Gives coins to another user.",
+usage: "<user> <amount>",
 code: `
 $description[1;You gifted $getVar[Coi]$message[2] to <@$findUser[$message[1];no]>.]
 $color[1;$getGlobalUserVar[EmbedColor;$authorID]]

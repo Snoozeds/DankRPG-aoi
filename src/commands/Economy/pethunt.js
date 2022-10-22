@@ -2,6 +2,9 @@ module.exports = {
 name: "pethunt",
 aliases: ["pet hunt", "petshunt", "pets hunt", "phunt", "ph"],
 $if: "v4",
+category: "Economy",
+description: "Your pet hunts for you.",
+usage: "N/A",
 code:`
 <@!$authorID>
 $title[1;$username[$authorID]'s Pet Hunt]

@@ -2,6 +2,9 @@ module.exports = {
 name: "whois",
 $if: "v4",
 aliases: ["wi", "ui", "userinfo"],
+category: "Misc",
+description: "Shows information about you or another user.",
+usage: "(optional: <user>)",
 code: `
 $if[$getUserBanner[$get[u]]!=null]
 $description[1;

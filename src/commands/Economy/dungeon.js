@@ -2,6 +2,8 @@ module.exports = [{
 name: "dungeon",
 aliases: ["startdungeon", "dun", "dung", "du"],
 $if: "v4",
+category: "Economy",
+description: "Start a dungeon run. Chance of losing coins, finding coins/megacoins",
 code: `
 
 $if[$getGlobalUserVar[Coins;$authorID]<=500]

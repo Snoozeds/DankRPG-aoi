@@ -1,6 +1,9 @@
 module.exports = {
 name: "banner",
 $if: "v4",
+category: "Misc",
+description: "Shows your or another user's banner.",
+usage: "(optional: <user>)",
 code: `
 
 $if[$getUserBanner[$findUser[$message;yes]]==null]

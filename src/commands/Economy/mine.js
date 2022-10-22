@@ -4,6 +4,9 @@ module.exports = [
 name: "mine",
 aliases: ["m"],
 $if: "v4",
+category: "Economy",
+description: "Mines for minerals.",
+usage: "N/A",
 code: `
 $if[$getGlobalUserVar[MiningTime;$authorID]==10m]
 $channelSendMessage[$channelID;<@$authorID>\nYou mined:\n$getVar[StoneEmoji]**$random[10;20]** Stone\n$getVar[GoldEmoji]**$random[5;10]** Gold\n$getVar[DiamondEmoji]**$random[2;3]** Diamond(s)]
@@ -45,6 +48,9 @@ $globalCooldown[$sum[$replaceText[$getGlobalUserVar[MiningTime;$authorID];m; ;-1
 name: "sell diamond",
 aliases: ["selldiamond", "sell diamonds", "selldiamonds"],
 $if: "v4",
+category: "Economy",
+description: "Sells diamonds.",
+usage: "(optional: <amount>/\"all\")",
 code: `
 $if[$message==all]
 $setGlobalUserVar[Diamond;0;$authorID]
@@ -73,6 +79,9 @@ $onlyIf[$message!=;Please specify how many you want to sell, with either \`all\`
 name: "sell gold",
 aliases: ["sellgold", "sell gold"],
 $if: "v4",
+category: "Economy",
+description: "Sells gold.",
+usage: "(optional: <amount>/\"all\")",
 code: `
 $if[$message==all]
 $setGlobalUserVar[Gold;0;$authorID]
@@ -101,6 +110,9 @@ $onlyIf[$message!=;Please specify how many you want to sell, with either \`all\`
 name: "sell stone",
 aliases: ["sellstone", "sellstones", "sell stones"],
 $if: "v4",
+category: "Economy",
+description: "Sells stone.",
+usage: "(optional: <amount>/\"all\")",
 code: `
 $if[$message==all]
 $setGlobalUserVar[Stone;0;$authorID]
