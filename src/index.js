@@ -90,6 +90,7 @@ $createApplicationCommand[global;slap;slaps a user.;true;slash;[{"name":"member"
 $createApplicationCommand[global;hug;hugs a user.;true;slash;[{"name":"member", "description":"the member you'd like to hug.","type":"USER", "required": true}]]
 $createApplicationCommand[global;laugh;sends a laughing GIF.;true;slash]
 $createApplicationCommand[global;wave;sends a waving GIF.;true;slash]
+$createApplicationCommand[global;vote;provides the link to vote for DankRPG on top.gg.;true;slash]
 */
 
 const loader = new aoijs.LoadCommands(bot)
