@@ -1,4 +1,4 @@
-## Forewarning: Always download the latest version from "Releases". The main branch will be unstable.
+## Forewarning: Always download the latest version from "Releases". <br> The main branch will be unstable. <br> <br> A re-write of DankRPG in Discord.js is also underway.
 
 # The Guide
 Please note that this project mainly for people who want to see the code of DankRPG, and learn from it. I have provided this guide for the people that wish to self host DankRPG, but you will most likely encounter errors. You will have to edit some of the code yourself.
